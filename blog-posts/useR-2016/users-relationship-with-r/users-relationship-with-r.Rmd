@@ -9,7 +9,7 @@ title: "useRs Relationship with R"
 tocify: true
 knit: (function(inputFile, encoding) { 
     dir <- "blog/2017/03/11/users-relationship-with-r/";
-    outFile <- file.path(dir, "users-relationship-with-r.md");
+    outFile <- paste0(dir, "users-relationship-with-r.md");
     setwd("../../../../website_source/content/");
     knitr::opts_chunk$set(fig.path = dir, fig.width = 28/3, fig.height = 20/3);
     knitr::knit(inputFile, output = outFile, encoding = encoding);
