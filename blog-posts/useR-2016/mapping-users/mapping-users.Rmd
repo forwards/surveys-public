@@ -7,13 +7,17 @@ description: "Report on demographics section of useR! 2016 survey"
 categories : ["analysis"]
 menu : ""
 images : []
-banner : "/blog/2017/01/13/mapping-users/banner.png"
+banner : "blog/2017/01/13/mapping-users/banner.png"
 tocify: true
 knit: (function(inputFile, encoding) { 
-    rmarkdown::render(inputFile,
-                      output_format = "md_document",
-                      output_dir = "../../../../website_source/content/blog/2017/01/13/mapping-users",
-                      encoding = encoding) })
+    dir <- "blog/2017/01/13/mapping-users";
+    outFile <- file.path(dir, "mapping-users.md");
+    setwd("../../../../website_source/content/");
+    knitr::opts_chunk$set(fig.path = dir, fig.width = 28/3, fig.height = 20/3);
+    knitr::knit(inputFile, output = outFile, encoding = encoding);
+    txt <- readLines(outFile);
+    txt <- gsub("src=\"blog/", "src=\"/blog/", txt);
+    writeLines(txt, outFile)}) 
 ---
 
 ```{r setup, include=FALSE}
