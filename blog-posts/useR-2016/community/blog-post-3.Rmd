@@ -1,0 +1,332 @@
+---
+author: "Stella Bollmann, Dianne Cook, Rudolf Debelak, Jasmine Dumas, John Fox, Julie Josse, Oliver Keyes, Carolin Strobl, Heather Turner"
+banner: "/blog/images/users-relationship-with-r/banner.png"
+categories: ["analysis"]
+date: 2017-03-11T16:37:43Z
+description: "Report on community section of useR! 2016 survey"
+tags: ["useR!", "survey", "programming"]
+title: "useRs Participation in the R Community"
+tocify: true
+knit: (function(inputFile, encoding) { 
+    dir <- "blog/users-relationship-with-r/";
+    outFile <- paste0(dir, "users-relationship-with-r.md");
+    setwd("../../../../website_source/content/");
+    knitr::opts_chunk$set(fig.path = dir, fig.width = 28/3, fig.height = 20/3);
+    knitr::knit(inputFile, output = outFile, encoding = encoding);
+    txt <- readLines(outFile);
+    txt <- gsub("src=\"blog/", "src=\"/blog/", txt);
+    writeLines(txt, outFile)})                      
+---
+
+
+```{r setup, include=FALSE}
+library(ggplot2)
+library(knitr)
+library(dplyr)
+library(forcats)
+library(tidyr)
+library(likert)
+library(purrr)
+load("../../../../survey/survey.RData")
+opts_chunk$set(results = "hide", echo = FALSE, message = FALSE, warning = FALSE, fig.align = "center")
+# use women/men rather than male/female
+survey_data <- survey_data %>%
+  mutate(Q2 = replace(Q2, Q2 == "Female", "Women"),
+         Q2 = replace(Q2, Q2 == "Male", "Men"))
+```
+
+In our [first](https://forwards.github.io/blog/2017/01/13/mapping-users/) and [second](http://forwards.github.io/blog/2017/03/11/users-relationship-with-r/) posts on the useR! 2016 survey] we discussed the responses from the demographic and programming sections. The main findings were:
+
+ - The useR! 2016 attendees were predominately men, typically under 40, White/Caucasian and employed full-time.
+ - Women attendees tended to be younger, with less programming experience and lower involvement in package development.
+ - Most useRs had a generally positive view of R, finding it fun to use, but women were less likely than men to code recreationally.
+ 
+In this last blog post of the series, we consider useRs involvement in the wider R community.
+
+## Summary
+
+## Survey results
+
+### Belonging to the Community
+
+```{r, eval = FALSE}
+tab <- table(survey_data$Q11, survey_data$Q18)
+#               No Yes
+#  > 10 years    7 111
+#  1-2 years     8  25
+#  2-5 years    18  95
+#  5-10 years   20 107
+#  6-12 months   9  20
+#  < 6 months    6   3
+tab[,1]/rowSums(tab)
+# > 10 years   1-2 years   2-5 years  5-10 years 6-12 months  < 6 months 
+# 0.05932203  0.24242424  0.15929204  0.15748031  0.31034483  0.66666667 
+```
+
+
+The first question asked useRs whether they considered themselves to be part of the R community: 361 (79%) responded that they did, whereas 69 (15%) responded that they did not and 28 (6%) respondents did not give an answer. There was no significant difference in responses from men and women.
+ 
+It's encouraging that such a large proportion feel part of the R community: as might be expected the proportion increased with the length of time the respondent had used R, yet even people with less than 6 months' experience responded positively. This is a testament to a generally welcoming community as backed up by some of the free text comments:
+
+    Y'all seem to have a very active and robust community - keep it up!
+    
+    I really like the idea that R can be for you[...]I was trained as an engineer, not a statistician. I really appreciate the welcoming I have received
+    
+Other comments mentioned that "[m]eetups are a great source of network building" and the companies "like RStudio stay true to open source and actively encourage folks to edit their packages", both aspects encouraging participation and a sense of community.
+
+There were a number of reasons given for not feeling part of the community. One person mentioned that they "wouldn't feel officially part of the R community unless [they had] contributed to or made a package". Another respondent, for whom useR! 2016 was their 3rd useR!, said they don't yet feel fully welcomed and hoped that by giving regular talks at conferences they would become better known by folks with similar interests. One person observed there was a focus on having a PhD: "there's definitely a sense of 'you're in the club or not'" and they contrasted this with the Python community, saying it "doesn't feel like the [P]ython community wants to put a fence around itself and go 'oh, this is for those who belong to the esteemed academy.'"
+ 
+The fact that even some useRs with more than 10 years' experience responded negatively, suggests that some people just view R as a tool, perhaps one of many they use, and see no need to be involved in the wider community. However, some people many not be aware of community activities, or how they can get more involved in the R project. As pointed out in another commment, the number of new users is increasing rapidly, so finding ways to spread knowledge of these activities will help newcomers.
+
+### Support in Using R
+
+The next question in this section asked useRs which resources they used for support. Respondents could select one or more resources from a list and/or add their own resources. The plot below shows the resources that were selected by at least 10 respondents.
+
+```{r}
+dat <- survey_data %>%
+  select(Q19, Q19_B, Q19_C, Q19_D, Q19_E, Q19_F) %>%
+  summarise_all(funs(Yes = sum(!is.na(.)),
+                     No = sum(is.na(.)))) %>%
+  gather(Response, Count) %>%
+  separate(Response, c("Q", "Answer"), sep = "_(?=[^_]+$)") %>%
+  arrange(Q, Answer)
+
+group_by(dat, Q) %>% summarise(sum(Count)) #always 458
+
+# filter to Yes and add additional responses
+dat <- dat %>%
+    filter(Answer == "Yes") %>%
+    select(-Answer) %>%
+    mutate(Q = c("The R mailing lists", "The #rstats hashtag on Twitter",
+                 "The R StackOverflow queues", "The R IRC channel",
+                 "The rOpenSci mailing lists or chat forums",
+                 "The Bioconductor support site"))
+dat <- rbind(dat,
+             data_frame(Q = c("R-Bloggers/blogs", "Google/Web search", "Colleagues",
+                              "Local group", "R documentation"),
+                              Count = c(27, 16, 9, 5, 6)))
+
+dat <- filter(dat, Count > 9) %>%
+    arrange(Count) %>%
+    mutate(Percentage = Count/458 * 100,
+           Q = factor(Q, Q))
+
+ggplot(dat, aes(Q, Percentage)) + 
+  geom_bar(fill = "midnightblue", stat = "identity") +
+  coord_flip() + theme_minimal(base_family = "RobotoCondensed-Regular") +
+  scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 100)) +
+  labs(x = NULL, y = "%",
+       title = "useR! 2016 attendees' resources for support")
+```
+
+There was no significant difference in the resources used by men and women. Over 70% (334 of 458) use StackOverflow for support, but the long-running R mailing lists are still heavily used, with 40% (180 of 458) using these for support. Both resources were criticised in the comments as being unfriendly to newcomers though:
+
+    The mailing lists need to be more inclusive / friendly. Way too often new users are scared away by the "read documentation" and/or "this is a statistics question" comments
+    
+    It would be wonderful to have something like StackOverflow, but more friendly + welcoming for newcomers.
+    
+Another problem noted with StackOverflow (that probably also applies to the mailing lists) is that many questions are left unanswered. One suggestion was to have workshops at useR! where people could bring problems and have help solving them - this could be something to try, but obviously has limited reach. Another suggestion was to split r-help into subgroups for better signal-to-noise ratio. This has been done to some extent with the Special Interest Group mailing lists of which there are more than 20 covering a range of topics e.g. databases, ecology, GUIs, jobs and teaching, see the [Mailing Lists](https://www.r-project.org/mail.html) page for more. The Bioconductor support site and the rOpenSci mailing lists/forums, also featuring in the responses, are other examples of support focused on particular areas.
+
+The third most popular resource, with 26% (118/458) of people using it is the #rstats Twitter hashtag. This may be surprising to people not on Twitter, or not using Twitter for work purposes, but it is a natural extension of the support that people get from colleagues or local groups (also mentioned, but by only 9 and 5 respondents respectively). That is, it provides a network of people who share news of R packages, programming tips and who help each other on issues - sometimes crossreferencing other resources such as StackOverflow, e.g. to get an answer to their question.  
+
+Four respondents used an internal mailing list or Slack group. Starting an open Slack group was suggested by a couple of respondents to provide a forum for discussion/support and for mentoring new users. There were individual mentions of the R user group on Facebook, Google groups and LinkedIn R user groups.
+
+Other resources are web search (particularly using Google, which recognises R as a word!), blogs (particularly [R-bloggers](https://www.r-bloggers.com/) which aggregates R blogs), R documentation, books, journals (e.g. [The R Journal](https://journal.r-project.org/), [Journal of Statistical Software](https://www.jstatsoft.org/index)), GitHub, online courses/tutorials, and other specific websites.
+
+### R News
+
+Next we asked useRs what was their preferred medium for R community news (e.g. events, webinars, opportunities). Again there was no significant difference between the responses for men and women, so the results for all genders are presented below:
+
+```{r}
+dat <- survey_data %>%
+    mutate(Q20 = fct_lump(Q20, prop = 0.02)) %>%
+    group_by(Q20) %>%
+    summarise(Count = n())
+
+# move "r-bloggers" to blog 
+dat[1, 2] <- dat[1, 2] + 3
+dat[8, 2] <- dat[8, 2] - 3
+
+dat <- dat %>%
+    arrange(Count) %>%
+    mutate(Percentage = Count/sum(Count) * 100) %>%
+    filter(!is.na(Q20)) %>%
+    mutate(Q20 = factor(Q20, Q20))
+
+
+ggplot(dat, aes(Q20, Percentage)) + 
+  geom_bar(fill = "midnightblue", stat = "identity") +
+  coord_flip() + theme_minimal(base_family = "RobotoCondensed-Regular") +
+  scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 100)) +
+  labs(x = NULL, y = "%",
+       title = "useR! 2016 attendees' resources for support")
+```
+
+The majority of useRs are split across four media: website (24%, 110 of 458), mailing list (21%, 96 of 458), blog (21%, 85 of 458) and Twitter (15%, 69 of 458). Therefore communication across a range of media is necessary to be confident in reaching a large proportion of R users and developers. In addition to the other media featured in the plot above (Facebook, RSS feed, podcast) useRs selected Google+ and their local R meetup group as sources of news. The remaining people in the "Other" category wanted to selected multiple categories or had no preference. A sizeable proportion (13.1%) did not select any option, so do not have a preference or are not interested in R community news. Nonetheless, as conference participants, they may receive some news in person.
+
+### Local Groups
+
+<!--- add 4 from "Other" corresponding to general user group; move one from attend to not attend (used to attend) --->
+```{r, eval = FALSE}
+# change to "No" if used to attend or give reason for not attending (other than "I attend"!)
+survey_data <- survey_data %>%
+    mutate(Q21 = ifelse(Q22_B %in% "used to, but I'm too busy now with three young children" |
+                            (!is.na(Q23) & !Q23_B %in% "I attend"), "No", Q21))
+
+survey_data %>%
+    group_by(Q21) %>%
+    summarise(Count = n()) %>%
+    mutate(Percentage = Count/sum(Count) * 100)
+
+# more people specify a user group than attend - specify these as NA
+survey_data <- survey_data %>%
+    mutate(Q22 = ifelse(Q21 == "No", NA, Q22))
+
+# reassign some from "Other"
+survey_data <- survey_data %>%
+    mutate(Q22 = ifelse(Q22_B %in% c("r meetup", "geographic", "A users group for all users in my country", 
+                                     "An R user group"), 
+                        "A general user group", Q22))
+
+# 2 people who attend do not specify type
+survey_data %>%
+    filter(Q21 == "Yes") %>%
+    group_by(Q22) %>%
+    summarise(Count = n()) %>%
+    ungroup() %>%
+    mutate(Percentage = Count/sum(Count))
+
+filter(survey_data, Q21 == "Yes" & Q22 == "Other (please specify)") %>%
+    select(Q22_B)
+```
+The last set of directed questions related to useRs involvement in local R user groups. Among the 458 respondents, 152 (33%) said they attended a local group, whereas 279 (59%) did not and 27 (6%) did not respond. Of those that attended RUGs, 124 (82%) attended a general user group, while 12 (8%) attended a university-based group and 7 (5%) attended a company-based group. Other types of groups mentioned were a user group for women in R (R-Ladies), a combined general user and R-Ladies group, a group based in a government organization and an informal user group for government and academia.
+
+The respondents that did not attend a user group were asked why not, giving the following responses:
+
+```{r, eval = FALSE}
+# basic counts
+dat <- survey_data %>%
+    filter(Q21 == "No") %>%
+    group_by(Q23) %>%
+    summarise(Count = n())
+
+# add in other categories (separate from Other)
+dat <- rbind(dat,
+             data_frame(Q23 = c("Unaware of group", "Don't use R enough",
+                                "Inconvenient time/place"),
+                        Count = c(12, 5, 6)))
+
+# move some from Other to correct category, update Other count
+dat[1, 2] <- dat[1, 2] + 2
+dat[6, 2] <- dat[6, 2] + 1
+dat[5, 2] <- dat[5, 2] - 12 - 5 - 6 - 2 - 1
+
+dat <- dat %>%
+    arrange(Count) %>%
+    mutate(Q23 = ifelse(Q23 %in% c(NA, "Other (please specify)"), "Other",
+                        Q23),
+        Q23 = factor(Q23, c("Other", setdiff(Q23, "Other"))),
+         Percentage = Count/sum(Count) * 100)
+
+ggplot(dat, aes(Q23, Percentage)) + 
+  geom_bar(fill = "midnightblue", stat = "identity") +
+  coord_flip() + theme_minimal(base_family = "RobotoCondensed-Regular") +
+  scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 100)) +
+  labs(x = NULL, y = "%",
+       title = "Reasons for not attending an R user group")
+```
+
+The most common responses were that they were too busy (30%, 85 of 279) or there
+was no active group nearby (30%, 84 of 279). The next most frequent response correspond to people that feel too inexperienced (11%, 30 of 279) or perhaps too experienced, in that they don't need the extra support (9%, 25 of 279). Some people did not know whether there was a group near them, or were unaware that such groups existed - one person looked up their local group as a result of filling in the survey and signed up for it straight away! For others the topics were not relevant/interesting, the time or place was inconvenient, they didn't use R enough (using other tools more or being completely new to R), there were logistical issues (accessibility, problems signing up to meetups or not enough space at meetup) or social issues (feeling intimidated or worrying they would intimidate others), they'd just never considered it, or planned to go soon.
+
+
+A higher proportion of men (46%) said that they attended a user group, compared to women (25%). Men and women also differed in some of their responses when asked what would make them more likely to participate in the R community, or improve their experience. Therefore these results are shown for men and women separately below, for options with at least 5 respondents in an gender:catergory combination:
+
+```{r}
+# combined counts
+dat  <- survey_data %>%
+  select(Q24, Q24_B, Q24_C, Q24_D, Q24_E, Q24_F, Q24_G, Q24_H, Q24_I, Q24_J,
+         Q24_K, Q24_L) %>%
+  summarise_all(funs(Yes = sum(!is.na(.)),
+                     No = sum(is.na(.)))) %>%
+  gather(Response, Count) %>%
+  separate(Response, c("Q", "Answer"), sep = "_(?=[^_]+$)") %>%
+  arrange(Q, Answer) %>%
+  group_by(Q) %>%
+  summarise(Yes = Count[2],
+            Percentage = Count[2]/sum(Count) * 100)
+
+dat <- survey_data %>%
+  filter(Q2 %in% c("Men", "Women")) %>%
+  select(Q2, Q24, Q24_B, Q24_C, Q24_D, Q24_E, Q24_F, Q24_G, Q24_H, Q24_I, Q24_J,
+         Q24_K, Q24_L) %>%
+  group_by(Q2) %>%
+  summarise_all(funs(Yes = sum(!is.na(.)),
+                     No = sum(is.na(.)))) %>%
+  gather(Response, Count, -Q2) %>%
+  separate(Response, c("Q", "Answer"), sep = "_(?=[^_]+$)") %>%
+  arrange(Q2, Q, Answer) %>%
+  group_by(Q2, Q) %>%
+  summarise(Yes = Count[2],
+            Percentage = Count[2]/sum(Count) * 100) %>%
+    filter( Yes > 4) %>%
+  mutate(Q = factor(Q, labels = c("New R user group near me",#A
+                                  "New R user group near me aimed at my demographic",#B
+                                  "Free local introductory R workshops",#C
+                                  "Paid local advanced R workshops",#D
+                                  "R workshop at conference in my domain", #E
+                                  "R workshop aimed at my demographic",#F
+                                  "Mentoring", #G
+                                  #"Training in non-English language",
+                                  #"Training that accommodates my disability",
+                                  "Online forum to discuss R-related issues", #J
+                                  "Online support group for my demographic"#, #K
+                                  #"Special facilities at R conferences"
+                                  ))) 
+
+ggplot(dat, aes(x = fct_rev(Q),  y = Percentage, fill = Q2)) + 
+  geom_bar(stat = "identity", position = "dodge") +
+  coord_flip() + theme_minimal(base_family = "RobotoCondensed-Regular") +
+  labs(x = NULL, y = "%", title = "R programming level of useR! 2016 attendees", fill = NULL) +
+  scale_y_continuous(breaks = seq(0, 100, 20), limits = c(0, 100)) +
+  scale_fill_hue(h = c(110,250), direction = -1, breaks = c("Women", "Men"))
+```
+
+The most common option selected was to have a new user group near them: 122 respondents selected this (27%) and the proportion was comparable between men and women. The next most common was mentoring (examples were given of mentoring first CRAN submission, useR! abstract submission or GitHub contribution); overall 87 respondents (19%) selected this. For women, the next most useful support was an online forum to discuss R-related issues, but this was more popular for women than men, with 20% of women vs 10% of men selecting this option. The gender difference is similar regarding views on an online support group for their demographic (note this could be other than gender), but overall the positive response was much lower for this option. For men, after user groups and mentoring, the next most popular option was workshops, with similar numbers selecting free local introductory workshops, paid local advanced workshops and workshops at a conference in their domain. These options were also popular with women, with a slightly stronger preference for advanced workshops or workshops at conferences. Conferences specified in the comments were JSM, INFORMS, NIPS and ICML. For men, there were no other options selected by at least 10 individuals, but for women there was still strong support for user groups, workshops and an online support group aimed at their demographic (respectively 13%, 8% and 8% of women). Respondents were asked to specify the demographic in the comments, mostly this was women, but LGBT and academic (students/teachers/reseachers) were also specified.
+
+Less frequently selected options, or aspects mentioned in the comments were childcare at conferences, a user group where it is possible to bring children, greater demand for R in local area and training in a non-English language (Chinese).
+
+The community maintains a [list of R User Groups](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and R-Ladies Groups can be found on the [R Ladies Global website](http://rladies.org/). As the conference was in Stanford, it is not surprising that there were several people from the local area interested a group near them. For some of these, the [Bay Area R User Group](https://www.meetup.com/R-Users/), might work, but some individuals from Oakland or Palo Alto felt this was too far. Further afield there were a number of specific places mentioned, where there is already a local group or one not so far away, some started since useR! 2016:
+ - Los Angeles, CA [RUG](https://www.meetup.com/LAarea-R-usergroup/))
+ - Denver, CO [RUG](https://www.meetup.com/DenverRUG/)
+ - Connecticut CT [R-ladies](https://www.meetup.com/rladies-connecticut/) (**NEW**)
+ - Washington DC [RUG](https://www.meetup.com/stats-prog-dc/); [R-Ladies](https://www.meetup.com/rladies-dc/) (**NEW**)
+ - Ames, IA [R-Ladies](https://www.meetup.com/R-Ladies-Ames/) (**NEW**)
+ - Boston, MA [R-Ladies](https://www.meetup.com/R-Ladies-Boston/)] (**NEW**)
+ - Greensboro, NC; not so far from Winston Salem  [RUG](https://www.meetup.com/Winston-Salem-R-Users-Group/)
+ - Durham, NC [R-Ladies](https://www.meetup.com/R-Ladies-RTP/) (**NEW**)
+ - Columbus, OH [R-Ladies](https://www.meetup.com/R-Ladies-Columbus/)
+ - Portland OR [RUG](https://www.meetup.com/portland-r-user-group)
+ - Nashville, TN [RUG](https://www.meetup.com/Nashville-R-Users-Group/); [R-Ladies](https://www.meetup.com/rladies-nashville/) (**NEW**)
+ - Seattle, WA [RUG](https://www.meetup.com/Seattle-useR/)
+ - Zurich, Switzerland [RUG](https://www.meetup.com/Zurich-R-User-Group/)
+ - Muenster, Germany [RUG]((https://www.meetup.com/Munster-R-Users-Group) (**NEW**)
+ 
+There were also some places where there isn't an active group nearby and there may be potential to (re)start a new group:
+ - Central Valley, CA
+ - Orlando, FL
+ - Davenport, IA
+ - Iowa City, IA
+ - SE Minnesota, MN
+ - Wilmington, NC 
+ - Moscow, ID
+ - Eugene, OR
+ - Seattle WA (for women)
+ - Richland, WA
+ - Geneva, Switzerland
+ - Hasselt, Belgium
+ - Freiberg, Germany
+ - Glasgow, Scotland
+ - Cluj-Napoca, Romania
+
+Many domains were mentioned including spatial statistics, electrical engineering, operations research, health care and finance. Some of these might be fed through to the corresponding local groups, while others might provide ideas for future useR!s.
