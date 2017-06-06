@@ -7,6 +7,7 @@ description: "Report on community section of useR! 2016 survey"
 tags: ["useR!", "survey", "programming"]
 title: "useRs Participation in the R Community"
 tocify: true
+output: github_document
 ---
 
 
@@ -160,7 +161,7 @@ ggplot(dat, aes(Q20, Percentage)) +
        title = "useR! 2016 attendees' resources for support")
 ```
 
-The majority of useRs are split across four media: website (24%, 110 of 458), mailing list (21%, 96 of 458), blog (21%, 85 of 458) and Twitter (15%, 69 of 458). Therefore communication across a range of media is necessary to be confident in reaching a large proportion of R users and developers. In addition to the other media featured in the plot above (Facebook, RSS feed, podcast) useRs selected Google+ and their local R meetup group as sources of news. The remaining people in the "Other" category wanted to select multiple categories or had no preference. A sizeable proportion (13.1%) did not select any option, so do not have a preference or are not interested in R community news. Nonetheless, as conference participants, they may receive some news in person.
+The majority of useRs are split across four media: website (24%, 110 of 458), mailing list (21%, 96 of 458), blog (21%, 85 of 458) and Twitter (15%, 69 of 458). Therefore communication across a range of media is necessary to be confident in reaching a large proportion of R users and developers. In addition to the other media featured in the plot above (Facebook, RSS feed, podcast) useRs selected Google+ and their local R meetup group as sources of news. The remaining people in the "Other" category wanted to select multiple categories or had no preference. _[Refers to MCA report] An exploratory multivariate analysis suggests that Facebook (not Twitter), podcasts and blogs are more more popular among newcomers, especially women, so these media may be important for outreach._ A sizeable proportion (13.1%) did not select any option, so do not have a preference or are not interested in R community news. Nonetheless, as conference participants, they may receive some news in person.
 
 ### Local Groups
 
@@ -273,7 +274,7 @@ dat <- survey_data %>%
                                   "Paid local advanced R workshops",#D
                                   "R workshop at conference in my domain", #E
                                   "R workshop aimed at my demographic",#F
-                                  "Mentoring", #G
+                                  "Mentoring (e.g. CRAN/useR! submission, GitHub contribution)", #G
                                   #"Training in non-English language",
                                   #"Training that accommodates my disability",
                                   "Online forum to discuss R-related issues", #J
@@ -289,7 +290,7 @@ ggplot(dat, aes(x = fct_rev(Q),  y = Percentage, fill = Q2)) +
   scale_fill_hue(h = c(110,250), direction = -1, breaks = c("Women", "Men"))
 ```
 
-The most common option selected was to have a new user group near them: 122 respondents selected this (27%) and the proportion was comparable between men and women. The next most common was mentoring (examples were given of mentoring first CRAN submission, useR! abstract submission or GitHub contribution) selected by 87 respondents (19%). For women, the next most wanted support was an online forum to discuss R-related issues, but this was more popular for women than men, with 20% of women vs 10% of men selecting this option. The gender difference is similar regarding views on an online support group for their demographic (note this could be other than gender), but overall the positive response was much lower for this option. For men, after user groups and mentoring, the next most popular option was workshops, with similar numbers selecting free local introductory workshops, paid local advanced workshops and workshops at a conference in their domain. These options were also popular with women, with a slightly stronger preference for advanced workshops or workshops at conferences. Conferences specified in the comments were JSM, INFORMS, NIPS and ICML. For men, there were no other options selected by at least 10 individuals, but for women there was still support for user groups, workshops and an online support group aimed at their demographic (respectively 13%, 8% and 8% of women). Respondents were asked to specify the demographic in the comments, mostly this was women, but LGBT and academics (students/teachers/reseachers) were also specified.
+The top two options were to have a new user group nearby (27%, 122 of 458) and mentoring (19%, 87 of 458). The proportions selecting these options were similar for men and women. For women, the next most wanted support was an online forum to discuss R-related issues; 20% of women vs 10% of men selected this option. The gender difference was similar regarding views on an online support group for their demographic (note this could be other than gender), but overall the positive response was much lower for this option. For men, after user groups and mentoring, the next most popular option was workshops, with similar numbers selecting free local introductory workshops, paid local advanced workshops and workshops at a conference in their domain. These options were also popular with women, with a slightly stronger preference for advanced workshops or workshops at conferences. Conferences specified in the comments were JSM, INFORMS, NIPS and ICML. For men, there were no other options selected by at least 10 individuals, but for women there was still support for user groups, workshops and an online support group aimed at their demographic (respectively 13%, 8% and 8% of women). Respondents were asked to specify the demographic in the comments, mostly this was women, but LGBT and academics (students/teachers/reseachers) were also specified.
 
 Less frequently selected options, or aspects mentioned in the comments were childcare at conferences, a user group where it is possible to bring children, greater demand for R in local area and training in a non-English language (Chinese).
 
