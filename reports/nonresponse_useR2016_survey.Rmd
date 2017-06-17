@@ -4,15 +4,26 @@ author: "Heather Turner and Julie Josse"
 date: "2016-10-07"
 output: html_document
 type: report
-knit: (function(inputFile, encoding) { 
-    rmarkdown::render(inputFile,
-                      output_dir = "../../website_source/content/docs",
-                      encoding = encoding)}) 
+knit: (function(inputFile, encoding) {
+    outputFile <- paste0("../../website_source/content/docs/",
+                         gsub(".*/(.*).Rmd", "\\1", inputFile), ".md");
+    knitr::knit(inputFile, output = outputFile, encoding = encoding);
+    out <- readLines(outputFile);
+    out <- gsub("images/", "/images/", out);
+    writeLines(out, outputFile)
+    })
 ---
+
+```{r knitr, include = FALSE}
+library(knitr)
+opts_knit$set(base.dir = "../../website_source/content/")
+opts_chunk$set(echo = FALSE, message = FALSE, fig.align = "center",
+               fig.path = "images/reports/nonresponse_useR2016_survey/")
+```
+
 
 ```{r setup, include=FALSE}
 library(ggplot2)
-library(knitr)
 library(scales)
 library(dplyr)
 library(tidyr)
@@ -22,7 +33,6 @@ load("../../survey/survey.RData")
 ## From Julie's genderizer + manual gender assignment
 gender <- data_frame(Gender = c("Female", "Male", "Undetermined"), 
                      Freq = c(235, 593, 76))
-opts_chunk$set(echo = FALSE, message = FALSE, fig.align = "center")
 ```
 
 ## Background
