@@ -1,24 +1,39 @@
 ---
 author: "Stella Bollmann, Dianne Cook, Rudolf Debelak, Jasmine Dumas, John Fox, Julie Josse, Oliver Keyes, Carolin Strobl, Heather Turner"
-banner: "/blog/images/users-relationship-with-r/banner.png"
+banner: "images/blog/community-involvement-of-users/user2016-reception.jpg"
 categories: ["analysis"]
-date: 2017-03-11T16:37:43Z
+date: 2017-06-19
 description: "Community Involvement of useRs"
-tags: ["useR!", "survey", "programming"]
+tags: ["useR!", "survey", "community"]
 title: "useRs Participation in the R Community"
 tocify: true
-output: github_document
+#output: github_document
+knit: (function(inputFile, encoding) {
+    outputFile <- 
+        knitr::knit(inputFile, 
+                    output = paste0("../../../../website_source/content/blog/",
+                                    gsub(".*/(.*).Rmd", "\\1", inputFile), 
+                                    ".md"), encoding = encoding);
+    out <- readLines(outputFile);
+    out <- gsub("images/", "/images/", out);
+    writeLines(out, outputFile)
+    })
 ---
+
+```{r knitr, include = FALSE}
+library(knitr)
+opts_knit$set(base.dir = "../../../../website_source/content/")
+opts_chunk$set(echo = FALSE, message = FALSE, fig.align = "center",
+               fig.path = "images/blog/community-involvement-of-users/")
+```
+
 
 
 ```{r setup, include=FALSE}
 library(ggplot2)
-library(knitr)
 library(dplyr)
 library(forcats)
 library(tidyr)
-library(likert)
-library(purrr)
 load("../../../../survey/survey.RData")
 opts_chunk$set(results = "hide", echo = FALSE, message = FALSE, warning = FALSE, fig.align = "center")
 # use women/men rather than male/female
@@ -27,7 +42,7 @@ survey_data <- survey_data %>%
          Q2 = replace(Q2, Q2 == "Male", "Men"))
 ```
 
-In our [first](https://forwards.github.io/blog/2017/01/13/mapping-users/) and [second](http://forwards.github.io/blog/2017/03/11/users-relationship-with-r/) posts on the useR! 2016 survey we discussed the responses from the demographic and programming sections. The main findings were:
+In our [first](https://forwards.github.io/blog/2017/01/13/mapping-users/) and [second](https://forwards.github.io/blog/2017/03/11/users-relationship-with-r/) posts on the useR! 2016 survey we discussed the responses from the demographic and programming sections. The main findings were:
 
  - The useR! 2016 attendees were predominantly men, typically under 40, White/Caucasian and employed full-time.
  - Women attendees tended to be younger, with less programming experience and lower involvement in package development.
@@ -42,7 +57,7 @@ with the proportion increasing with length of time using R.
 
 Stackoverflow and the R mailing lists are the most common resources used for support, despite the negative experience of some useRs. A third of useRs attend a local user group, although the proportion is higher among men than women. The main reasons for not attending are there is no group nearby, or people are too busy. The top initiatives that would encourage more involvement are a new user group nearby and mentoring. Women are more likely than men to want additional support and are more in favour of online support and initiatives targeted at their demographic.
 
-The respondents had many suggestions for improving the R community and these along with the other survey responses provide a based for Forwards and other R community leaders to work towards greater engagement.
+The respondents had many suggestions for improving the R community and these along with the other survey responses provide a basis for Forwards and other R community leaders to work towards greater engagement.
 
 ## Survey results
 
@@ -68,6 +83,8 @@ The first question asked useRs whether they considered themselves to be part of 
 It's encouraging that such a large proportion feel part of the R community: as might be expected the proportion increased with the length of time the respondent had used R, yet even people with less than 6 months' experience responded positively. This is a testament to a generally welcoming community as backed up by some of the free text comments, for example:
 
 > Y'all seem to have a very active and robust community - keep it up!
+
+# 
     
 > I really like the idea that R can be for you [...] I was trained as an engineer, not a statistician. I really appreciate the welcoming I have received
     
@@ -75,7 +92,7 @@ Other comments mentioned that "[m]eetups are a great source of network building"
 
 On the negative side, one person said they "wouldn't feel officially part of the R community unless [they had] contributed to or made a package". Another respondent, for whom useR! 2016 was their 3rd useR!, hoped to become better known to folks with similar interests by continuing to present at conferences. A third person observed an emphasis on having a PhD: "there's definitely a sense of 'you're in the club or not' [...] it doesn't feel like the [P]ython community wants to put a fence around itself and go 'oh, this is for those who belong to the esteemed academy.'"
  
-Even some useRs with more than 10 years' experience responded that they did not feel part of the R community. Possibly they view R as a tool, perhaps one of many they use, and are not interested in the community surrounding R. However, some people many not be aware of community activities, or how they can get more involved in the R project. As pointed out in another commment, the number of new users is increasing rapidly, so finding ways to spread awareness of these activities is important.
+Even some useRs with more than 10 years' experience responded that they did not feel part of the R community. Possibly they view R as a tool, perhaps one of many they use, and are not interested in the community surrounding R. However, some people may not be aware of community activities, or how they can get more involved in the R project. As pointed out in another commment, the number of new users is increasing rapidly, so finding ways to spread awareness of these activities is important.
 
 ### Support in Using R
 
@@ -121,12 +138,14 @@ ggplot(dat, aes(Q, Percentage)) +
 Over 70% (334 of 458) use StackOverflow for support, but the long-running R mailing lists are still heavily used, with 40% (180 of 458) using these. Both resources were criticised in the comments as being unfriendly to newcomers though, for example:
 
  > The mailing lists need to be more inclusive / friendly. Way too often new users are scared away by the "read documentation" and/or "this is a statistics question" comments
+
+# 
     
  > It would be wonderful to have something like StackOverflow, but more friendly + welcoming for newcomers.
     
 Another problem noted with StackOverflow (that probably also applies to the mailing lists) is that many questions are left unanswered. One respondent suggested splitting  r-help into subgroups for better signal-to-noise ratio. This has been done to some extent with the Special Interest Group mailing lists of which there are more than 20 covering a range of topics e.g. databases, ecology, GUIs, jobs and teaching, see the [Mailing Lists](https://www.r-project.org/mail.html) page for more. The Bioconductor support site and the rOpenSci mailing lists/forums, also featuring in the responses, are other examples of support focused on particular areas. Another suggestion in the comments was to start a new mailing or forum targeted at beginners and/or non-statisticians.
 
-The third most popular resource, with 26% (118/458) of respondents using it is the [#rstats Twitter hashtag](https://twitter.com/hashtag/rstats?lang=en-gb). This may be surprising to people not on Twitter, or not using Twitter for work purposes, but it is a natural extension of the support that people get from colleagues or local groups (also mentioned, but by only 9 and 5 respondents respectively). That is, it provides a network of people who share news of R packages, programming tips and who help each other on issues - sometimes crossreferencing other resources such as StackOverflow, e.g. to get an answer to their question.  
+The third most popular resource, with 26% (118 of 458) of respondents using it is the [#rstats Twitter hashtag](https://twitter.com/hashtag/rstats?lang=en-gb). This may be surprising to people not on Twitter, or not using Twitter for work purposes, but it is a natural extension of the support that people get from colleagues or local groups (also mentioned, but by only 9 and 5 respondents respectively). That is, it provides a network of people who share news of R packages, programming tips and who help each other on issues - sometimes crossreferencing other resources such as StackOverflow, e.g. to get an answer to their question.  
 
 Four respondents used an internal mailing list or Slack group. Starting an open Slack group was suggested by a couple of respondents to provide a forum for discussion/support and for mentoring new users. There were individual mentions of the R user group on Facebook, Google groups and LinkedIn R user groups.
 
@@ -161,7 +180,7 @@ ggplot(dat, aes(Q20, Percentage)) +
        title = "useR! 2016 attendees' resources for support")
 ```
 
-The majority of useRs are split across four media: website (24%, 110 of 458), mailing list (21%, 96 of 458), blog (21%, 85 of 458) and Twitter (15%, 69 of 458). Therefore communication across a range of media is necessary to be confident in reaching a large proportion of R users and developers. In addition to the other media featured in the plot above (Facebook, RSS feed, podcast) useRs selected Google+ and their local R meetup group as sources of news. The remaining people in the "Other" category wanted to select multiple categories or had no preference. _[Refers to MCA report] An exploratory multivariate analysis suggests that Facebook (not Twitter), podcasts and blogs are more more popular among newcomers, especially women, so these media may be important for outreach._ A sizeable proportion (13.1%) did not select any option, so do not have a preference or are not interested in R community news. Nonetheless, as conference participants, they may receive some news in person.
+The majority of useRs are split across four media: website (24%, 110 of 458), mailing list (21%, 96 of 458), blog (21%, 85 of 458) and Twitter (15%, 69 of 458). Therefore communication across a range of media is necessary to be confident in reaching a large proportion of R users and developers. In addition to the other media featured in the plot above (Facebook, RSS feed, podcast) useRs selected Google+ and their local R meetup group as sources of news. The remaining people in the "Other" category wanted to select multiple categories or had no preference. An exploratory multivariate analysis[^1] suggests that Facebook (not Twitter), podcasts and blogs are more more popular among newcomers, especially women, so these media may be important for outreach. A sizeable proportion (13.1%) did not select any option, so do not have a preference or are not interested in R community news. Nonetheless, as conference participants, they may receive some news in person.
 
 ### Local Groups
 
@@ -198,7 +217,7 @@ survey_data %>%
 filter(survey_data, Q21 == "Yes" & Q22 == "Other (please specify)") %>%
     select(Q22_B)
 ```
-The last set of directed questions related to useRs involvement in local R user groups. Among the 458 respondents, 152 (33%) said they attended a local group, whereas 279 (59%) did not and 27 (6%) did not respond. Of those that attended RUGs, 124 (82%) attended a general user group, while 12 (8%) attended a university-based group and 7 (5%) attended a company-based group. Other types of groups mentioned were a user group for women in R (R-Ladies), a combined general user and R-Ladies group, a group based in a government organization and an informal user group for government and academia.
+The last set of directed questions related to useR's involvement in local R user groups. Among the 458 respondents, 152 (33%) said they attended a local group, whereas 279 (59%) did not and 27 (6%) did not respond. Of those that attended RUGs, 124 (82%) attended a general user group, while 12 (8%) attended a university-based group and 7 (5%) attended a company-based group. Other types of groups mentioned were a user group for women in R (R-Ladies), a combined general user and R-Ladies group, a group based in a government organization and an informal user group for government and academia.
 
 The respondents that did not attend a user group were asked why not, giving the following responses:
 
@@ -294,7 +313,7 @@ The top two options were to have a new user group nearby (27%, 122 of 458) and m
 
 Less frequently selected options, or aspects mentioned in the comments were childcare at conferences, a user group where it is possible to bring children, greater demand for R in local area and training in a non-English language (Chinese).
 
-The community maintains a [list of R User Groups](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and R-Ladies Groups can be found on the [R Ladies Global website](http://rladies.org/). As the conference was in Stanford, it is not surprising that there were several people from the local area interested a group near them. For some of these, the [Bay Area R User Group](https://www.meetup.com/R-Users/), might work, but some individuals e.g. from Oakland or Palo Alto felt this was too far. Further afield there were a number of specific places mentioned, where there is already a local group or one not so far away, though many have started since useR! 2016:
+The community maintains a [list of R User Groups](https://jumpingrivers.github.io/meetingsR/r-user-groups.html) and R-Ladies Groups can be found there as well as on the [R Ladies Global website](http://rladies.org/). As the conference was in Stanford, it is not surprising that there were several people from the local area interested a group near them. For some of these, the [Bay Area R User Group](https://www.meetup.com/R-Users/), might work, but some individuals e.g. from Oakland or Palo Alto felt this was too far. Further afield there were a number of specific places mentioned, where there is already a local group or one not so far away, though many have started since useR! 2016:
 
  - Los Angeles, CA [RUG](https://www.meetup.com/LAarea-R-usergroup/)
  - Denver, CO [RUG](https://www.meetup.com/DenverRUG/)
@@ -386,7 +405,7 @@ Finally many respondents expressed thanks to Forwards for running the survey and
 
 It has taken us a while to work through the survey and report back. However a benefit of this is we can see that actions in the meantime by Forwards and the wider community are already starting to address many of the issues raised in the last part of the survey. 
 
-The massive expansion of R-Ladies over the past year (from 4 groups to over 45) means that many people who were looking for a group now have one nearby, or will have soon. Many of the suggestions for useR! are in place for useR! 2017: there will be a [newbies session](https://user2017.sched.com/event/Avzo/sessions-for-user-newbies), [childcare](https://user2017.brussels/news/2017/user-2017-childcare) and a "hackathon space" for informal birds of a feather gatherings. In addition 26 participants were awarded diversity scholarships (thanks to the [conference sponsors](https://user2017.brussels/sponsors), especially platinum sponsors Microsoft, Open Analytics, R Consortium, RStudio, DataCamp, and IBM). 
+The massive expansion of R-Ladies over the past year (from 4 groups to over 45[^2]) means that many people who were looking for a group now have one nearby, or will have soon. Many of the suggestions for useR! are in place for useR! 2017: there will be a [newbies session](https://user2017.sched.com/event/Avzo/sessions-for-user-newbies), [childcare](https://user2017.brussels/news/2017/user-2017-childcare) and a "hackathon space" for informal birds of a feather gatherings. In addition 26 participants were awarded diversity scholarships (thanks to the [conference sponsors](https://user2017.brussels/sponsors), especially platinum sponsors Microsoft, Open Analytics, R Consortium, RStudio, DataCamp, and IBM). 
 
 With regards to education and outreach, the Forwards Teaching sub-team were recently awarded an [R Consortium grant](https://www.r-consortium.org/blog/2017/04/03/q1-2017-isc-grants) to develop workshops specifically targeting women and high school girls - initial workshops are planned for September and December in Melbourne, Australia and Auckland, New Zealand respectively. Further workshops will be run in Europe and the US, and the material made available under a Creative Commons share-alike license for others to use.
 
@@ -400,7 +419,13 @@ Now that we have completed this blog series, we will work on preparing an aggreg
 
 The analysis presented here used the following packages:
 
- - For data manipulation: dplyr, forcats, purrr, tidyr
+ - For data manipulation: dplyr, forcats, tidyr
  - For visualization and reporting: knitr, ggplot2
  
-The code is available in the [Rmarkdown file](https://github.com/forwards/surveys-public/blog-posts/useR-2016/users-relationship-with-r/users-relationship-with-r.Rmd).
+The code is available in the [Rmarkdown file](https://github.com/forwards/surveys-public/blog-posts/useR-2016/community-involvement-of-users/2017-06-19-community-involvement-of-users.Rmd).
+
+The banner photo was taken at useR! 2016 by [Thomas Petzoldt](http://tu-dresden.de/Members/thomas.petzoldt), used with permission.
+
+[^1]: See our supplementary report: [useR! 2016 participants and the R community: a multivariate analysis](https://forwards.github.io/docs/MCA_community_useR2016_survey/).
+
+[^2]: [R-Ladies Global Community and Vision](bit.ly/rladies_cascadiarconf), Gabriela de Queiroz, Cascadia R Conference, June 3, 2017, Portland, OR.
