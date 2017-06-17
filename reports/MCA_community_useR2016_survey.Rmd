@@ -1,0 +1,509 @@
+---
+title: "useR! 2016 participants and the R community: a multivariate analysis"
+author: "Julie Josse"
+date: "2017-06-17"
+type: report
+knit: (function(inputFile, encoding) {
+    outputFile <- 
+        knitr::knit(inputFile, 
+                    output = paste0("../../website_source/content/docs/",
+                                    gsub(".*/(.*).Rmd", "\\1", inputFile), 
+                                    ".md"), encoding = encoding);
+    out <- readLines(outputFile);
+    out <- gsub("images/", "/images/", out);
+    writeLines(out, outputFile)
+    })
+---
+
+```{r knitr, include = FALSE}
+library(knitr)
+opts_knit$set(base.dir = "../../website_source/content/")
+opts_chunk$set(echo = FALSE, message = FALSE, fig.align = "center",
+               fig.path = "images/reports/MCA_community_useR2016_survey/")
+```
+
+## Introduction
+
+### Background
+
+The useR! survey gathers responses to questions on different themes for 455 attendees: demographic characteristics, R programming and involvement in the R community. The separate analyses of each question in each theme are detailed in the posts [Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/),  [useRs Relationship with R](http://forwards.github.io/blog/2017/03/11/users-relationship-with-r/) and [Community Involvement of useRs](http://forwards.github.io/blog/2017/06/19/community-involvement-of-users/). A multivariate analysis of the R programming questions is detailed in [a companion report](http://forwards.github.io/docs/MCA_programming_useR2016_survey/). Here, we perform MCA on the R community questions.
+
+### R community questions
+
+Questions are the following ones:
+ 
+* Q18 Do you consider yourself part of the R community?
+* Q19 Which of the following resources do you use for support? Select all that apply 
+    + Q19_A The R mailing lists
+    + Q19_B The #rstats hashtag on Twitter
+    + Q19_C The R StackOverflow queues
+    + Q19_D The R IRC channel
+    + Q19_E The rOpenSci mailing lists or chat forums
+    + Q19_F The Bioconductor support site
+    + Q19_H Other
+* Q20 What would be your preferred medium for R community news (e.g. events, webinars, opportunities)? 
+* Q21 Do you attend R user group meetings in your local area?
+* Q22 If you do: you do: what type of user group is it?
+* Q23 If you do not: why not?
+* Q24 Which of the following would make you more likely to participate in the R community, or improve your experience? Tick any that apply.
+    + Q24_A New R user group near me (specify location in comments box)
+    + Q24_B New R user group near me aimed at my demographic (specify relevant group in comments box)
+    + Q24_C Free local introductory R workshops
+    + Q24_D Paid local advanced R workshops
+    + Q24_E R workshop at conference in my domain (specify domain/conference in comments box)
+    + Q24_F	R workshop aimed at my demographic (specify relevant group in comments box)
+    + Q24_G Mentoring (e.g. first CRAN submission/useR! abstract submission/GitHub contribution)
+    + Q24_H Training in non-English language (specify language in comments box)
+    + Q24_I Training that accommodates my disability (specify disability in comments box)
+    + Q24_J Online forum to discuss R-related issues
+    + Q24_K Online support group for my demographic (specify relevant group in comments box)
+    + Q24_L Special facilities at R conferences (give further detail in comments box)
+    + Q24_M Comments on answers above
+* Q25 What other ideas do you have for improving the R community?
+* Q26 Do you have any feedback for the survey authors?
+
+
+### Coding
+
+* Question Q20 has a category "others" which corresponds to free text answers.  We add new categories for this variable by grouping common answers and we name the new variables with the suffix "_new''. For instance, there is a variable Q20_new with a new category medium_R-bloggers.
+
+* Question Q19_H also corresponds to free text answers. It has been recoded with Q19_H_new to  Q19_N_new by grouping common answers: for instance, Q19_K_new has two categories Github_yes or Github_no. 
+
+* Q21, Q22 and Q23 have been merged in a variable Q21_new since Q22 and Q23 are filled-in depending on the answer on Q21.  For example, for Q21 *Do you attend R user group meetings in your local area?*, if the respondent answers *no*, they answer  Q23 *If you do not: why not?*, with *I am too busy*. This is coded in the variable Q21_new, with the category *meeting_no_I am too busy*.
+
+* Q24_M, Q25 and Q26 are not analysed.
+
+* Non-respondents identified in the *MCA Rprogramming* document are also excluded since they do not answer to R community questions as well.
+
+* Categories are renamed to be easily understandable. In particular, the two categories for answers completed by checking a box are recoded as _yes_, if the box is checked, or recoded as _no_ otherwise.
+
+
+```{r,message=FALSE,echo=FALSE}
+rm(list=ls())
+library(FactoMineR)
+library(knitr)
+library(RcmdrMisc)
+library(dplyr)
+load("../../survey/survey.RData")
+# use women/men rather than male/female
+survey_data <- survey_data %>%
+  mutate(Q2 = replace(Q2, Q2 == "Female", "Women"),
+         Q2 = replace(Q2, Q2 == "Male", "Men"))
+
+# deletion of 3 rows without any value
+survey_data <- survey_data[-which(is.na(survey_data[, "respondent_id"])), ]
+class(survey_data) <- "data.frame"
+
+# names for individuals
+rownames(survey_data) <- survey_data$respondent_id
+survey_data <- survey_data[ , -which(colnames(survey_data)=="respondent_id")]
+
+
+##########################
+# deletion of questions 25 and 26
+##########################
+survey_data <- survey_data[, -which(colnames(survey_data)%in%c("Q25", "Q26"))]
+
+##########################
+# deletion of question Q19_G, Q24_I (only NA)
+##########################
+survey_data$Q19_G <- survey_data$Q24_I <- NULL
+
+##########################
+# modify class for factor variables
+##########################
+survey_data[, -4]<-lapply(survey_data[, -4], as.factor)
+
+# Age as factor (split in 6 classes by k-means)
+survey_data$Q3_cat <- with(survey_data,
+                           bin.var(Q3, bins=6, method='natural',
+                                   labels=c(">58", "49-58", "41-48", "34-40", "29-33", "20-28")))
+
+##########################
+# Grouping free text responses found in "other" into new categories
+##########################
+
+## Grouping categories (program committee and Program Committee / "Non-profit" and "Non-profit researcher")
+survey_data$Q1_Other_new<-survey_data$Q1_Other
+survey_data$Q1_new<-survey_data$Q1
+levels(survey_data[, "Q1_Other_new"]) <- levels(survey_data[, "Q1_Other_new"])[c(1, 1, 3, 5, 5, 6, 7)]
+
+## Adding new categories
+ind.tmp <- rownames(survey_data)[which(survey_data[,"Q1_new"]=="Other (please specify)")]             # ID of individuals answering "other" to the question Q1
+levels(survey_data[, "Q1_new"])<-c(levels(survey_data[, "Q1_new"]), levels(survey_data[, "Q1_Other_new"])) # add new levels to Q1_new
+survey_data[ind.tmp, "Q1_new"]<-survey_data[ind.tmp, "Q1_Other_new"]                                    # replace the category "other" by the one given in question Q1_other
+survey_data <- droplevels(survey_data)                                                                  # delete levels not used
+survey_data <- survey_data[, -which(colnames(survey_data)=="Q1_Other_new")]                              # delete the variable Q1_Other_new
+
+## Q5 (group "curacao" and "Curacao" and "Netherlands Antilles")
+survey_data$Q5_new <- survey_data$Q5
+survey_data$Q5_B_new <- survey_data$Q5_B
+levels(survey_data$Q5_new)[which(levels(survey_data$Q5_new)=="Netherlands Antilles")] <- "Curacao"    # replace the level Netherlands Antilles by Curacao
+survey_data[which(!is.na(survey_data$Q5_B_new)), "Q5_new"] <- "Curacao"                                # delete the level Netherlands Antilles
+survey_data <- survey_data[, -which(colnames(survey_data)=="Q5_B_new")]                                # delete the variable Q5_B_new
+
+## Q19
+survey_data$Q19_H_new <- survey_data$Q19_H
+levels(survey_data$Q19_H_new)[c(39:46, 52:54)]<-"R-bloggers"
+levels(survey_data$Q19_H_new)[c(10:13)]<-"Github"
+levels(survey_data$Q19_H_new)[c(11:19, 24, 35, 47:48, 52, 54)]<-"web"
+levels(survey_data$Q19_H_new)[c(1, 5, 6, 7)]<-"colleague"
+levels(survey_data$Q19_H_new)[c(3, 4, 29)]<-"blogs"
+levels(survey_data$Q19_H_new)[c(4, 8)]<-"MOOCs"
+levels(survey_data$Q19_H_new)[c(30, 28)]<-"Rseek"
+levels(survey_data$Q19_H_new)[c(12:13)]<-"meetup group"
+levels(survey_data$Q19_H_new)[c(7)]<-"rug.mnhn"
+levels(survey_data$Q19_H_new)[c(10)]<-"linkedIn group"
+levels(survey_data$Q19_H_new)[c(13, 14, 22, 26)]<-"R manual"
+levels(survey_data$Q19_H_new)[c(15)]<-"meetup group"
+levels(survey_data$Q19_H_new)[c(20)]<-"Facebook group"
+levels(survey_data$Q19_H_new)[c(14)]<-"blogs"
+levels(survey_data$Q19_H_new)[c(25)]<-"colleague"
+levels(survey_data$Q19_H_new)[c(21)]<-"book"
+
+# only categories from Q19_H_new that are taken by more than 3 individuals will correspond to a new level for variable Q19
+# which(table(survey_data$Q19_H_new)>3)
+# colleague      blogs     Github        web   R manual R-bloggers 
+
+survey_data$Q19_I_new<-survey_data$Q19_J_new<-survey_data$Q19_K_new<-survey_data$Q19_L_new<-survey_data$Q19_M_new<-survey_data$Q19_N_new<-rep(NA, length(survey_data$Q19))
+survey_data$Q19_I_new[survey_data$Q19_H_new=="colleague"]<-"colleague"
+survey_data$Q19_J_new[survey_data$Q19_H_new=="blogs"]<-"blogs"
+survey_data$Q19_K_new[survey_data$Q19_H_new=="Github"]<-"Github"
+survey_data$Q19_L_new[survey_data$Q19_H_new=="web"]<-"web"
+survey_data$Q19_M_new[survey_data$Q19_H_new=="R manual"]<-"R manual"
+survey_data$Q19_N_new[survey_data$Q19_H_new=="R-bloggers"]<-"R-bloggers"
+levels(survey_data$Q19_H_new)[!(table(survey_data$Q19_H_new)>3)]<-"Other"
+survey_data$Q19_H_new[survey_data$Q19_H_new!="Other"]<-NA
+survey_data$Q19_H_new<-droplevels(survey_data$Q19_H_new)
+survey_data[, paste(c("Q19_I", "Q19_J", "Q19_K", "Q19_L", "Q19_M", "Q19_N"), "new", sep="_")]<-lapply(survey_data[, paste(c("Q19_I", "Q19_J", "Q19_K", "Q19_L", "Q19_M", "Q19_N"), "new", sep="_")], as.factor)
+
+## Q20
+survey_data$Q20_new<-survey_data$Q20
+survey_data$Q20_B_new<-survey_data$Q20_B
+ind.tmp<-rownames(survey_data)[which(survey_data[, "Q20_new"]=="Other (please specify)")]
+levels(survey_data[, "Q20_B_new"])[c(5, 6, 7)]<-"R-bloggers"
+levels(survey_data[, "Q20_B_new"])[3]<-"meetup group"
+levels(survey_data[, "Q20_new"])<-c(levels(survey_data[, "Q20_new"]), levels(survey_data[, "Q20_B_new"]))
+survey_data[ind.tmp[c(1, 4, 7)], "Q20_new"]<-"R-bloggers"
+survey_data[ind.tmp[2], "Q20_new"]<-"Twitter"
+survey_data[ind.tmp[5], "Q20_new"]<-NA
+survey_data[ind.tmp[8], "Q20_new"]<-NA
+survey_data<-droplevels(survey_data)
+survey_data<-survey_data[, -which(colnames(survey_data)=="Q20_B_new")]
+
+## Q22
+survey_data$Q22_new<-survey_data$Q22
+survey_data$Q22_B_new<-survey_data$Q22_B
+ind.tmp<-rownames(survey_data)[which(survey_data[, "Q22_new"]=="Other (please specify)")]
+levels(survey_data[, "Q22_B_new"])[c(1, 3)]<-"A user group within a region"
+levels(survey_data[, "Q22_B_new"])[c(3, 8)]<-"A user group for government"
+levels(survey_data[, "Q22_B_new"])[2]<-"A general user group"
+levels(survey_data[, "Q22_new"])<-c(levels(survey_data[, "Q22_new"]), levels(survey_data[, "Q22_B_new"])[-2])
+
+
+survey_data[ind.tmp[c(2, 8)], "Q22_new"]<-"A user group for government"
+survey_data[ind.tmp[c(3)], "Q22_new"]<-NA
+survey_data[ind.tmp[c(4, 5)], "Q22_new"]<-"A user group for government"
+survey_data[ind.tmp[c(7, 9)], "Q22_new"]<-"A general user group"
+survey_data<-droplevels(survey_data[, -which(colnames(survey_data)=="Q22_B_new")])
+
+## Q23
+survey_data$Q23_new<-survey_data$Q23
+survey_data$Q23_B_new<-survey_data$Q23_B
+ind.tmp<-rownames(survey_data)[which(survey_data[, "Q23_new"]=="Other (please specify)")]
+levels(survey_data[, "Q23_B_new"])[c(3, 33, 34)]<-"I am not available at good time"
+levels(survey_data[, "Q23_B_new"])[c(21, 35)]<-"I didn't know R"
+levels(survey_data[, "Q23_B_new"])[c(4, 5, 9, 11:12, 14, 16, 17, 22, 26, 28:30, 36)]<-"I didn't know R user groups"
+levels(survey_data[, "Q23_B_new"])[c(6, 22)]<-"I am too busy"
+levels(survey_data[, "Q23_B_new"])[10]<-"I feel too inexperienced" 
+levels(survey_data[, "Q23_B_new"])[11:12]<-"It is not necessary (I have the support I need)"
+levels(survey_data[, "Q23_B_new"])[15]<-"There is no group nearby/the group is inactive"
+levels(survey_data[, "Q23_new"])<-c(levels(survey_data[, "Q23_new"]), "I am not available at good time", "I didn't know R user groups", "I didn't know R")
+survey_data[ind.tmp[c(6, 12)], "Q23_new"]<-"I am not available at good time"
+survey_data[ind.tmp[c(2, 13:14, 17, 21, 23, 26:27, 31, 33, 36, 37, 40)], "Q23_new"]<-"I didn't know R user groups"
+survey_data[ind.tmp[c(20, 35)], "Q23_new"]<-"I didn't know R"
+survey_data[ind.tmp[c(4, 32)], "Q23_new"]<-"I am too busy"
+survey_data[ind.tmp[c(18)], "Q23_new"]<-"I feel too inexperienced"
+survey_data[ind.tmp[c(7, 30)], "Q23_new"]<-"It is not necessary (I have the support I need)"
+survey_data[ind.tmp[c(24)], "Q23_new"]<-"There is no group nearby/the group is inactive"
+survey_data<-droplevels(survey_data[, -which(colnames(survey_data)=="Q23_B_new")])
+
+##########################
+# new names for categories
+##########################
+## Q6
+levels(survey_data$Q6)<-paste("LGBT", levels(survey_data$Q6), sep="_")
+
+## Q10
+levels(survey_data$Q10)<-paste("Caryng_resp", levels(survey_data$Q10), sep="_")
+
+## Q18
+levels(survey_data$Q18) <- c("no", "yes")
+levels(survey_data$Q18) <- paste0("in_Rcommunity_", levels(survey_data$Q18))
+
+## Q19 and Q24
+survey_data[, c("Q19", "Q24", paste("Q19", LETTERS[2:6], sep="_"), paste("Q24", LETTERS[2:12][-8], sep="_"), paste("Q19", LETTERS[8:14], "new", sep="_"))]<-lapply(
+  survey_data[, c("Q19", "Q24", paste("Q19", LETTERS[2:6], sep="_"), paste("Q24", LETTERS[2:12][-8], sep="_"), paste("Q19", LETTERS[8:14], "new", sep="_"))], FUN=function(xx){
+    yy<-xx
+    levels(yy)<-c("yes", "no")
+    yy[is.na(xx)]<-"no"
+    return(yy)
+  })
+
+levels(survey_data$Q19)<-paste0("R_mailing_", levels(survey_data$Q19))
+levels(survey_data$Q19_B)<-paste0("R_twitter_", levels(survey_data$Q19_B))
+levels(survey_data$Q19_C)<-paste0("R_StackOverflow_", levels(survey_data$Q19_C))
+levels(survey_data$Q19_D)<-paste0("R_IRC_", levels(survey_data$Q19_D))
+levels(survey_data$Q19_E)<-paste0("rOpenSci_", levels(survey_data$Q19_E))
+levels(survey_data$Q19_F)<-paste0("Biocond_", levels(survey_data$Q19_F))
+levels(survey_data$Q19_H_new)<-paste0("Other_", levels(survey_data$Q19_H_new))
+levels(survey_data$Q19_I_new)<-paste0("colleague_", levels(survey_data$Q19_I_new))
+levels(survey_data$Q19_J_new)<-paste0("blogs_", levels(survey_data$Q19_J_new))
+levels(survey_data$Q19_K_new)<-paste0("Github_", levels(survey_data$Q19_K_new))
+levels(survey_data$Q19_L_new)<-paste0("web_", levels(survey_data$Q19_L_new))
+levels(survey_data$Q19_M_new)<-paste0("R manual_", levels(survey_data$Q19_M_new))
+levels(survey_data$Q19_N_new)<-paste0("R-bloggers_", levels(survey_data$Q19_N_new))
+
+levels(survey_data$Q24)<-paste0("new_gp_near_", levels(survey_data$Q24))
+levels(survey_data$Q24_B)<-paste0("new_gp_demo_", levels(survey_data$Q24_B))
+levels(survey_data$Q24_C)<-paste0("free_workshop_", levels(survey_data$Q24_C))
+levels(survey_data$Q24_D)<-paste0("paid_workshop_", levels(survey_data$Q24_D))
+levels(survey_data$Q24_E)<-paste0("domain_workshop_", levels(survey_data$Q24_E))
+levels(survey_data$Q24_F)<-paste0("demo_workshop_", levels(survey_data$Q24_F))
+levels(survey_data$Q24_G)<-paste0("mentoring_", levels(survey_data$Q24_G))
+levels(survey_data$Q24_H)<-paste0("training_non_EN_", levels(survey_data$Q24_H))
+# levels(survey_data$Q24_I)<-paste0("training_disability_", levels(survey_data$Q24_I)) do not exist
+levels(survey_data$Q24_J)<-paste0("online_forum_", levels(survey_data$Q24_J))
+levels(survey_data$Q24_K)<-paste0("online_demo_", levels(survey_data$Q24_K))
+levels(survey_data$Q24_L)<-paste0("facilities_conf_", levels(survey_data$Q24_L))
+
+## Q20
+levels(survey_data$Q20_new)[which(levels(survey_data$Q20_new)=="Other (please specify)")]<-"Other"
+levels(survey_data$Q20_new)<-paste0("medium_", levels(survey_data$Q20_new))
+
+##########################
+#merge of Q21, Q22 and Q23
+##########################
+survey_data$Q21_new<-survey_data$Q21
+levels(survey_data$Q22_new)<-paste0("yes_", levels(survey_data$Q22_new))
+levels(survey_data$Q23_new)<-paste0("no_", levels(survey_data$Q23_new))
+
+levels(survey_data$Q21_new)<-c(levels(survey_data$Q21_new), levels(survey_data$Q22_new), levels(survey_data$Q23_new))
+for (ii in seq(length(survey_data$Q21_new))){
+  # ii<-1
+  if(survey_data$Q21_new[ii]=="Yes"& !is.na(survey_data$Q22_new[ii])){
+    survey_data$Q21_new[ii]<-survey_data$Q22_new[ii]
+  }else if(survey_data$Q21_new[ii]=="No"& !is.na(survey_data$Q23_new[ii])){
+    survey_data$Q21_new[ii]<-survey_data$Q23_new[ii]
+  }
+}
+survey_data$Q21_new<-droplevels(survey_data$Q21_new)
+survey_data$Q22_new<-survey_data$Q23_new<-NULL
+
+levels(survey_data$Q21_new)[which(!(table(survey_data$Q21_new)>3))]<-"Other (please specify)"
+levels(survey_data$Q21_new)[which(levels(survey_data$Q21_new)=="Other (please specify)")]<-"Other"
+levels(survey_data$Q21_new)<-paste0("meeting_", levels(survey_data$Q21_new))
+
+# creation of a variable sex-age
+survey_data$Q2Q3<-as.factor(apply(survey_data[c("Q3_cat","Q2")],1,function(xx){paste(xx[1],xx[2],sep="_")}))
+
+```
+
+```{r}
+demo<-c("Q1_new", "Q2","Q5_new", "Q6", "Q7", "Q8", "Q9", "Q10","Q3_cat","Q2Q3")
+supp<-"Q21"
+community<-c("Q18", "Q19", "Q19_B", "Q19_C", "Q19_D", "Q19_E", 
+             "Q19_F", "Q24", "Q24_B", "Q24_C", "Q24_D", "Q24_E", "Q24_F", 
+             "Q24_G", "Q24_H", "Q24_J", "Q24_K", "Q24_L",  
+             "Q19_H_new", "Q19_N_new", "Q19_M_new", "Q19_L_new", "Q19_K_new", 
+             "Q19_J_new", "Q19_I_new", "Q20_new", "Q21_new")
+
+###### Individuals without any answer in R programming questions are deleted
+don.mca <- survey_data[-which(rownames(survey_data)%in%c("4865215481", "4858599353", "4836397330", "4831209235", 
+                                                         "4831203233", "4829546819", "4827367990", "4827261927", "4827214508", 
+                                                         "4827132891", "4827094040", "4827066512")),c(demo,supp,community)]
+#######
+```
+
+## Analysis
+
+MCA summarizes the relationships between the categories of the R community variables.
+
+```{r}
+res.mca <- MCA(don.mca, quali.sup = seq(length(demo)+1), graph =  FALSE)
+set.seed(1234)
+plot(res.mca, invisible = c("ind"," quali.sup"), cex = 0.7, selectMod = "contrib 20", autoLab = "yes")
+```
+
+To interpret the main dimensions of variability in the response profiles, we study the proximities between categories. Indeed, two categories are close on the graph if most respondents taking the first category also take the other category. 
+
+### First dimension of variability
+
+The first dimension (horizontal axis) opposes people that **didn't answer questions about involvement in the R community** on the left, to the others on the right. More precisely, they did not answer Q21, Q18 and Q20 and did not check any boxes for the other questions (_no). 
+Individuals with the smallest coordinates on the first dimension work more in the industry; this is confirmed by a statistical test, but this remains difficult to interpret.
+
+### Second dimension of variability
+
+On the top, there are respondents who do not attend an R user group because they feel too inexperienced.  They 
+think that they would be more likely to participate in the R community or to improve their experience, if a user group, a workshop, or an online support dedicated to their socio-demographic group would be available. 
+Facebook would be their preferred medium for R community news. 
+They do not use Twitter (question Q19_B), (the category R_twitter_no corresponds to the answer  _The #rstats hashtag on Twitter_ for the question _Which of the following resources do you use for support?_). In addition,  they do not like to use it as a medium for R community news (question Q20). 
+They consider themselves as outside the R community.
+
+On the bottom, in contrast, there are individuals who tend to consider themselves as part of the R community.
+They attend general R user group meetings and they use Twitter. Twitter would be their preferred medium for R community news.
+
+```{r, eval = TRUE, figure = "hide", message = FALSE, echo = FALSE}
+indic_dim3<-rownames(res.mca$var$coord[order(-abs(res.mca$var$coord[,3])),3,drop=FALSE])[1:15]
+plot(res.mca,invisible=c("ind","quali.sup"), cex = 0.7,selectMod = indic_dim3, axes=c(2,3))
+```
+
+
+### Relationship with demographic
+
+In the following graph, answers about the demographic questions are projected as supplementary variables on the two first dimensions of variability. Supplementary variables are not used to build the dimensions of variability, but they are projected _a posteriori_ to highlight relationships between the dimensions of variability and demographics. Thus, supplementary variables can be used to characterize the response profiles described previously.
+
+Only demographic characteristics that are significantly related the R community profiles are represented. An analysis of variance with demographic variables as covariates, and the coordinates of the individuals on the dimensions as explanatory variables, has been performed.
+
+```{r}
+res.dimdesc<-dimdesc(res.mca)
+
+varselect<-demo[which(demo%in%unique(c(rownames(res.dimdesc$'Dim 1'$quali), rownames(res.dimdesc$'Dim 2'$quali))))]
+modeselect<-unlist(sapply(don.mca[, varselect],levels))
+modeselect<-modeselect[modeselect%in%unique(c(rownames(res.dimdesc$'Dim1'$category),rownames(res.dimdesc$'Dim 2'$category)))]        
+
+plot(res.mca, invisible = c("ind","var"), cex = 0.8,selectMod = modeselect, autoLab = "yes",xlim=c(-1.5,1.5), ylim = c(-1,1))
+```
+
+
+It appears that people having an undergraduate degree or a master degree are located at the top of the graph, while those with a doctorate are at the bottom. This would imply that people with undergraduate degree or master degree are more likely to consider themselves as outside the R community than people having a doctorate. The same comment holds for women versus men. It is interesting to note, caregivers for children or adult dependents tend to be at the bottom of the graph, while non-caregivers are on the top. 
+
+We represent the age categories on the map since some confounding effects with other demographic variables could explain the previous results. Youngest people tend to be on the top of the second axis, which suggests that they consider themselves as outside the community.
+
+```{r}
+plot(res.mca, invisible = c("ind","var"), cex = 0.8,selectMod =levels(don.mca$Q3_cat), autoLab = "yes", xlim=c(-1.5,1.5), ylim = c(-1,1))
+```
+
+To get more insights into this possible confounder effect, we created a new variable sex-age and represent it:
+
+```{r}
+res.dimdesc<-dimdesc(res.mca)
+
+varselect<-"Q2Q3"
+modeselect<-unlist(sapply(don.mca[, varselect],levels))
+
+plot(res.mca, invisible = c("ind","var"), cex = 0.8, selectMod = modeselect,autoLab="yes",xlim = c(-1.5,1.5), ylim = c(-1,1))
+```
+
+It highlights that both young (men and women) and women do not consider themselves as part of the R community.
+
+### Similarities between respondents
+
+A clustering of the participants is performed from their answers to questions about their involvement in the R community.
+More precisely a hierarchical clustering is performed on the principal components of MCA. The rationale is to improve the stability of the clustering by building it from denoised data rather than from the original dataset[^fn1]. Several rules can be used to select the number of components used for the clustering. Here we choose 44 dimensions which corresponds to 95% of the projected inertia (variance) of the data. 
+
+```{r}
+res.mca<-MCA(don.mca, quali.sup = seq(length(demo)+1), graph =  FALSE, ncp = 44 )
+```
+```{r}
+res.hcpc <- HCPC(res.mca, graph = FALSE)
+```
+
+The number of clusters is chosen according to the barplot of the inertia gains which suggests a partition with 3 clusters. However, this clustering is not relevant since most of respondents are in the same group:
+
+```{r}
+kable(matrix(table(res.hcpc$data.clust[,"clust"]), ncol = 3, dimnames = list("size",1:3)))
+```
+
+We investigate the number of respondents in each group according to the number of components used to build the clustering:
+
+
+```{r}
+res<-matrix(0,21,7,dimnames = list(paste0("ncp=",c(2:22)),paste0("clust",1:7)))
+for (ncp in 2:22){
+  res.mca<-MCA(don.mca,quali.sup = seq(length(demo)+1),graph =  FALSE,ncp=ncp)
+res.hcpc <- suppressWarnings(HCPC(res.mca, graph = FALSE))
+res[ncp-1,seq(length(table(res.hcpc$data.clust[,"clust"])))]<-table(res.hcpc$data.clust[,"clust"])
+}
+kable(res)
+```
+
+We choose to keep 13 components as this will keep enough information, while highlighting a new cluster in the previous big one.
+
+```{r}
+res.mca <- MCA(don.mca, quali.sup = seq(length(demo)+1), graph =  FALSE, ncp = 13)
+res.hcpc <- HCPC(res.mca, graph = FALSE)
+plot(res.hcpc, choice = "tree")
+```
+
+Respondents are grouped in the clusters as follows:
+
+```{r}
+kable(matrix(round(table(res.hcpc$data.clust[,"clust"])/nrow(don.mca)*100,2), ncol = 3 ,dimnames = list("%",1:3)))
+```
+
+```{r}
+plot(res.hcpc, choice = "map", draw.tree="FALSE", ind.names = FALSE)
+```
+
+From the previous interpretation of the two first dimensions of variability, the location of clusters on the graph allows providing a brief summary of the clusters: 
+cluster 1 is the group of non-respondents, while cluster 2 contains some respondents who feel they are part of the R community unlike the cluster 3 respondents.
+
+#### Cluster 1
+To describe the first cluster more precisely, we use statistical tests to compare the proportion of each category in the cluster against the proportion in the population of the respondents.
+
+```{r, eval = FALSE}
+kable(res.hcpc$desc.var$category$`1`[,1:4])
+```
+
+Unsurprisingly, there is an over-representation of people that didn't answer the questions about the involvement in the R community. Using the demographic characteristics, we can see that they are mainly from the industry.
+ 
+#### Cluster 2
+The following categories are over-represented in cluster 2:
+```{r}
+tmp<-res.hcpc$desc.var$category$`2`
+tmp<-tmp[order(tmp[,"p.value"]),]
+kable(tmp[tmp[, "v.test"]>2,1:4],digits=2)
+```
+
+The numbers read as follows, e.g. for Q18: 76.45% of individuals who consider themselves as part of the R community are in cluster 2; in cluster 2 84.15% of the individuals consider themselves as part of the R community, and 81.49% in the population of all the respondents consider themselves as part of the R community. The test is significant which implies that this cluster can be considered as a cluster with an over-representation of people considering themselves as part of the community. We conclude they are not interested in free workshops, online demos, etc.
+According to the demographic characteristics, there is an over-representation of people employed permanently in academia, people with caring responsibilities, as well as a significantly larger proportion of men and people with a doctorate.
+
+In the following table, we report the categories under-represented in the cluster:
+```{r}
+kable(tmp[tmp[, "v.test"]<(-2),1:4], digits = 2)
+```
+
+Since most of variables are binary, we do not get new information from this table. We note however that young people are under-represented, as well as people who didn't participate in R user group meetings because of inexperience.
+
+#### Cluster 3
+
+```{r}
+tmp<-res.hcpc$desc.var$category$`3`
+tmp<-tmp[order(tmp[,"p.value"]),]
+kable(tmp[tmp[, "v.test"]>2,1:4],digits=2)
+```
+
+
+In this cluster, there is an over-representation of those who adhere to most of the proposals to increase their participation in the R community. Most of them have never participated in a user group meeting. The cluster gathers a large number of people who use blogs to get help, but also a large proportion of people who do not use Twitter. They prefer to use a medium like Facebook or mailing lists for news.
+
+From a demographic point of view, the cluster contains a significantly higher proportion of women than the respondent population, and a larger proportion of those with a master's or undergraduate degree. People under the age of 30 are also over-represented.
+
+```{r,eval=FALSE}
+kable(tmp[tmp[, "v.test"]<(-2),1:4], digits = 2)
+```
+
+
+# Conclusion
+
+Missing values occurring in the questions relative to the involvement in the R community often occur on all the questions simultaneously.
+
+Two main groups of respondents have been highlighted:
+
+* People who do not feel they are part of the R community, but who would like to participate in workshops, or an R user group meeting close to them (from a geographic, or demographic point of view). They are more likely women, people with master or undergraduate degree.
+
+* People who feel they are part of the R community, but do not have time to participate to meetings. They are more likely men, people with caring responsibilities, or people with a doctorate.
+
+In addition, since we recoded many variables, we could make recommendations for the next questionnaire. In particular, we suggest using "yes" and "no" answers for the checkboxes to distinguish missing values from "no". 
+
+[^fn1]: For more details about the classification based on principal components methods, see: Francois Husson, Jerome Pages, Sebastien Le. Exploratory Multivariate Analysis by Example Using R. CRC Press Taylor & Francis, pp.240, 2010, Chapman & Hall/CRC Computer Science & Data Analysis.

@@ -3,7 +3,7 @@ author: "Stella Bollmann, Dianne Cook, Rudolf Debelak, Jasmine Dumas, John Fox, 
 banner: "/blog/images/users-relationship-with-r/banner.png"
 categories: ["analysis"]
 date: 2017-03-11T16:37:43Z
-description: "Report on community section of useR! 2016 survey"
+description: "Community Involvement of useRs"
 tags: ["useR!", "survey", "programming"]
 title: "useRs Participation in the R Community"
 tocify: true
