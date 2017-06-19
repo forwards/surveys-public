@@ -1,6 +1,6 @@
 ---
 title: 'useR! 2016 participants and R programming: a multivariate analysis'
-author: "Julie Josse"
+author: "Julie Josse and Heather Turner"
 date: "2017-06-17"
 type: report
 knit: (function(inputFile, encoding) {
@@ -202,7 +202,7 @@ res.mca <- MCA(don.mca, graph =  FALSE, quali.sup =  seq(length(suppl)))
 
 
 ```{r}
-plot(res.mca, invisible = c("ind", "quali.sup"), cex = 0.5)
+plot(res.mca, invisible = c("ind", "quali.sup"), cex = 0.8)
 ```
 
 Proximities between categories Q11.NA and Q14.NA indicate that people who did not answer Q11 (How long have you been using R for?) often did not answer Q14 (Do you use R as a recreational activity, primarily as part of a job or both?). However, it only concerns 16 individuals. 
@@ -225,7 +225,7 @@ The graph of the individuals allows identification of the individuals located at
 don.mca <- survey_data[, c(demo, ropinion)]
 rownames(don.mca) <- seq(nrow(don.mca))
 res.mca <- MCA(don.mca, graph =  FALSE, quali.sup =  seq(length(demo)))
-plot(res.mca, invisible = c("ind", "quali.sup"), cex = 0.7, selectMod = "coord 15")
+plot(res.mca, invisible = c("ind", "quali.sup"), cex = 0.8, selectMod = "coord 15")
 ```
 
 The analysis of questions related to the perception of the R language (Q15, Q16, Q17) shows again that attendees who did not answer one question often did not answer others (1st dimension). More interestingly, the second dimension of the graph highlights that people thinking very strongly that R is monotonous also think that it is not fun, not cool, or even think R is poor. It highlights that among respondents there is a sub-population of people who do not appreciate R. However, it concerns around 10 individuals. 
@@ -244,7 +244,7 @@ the perception variables are projected as supplementary variables on the graph o
 ```{r}
 don.mca <- survey_data[, c("Q12",ruses,ropinion)]
 res.mca <- MCA(don.mca, graph =  FALSE, quali.sup =  c(1, 10:15))
-plot(res.mca, invisible = c("ind"), cex = 0.7, selectMod = "cos2 12", xlim = c(-2,4))
+plot(res.mca, invisible = c("ind"), cex = 0.8, selectMod = "cos2 12", xlim = c(-2,4))
 legend("topleft", legend = c("perception", "use"),col = c(3,2), pch = 24, pt.bg = c(3,2))
 ```
 
@@ -324,7 +324,7 @@ kable(matrix(table(res.hcpc$data.clust[,"clust"]), ncol = 4, dimnames = list("si
 _i.e._ in terms of proportions:
 ```{r}
 kable(matrix(round(table(res.hcpc$data.clust[,"clust"])/nrow(don.mca),2), 
-             ncol = 4), dimnames = list("proportion",1:4)))
+             ncol = 4, dimnames = list("proportion",1:4)))
 ```
 
 We now interpret the clusters.
@@ -336,10 +336,11 @@ To help us describing the first cluster, we use statistical tests to compare the
 ```{r}
 tmp<-res.hcpc$desc.var$category$`1`
 tmp<-tmp[order(tmp[,"p.value"]), ]
+
 p <- format.pval(tmp[,4], digits = 2)
-tmp[,-4] <- as.character(sprintf("%#.2f", tmp[,-4]))
-tmp[,4] <- p
-kable(tmp[tmp[, "v.test"]>3, 1:4], digits = 2, align = "rrrr")
+tablo <- cbind.data.frame(tmp[tmp[, "v.test"]>3, 1:3], p[tmp[, "v.test"]>3])
+colnames(tablo)[4]<-"p.value"
+kable(tablo, digits = 2, align = "rrrr")
 ```
     
 The table can be interpreted as follows:
@@ -351,7 +352,9 @@ To wrap-up, the tests results confirm that **cluster 1 gathers experienced users
 
 This second table represents the categories that are underrepresented in cluster 1.
 ```{r}
-kable(tmp[tmp[, "v.test"]<(-3), 1:4], digits = 2)
+tablo <- cbind.data.frame(tmp[tmp[, "v.test"]<(-3), 1:3], p[tmp[, "v.test"]<(-3)])
+colnames(tablo)[4]<-"p.value"
+kable(tablo, digits = 2, align = "rrrr")
 ```
 
 US people are under-represented in cluster 1.  We can imagine that only people deeply using R are motivated to go to the US for such a conference due to the costs.
@@ -361,10 +364,12 @@ US people are under-represented in cluster 1.  We can imagine that only people d
 Cluster 2 can be described as a cluster of **intermediate users** who use R since 1-2 years or less, but more than 6 months. They use R functions, but don't write their own functions or packages. They appreciate R, but use it primarily for their job. They are more employed in the industry. This cluster gathers more women, more undergraduate and master and people from the US.
 ```{r}
 tmp<-res.hcpc$desc.var$category$`2`
+tmp<-tmp[order(tmp[,"p.value"]), ]
+
 p <- format.pval(tmp[,4], digits = 2)
-tmp[,-4] <- as.character(sprintf("%#.2f", tmp[,-4]))
-tmp[,4] <- p
-kable(tmp[tmp[, "v.test"]>3, 1:4], digits = 2, align = "rrrr")
+tablo <- cbind.data.frame(tmp[tmp[, "v.test"]>2, 1:3], p[tmp[, "v.test"]>2])
+colnames(tablo)[4]<-"p.value"
+kable(tablo, digits = 2, align = "rrrr")
 ```
 ```{r, eval=FALSE}
 kable(tmp[tmp[, "v.test"]<(-2), 1:4], digits = 2)
@@ -376,7 +381,11 @@ Cluster 3 gathers respondents with less than 6 months of experience in R. They d
 ```{r}
 tmp<-res.hcpc$desc.var$category$`3`
 tmp<-tmp[order(tmp[,"p.value"]), ]
-kable(tmp[tmp[, "v.test"]>2,1:4], digits = 2)
+
+p <- format.pval(tmp[,4], digits = 2)
+tablo <- cbind.data.frame(tmp[tmp[, "v.test"]>2, 1:3], p[tmp[, "v.test"]>2])
+colnames(tablo)[4]<-"p.value"
+kable(tablo, digits = 2, align = "rrrr")
 ```
 
 ```{r eval=FALSE}
