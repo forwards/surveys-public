@@ -1,0 +1,165 @@
+As part of introductory comments:
+
+This survey asks for personal and potentially identifiable information. Please 
+note that all demographic questions are optional and you may prefer to leave 
+some questions unanswered to preserve your anonymity. Consider which 
+demographics you wish to represent!
+
+To protect respondents, we guarantee that answers will be treated with full 
+confidentiality. Although high-level aggregates of individual questions will 
+be shared, the raw data will be kept strictly private. For an example of how 
+the demographic data was reported from previous useR! surveys, see the 
+[Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/) blog 
+post.
+
+Demographics
+
+1. In what year were you born?
+
+[Dropdown, 2003 - 1933]
+* Prefer not to respond
+
+2. In what country do you currently reside?
+
+[Dropdown, A-Z list of countries]
+[Other (please specify)]
+* Prefer not to respond
+
+3. To what ethnic group(s) do you identify?
+[Dropdown, list of ethnicity group]
+
+* White
+** please describe [TEXT: limited to 25 characters]
+
+* Mixed/Multiple ethnic groups
+** please describe [TEXT: limited to 25 characters]
+
+* Asian
+** please describe [TEXT: limited to 25 characters]
+
+* Black/African/Caribbean
+** please describe [TEXT: limited to 25 characters]
+
+* Other ethnic group
+** please describe [TEXT: limited to 25 characters]
+
+* Prefer not to respond
+
+4. What is your gender?
+
+[Multiple choice, select one]
+* Man
+* Woman
+* Gender diverse (gender non-conforming/gender-fluid/other gender minority)
+* Prefer not to respond
+
+[Text]
+Note on Questions 5:
+We're asking these questions because the R community is actively working
+to improve the inclusiveness and openness of our online and offline spaces
+and environments. Taking snapshots of data around sexuality and gender
+allows us to see how we're doing over time, and adjust accordingly when the
+results suggest our events are excluding demographics. All answers will be
+covered by the same confidentiality process as the survey as a whole, and
+answering is strictly optional.
+
+5. Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual 
+or gender minority)?
+
+[Multiple choice, select one]
+* Yes
+* No
+* Prefer not to respond
+
+6. Do you have any disabilities or impairments that affect the way you 
+study/work or place special requirements on your learning/working environment? 
+Select all that apply:
+
+[Multiple choice, select one or more]
+* A vision impairment
+* A hearing impairment
+* A mobility impairment
+* A learning disability
+* A mental health disorder
+* Other disability/impairment (please specify) ___________
+* I have no such disability or impairment
+* Prefer not to respond
+
+-> 7. [If respondents declare a disability or impairment] Are there actions you 
+think useR! organizers should take to better cater for your disabilities or 
+impairments?
+
+[Multiple choice, select one]
+* No, the provisions were good enough
+* Yes, there are actions the organizers should take (please specify)
+* Prefer not to respond
+
+8. What is the highest level of education you have completed?
+
+[Multiple choice, select one]
+* High school/Secondary school or lower
+* Undergraduate degree
+* Master degree
+* Doctorate degree
+* Professional degree or certification
+* Prefer not to respond
+
+9 Are you currently a student? (Note this includes PhD students, even if 
+salaried)
+
+[Multiple choice, select one]
+* Yes, full time
+* Yes, part time
+* No
+* Prefer not to respond
+
+10. What is your current employment status? If you are employed in multiple 
+sectors or both work and study, select all that apply.
+
+[Multiple choice, select one or more]
+* Employed permanently in academia
+* Employed non-permanently in academia (includes salaried students)
+* Employed in government/non-profit
+* Employed in industry
+* Self-employed
+* Unemployed 
+* Non-salaried student
+* Retired
+* Other (please specify)
+* Prefer not to respond
+
+11. If in paid employment, are you:
+
+[Multiple choice, select one]
+* Full time
+* Part time
+* I am not currently in paid employment
+* Prefer not to respond
+
+12. Do you have any dependents?
+
+[Multiple choice, select one]
+* Yes
+* No
+* Prefer not to respond
+
+
+Involvement at useR!
+
+1. Did you present in a contributed session at useR!?
+
+[Multiple choice, select one]
+* Yes, I gave a regular talk
+* Yes, I presented a lightning talk
+* Yes, I presented a poster
+* No
+* Prefer not to respond
+
+2. Did you present in an special session (invited talk, tutorial, organized 
+session) or hold an organizational position (program/local committee member, 
+session chair)?
+
+[Multiple choice, select one]
+* Yes
+* No
+* Prefer not to respond
