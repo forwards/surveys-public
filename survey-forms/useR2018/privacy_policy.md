@@ -80,3 +80,8 @@ post) or modifying the data to achieve at least 3-anonymity (as for the
 
 Data collected in other forms will not be published or shared with third 
 parties.
+
+### Contact
+
+Any questions or comments on our privacy policy should be sent to
+rowforwards@gmail.com.
