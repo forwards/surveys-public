@@ -75,3 +75,8 @@ Since survey data is of interest to the community at large, we do publish the
 results, but only in forms that minimise risk of personal identification. This means presenting aggregate summaries (as for example in this blog post [Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/) blog 
 post) or modifying the data to achieve at least 3-anonymity (as for the 
 `useR2016` data published in the [**forwards**](https://CRAN.R-project.org/package=forwards) package.
+
+#### Other forms
+
+Data collected in other forms will not be published or shared with third 
+parties.
