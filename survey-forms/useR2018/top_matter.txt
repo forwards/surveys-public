@@ -14,6 +14,6 @@ To protect respondents, we guarantee that answers will be treated with full
 confidentiality. Although high-level summaries will 
 be shared, the raw data will be kept strictly private. For an example of how 
 the demographic data was reported from previous useR! surveys, see the 
-[Mapping useRs](http://forwards.github.io/blog/2017/01/13/mapping-users/) blog 
+[Mapping useRs](https://forwards.github.io/blog/2017/01/13/mapping-users/) blog 
 post. For full details of how your data will be handled, see our 
-[Privacy policy]().
+[Privacy policy](https://forwards.github.io/docs/privacy_policy/).
