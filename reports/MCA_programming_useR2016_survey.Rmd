@@ -82,7 +82,7 @@ library(FactoMineR)
 library(knitr)
 library(RcmdrMisc)
 library(dplyr)
-load("../../survey/survey.RData")
+load("../../surveys/useR2016/survey.RData")
 # use women/men rather than male/female
 survey_data <- survey_data %>%
   mutate(Q2 = replace(Q2, Q2 == "Female", "Women"),

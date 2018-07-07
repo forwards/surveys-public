@@ -28,7 +28,7 @@ library(dplyr)
 library(tidyr)
 library(forcats)
 library(matrixStats)
-load("../../survey/survey.RData")
+load("../../surveys/useR2016/survey.RData")
 ## From Julie's genderizer + manual gender assignment
 gender <- data_frame(Gender = c("Female", "Male", "Undetermined"), 
                      Freq = c(235, 593, 76))
