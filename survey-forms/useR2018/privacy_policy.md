@@ -43,7 +43,7 @@ in a private GitHub repository. Access to this repository is restricted to the
 [survey team](https://github.com/orgs/forwards/teams/surveys/members). If a 
 member leaves the survey team, their access to the repository will be revoked 
 and they will be asked to delete any personal copies of the data. Survey data 
-may be shared with selected collaborators to assist us with statistical analysis 
+may be shared with selected collaborators to assist us with statistical analysis, 
 and potentially other academic researchers whose aims are consistent with our 
 own, for example those studying participation in open source projects. 
 

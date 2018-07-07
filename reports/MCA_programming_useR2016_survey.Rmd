@@ -19,7 +19,7 @@ knit: (function(inputFile, encoding) {
 library(knitr)
 opts_knit$set(base.dir = "../../website_source/content/")
 opts_chunk$set(echo = FALSE, message = FALSE, fig.align = "center",
-               fig.path = "images/reports/MCA_community_useR2016_survey/")
+               fig.path = "images/reports/MCA_programming_useR2016_survey/")
 ```
 
 ## Introduction
