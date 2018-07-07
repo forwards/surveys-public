@@ -2,8 +2,7 @@ As part of introductory comments:
 
 This survey asks for personal and potentially identifiable information. Please 
 note that all demographic questions are optional and you may prefer to leave 
-some questions unanswered to preserve your anonymity. Consider which 
-demographics you wish to represent!
+some questions unanswered to preserve your anonymity.
 
 We're asking these questions because the R community is actively working
 to improve the inclusiveness and openness of our online and offline spaces.
