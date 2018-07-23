@@ -26,6 +26,8 @@ Demographics
 * Black/African/Caribbean
 ** please describe [TEXT: limited to 25 characters]
 
+* Aboriginal and/or Torres Strait Islander
+
 * Other ethnic group
 ** please describe [TEXT: limited to 25 characters]
 
@@ -80,8 +82,8 @@ impairments?
 * Professional degree or certification
 * Prefer not to respond
 
-9 Are you currently a student? (Note this includes PhD students, even if 
-salaried)
+9 Are you currently a student?  (Note this includes PhD students, even if
+salaried, but this does not include postdocs)
 
 [Multiple choice, select one]
 * Yes, full time
