@@ -1,0 +1,14 @@
+1. How long have you been using R for? [Select one]
+< 6 months
+6-12 months
+1-2 years
+2-5 years
+5-10 years
+> 10 years
+[No answer]
+
+2. Do you use R to do your job? [Select one]
+Yes
+When I can find an excuse to, but it's not a requirement of my role
+No
+[No answer]

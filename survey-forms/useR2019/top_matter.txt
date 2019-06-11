@@ -1,0 +1,19 @@
+As part of introductory comments:
+
+This survey asks for personal and potentially identifiable information. Please 
+note that all demographic questions are optional and you may prefer to leave 
+some questions unanswered to preserve your anonymity.
+
+We're asking these questions because the R community is actively working
+to improve the inclusiveness and openness of our online and offline spaces.
+Taking snapshots of demographic data
+allows us to see how we're doing over time, and adjust accordingly if the
+results suggest our events are excluding certain demographics.
+
+To protect respondents, we guarantee that answers will be treated with full 
+confidentiality. Although high-level summaries will 
+be shared, the raw data will be kept strictly private. For an example of how 
+the demographic data was reported from previous useR! surveys, see the 
+[Mapping useRs](https://forwards.github.io/blog/2017/01/13/mapping-users/) blog 
+post. For full details of how your data will be handled, see our 
+[Privacy policy](https://forwards.github.io/docs/privacy_policy/).

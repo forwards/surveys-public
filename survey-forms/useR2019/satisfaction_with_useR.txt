@@ -1,0 +1,49 @@
+1. How satisfied were you with the following aspects of the useR! program? [rating 1-5, 5 = high, N/A option]
+Newbie events
+Tutorials
+Welcome reception
+R-Ladies lunch
+Keynotes
+Regular talks
+Lightning talks
+Poster flash talks
+Poster session
+
+2. Do you have other comments about the useR! program? [Medium free text box]
+
+3. How satisfied were you with the following aspects of the useR! organization? [rating 1-5, 5 = high, N/A option]
+
+Venue (look and feel, rooms, accessibility, ...)
+Organization of venue (places to sit, signage & wayfinding, ...)
+Registration process
+On-site badge and materials collection
+Swag
+Catering
+Wi-Fi
+Childcare
+Website
+Mobile app
+Atmosphere
+Value for money
+Overall
+
+4. Do you have other comments about the useR! organization? [Medium free text box]
+
+
+---
+
+Notes
+Organization of Venue (could include quiet zone/work zone/etc)
+
+Need to check
+Newbie events
+
+Not for 2019 (used in 2017/2018):
+Service via useR! 2019 email
+useR!XXXX look & feel
+Info / Speakers desk
+Sponsor Booths
+Publisher Village
+Registration and payment
+Transport
+Pictures

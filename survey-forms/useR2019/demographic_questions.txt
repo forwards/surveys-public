@@ -118,3 +118,24 @@ sectors or both work and study, select all that apply.
 * Yes
 * No
 * Prefer not to respond
+
+
+Involvement at useR!
+
+1. Did you present in a contributed session at useR!?
+
+[Multiple choice, select one]
+* Yes, I gave a regular talk
+* Yes, I presented a lightning talk
+* Yes, I presented a poster
+* No
+* Prefer not to respond
+
+2. Did you present in an special session (invited talk, tutorial, organized 
+session) or hold an organizational position (program/local committee member, 
+session chair)?
+
+[Multiple choice, select one]
+* Yes
+* No
+* Prefer not to respond
