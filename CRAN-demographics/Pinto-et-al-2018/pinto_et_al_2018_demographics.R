@@ -35,9 +35,11 @@
   gender_perc <- df %>%
     group_by(gender) %>%
     summarise(n = n()) %>%
-    mutate(perc = (floor((n / sum(n))*1000)/1000)*100) %>% 
+    mutate(perc = (round(n / sum(n), 3)*100)) %>% 
     select(-c(n)) %>% 
     ungroup()
+  
+  sum(gender_perc$perc) #check that sum of percent column equals 100
   
   ggplot(gender_perc, aes(x = gender, y = perc)) +
     geom_col() +
@@ -54,8 +56,10 @@
   age_perc <- df %>%
     group_by(age) %>%
     summarise(n = n()) %>%
-    mutate(perc = (floor((n / sum(n))*1000)/1000)*100) %>% 
+    mutate(perc = (round(n / sum(n), 3)*100)) %>% 
     ungroup()
+  
+  sum(age_perc$perc) #check that sum of percent column equals 100
   
   ggplot(age_perc, aes(x = age, y = perc, fill = age)) +
     geom_col(show.legend = FALSE) +
@@ -73,9 +77,11 @@
   loc_perc <- df %>%
     group_by(location) %>%
     summarise(n = n()) %>%
-    mutate(perc = (floor((n / sum(n))*1000)/1000)*100) %>% 
+    mutate(perc = (round(n / sum(n), 3)*100)) %>% 
     arrange(desc(perc, location)) %>% 
     ungroup()
+  
+  sum(loc_perc$perc) #check that sum of percent column equals 100
   
   ggplot(loc_perc, aes(x = reorder(location, -perc), y = perc)) +
     geom_col() +
@@ -92,8 +98,10 @@
   educ_perc <- df %>%
     group_by(highest_education) %>%
     summarise(n = n()) %>%
-    mutate(perc = (floor((n / sum(n))*1000)/1000)*100) %>% 
+    mutate(perc = (round(n / sum(n), 3)*100)) %>% 
     ungroup()
+  
+  sum(loc_perc$perc) #check that sum of percent column equals 100
   
   ggplot(educ_perc, aes(x = highest_education, y = perc, fill = highest_education)) +
     geom_col(show.legend = FALSE) +
