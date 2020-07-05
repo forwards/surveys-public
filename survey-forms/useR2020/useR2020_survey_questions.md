@@ -1,8 +1,10 @@
-# Forwards useR! 2019 Survey
+# Forwards useR! 2020 Survey
 
-[Forwards](https://forwards.github.io), the R Foundation taskforce for under-represented groups, invites you to participate in the useR! 2019 survey.
+[Forwards](https://forwards.github.io), the R Foundation taskforce for under-represented groups, invites you to participate in the useR! 2020 survey.
 
-This survey includes questions regarding personal and potentially identifiable information. We're asking these questions because the R community is actively working to improve the inclusiveness and openness of our online and offline spaces. Taking snapshots of demographic data allows us to see how we're doing over time, and adjust accordingly if the results suggest our events are excluding certain demographics. The legal basis for processing this data is your consent.
+Please only fill in the survey when you have watched/attended all the useR! contributions that you plan to watch/attend in July (the survey is open to people that would have liked to participate but did not).
+
+This survey includes questions regarding personal and potentially identifiable information. We ask these questions because the R community is actively working to improve the inclusiveness and openness of our online and offline spaces. Taking snapshots of demographic data allows us to see how we're doing over time, and adjust accordingly if the results suggest our events are excluding certain demographics. The legal basis for processing this data is your consent.
 
 Please note that all questions are optional and no explicit identifiers (name, email, IP address) are recorded.
 
@@ -10,33 +12,18 @@ There are 20 questions in this survey, which should take about 5 minutes to comp
 
 There are 19 questions in this survey.
 
-## Involvement at useR!
+## Interest in R and the useR! conference
 
-### Did you present in a contributed session at useR!?
-
-Choose one of the following answers
+### What is your interest in R?
 
 Please choose  **only one**  of the following:
 
--   Yes, I gave a regular talk
--   Yes, I presented a lightning talk
--   Yes, I presented a poster
--   No
--   Prefer not to respond
+- I am an R user
+- I am interested in becoming an R user
+- I am not interested in R, but I am interested in data science
+- I am not interested in R or data science [exit with thanks but not eligible]
 
-### Did you present in an special session (invited talk, tutorial, organized session) or hold an organizational position (program/local committee member,session chair)?
-
-Choose one of the following answers
-
-Please choose  **only one**  of the following:
-
--   Yes
--   No
--   Prefer not to respond
-
-## use of R
-
-### How long have you been using R for?
+### How long have you been using R for? [conditional on being an R user]
 
 Choose one of the following answers
 
@@ -49,7 +36,7 @@ Please choose  **only one**  of the following:
 -   5-10 years
 -   > 10 years
 
-### Do you use R to do your job?
+### Do you use R to in your work/study? [conditional on being an R user]
 
 Choose one of the following answers
 
@@ -58,66 +45,7 @@ Please choose  **only one**  of the following:
 -   Yes
 -   When I can find an excuse to, but it's not a requirement of my role
 -   No
-
-## Satisfaction with useR!
-
-### How satisfied were you with the following aspects of the useR! program?
-
-Please choose the appropriate response for each item:
-
-Not at all satisfied
-
-Slightly satisfied
-
-Moderately satisfied
-
-Very satisfied
-
-Completely satisfied
-
-Side events
-
-Tutorials
-
-Keynotes
-
-Regular talks
-
-Lightning talks
-
-Poster session
-
-### Do you have other comments about the useR! program?
-
-Please write your answer here:
-
-### How satisfied were you with the following aspects of the useR! organization?
-
-Please choose the appropriate response for each item:
-
-Not at all satisfied
-
-Slightly satisfied
-
-Moderately satisfied
-
-Very satisfied
-
-Completely satisfied
-
-Venue
-
-Registration
-
-Catering
-
-Website
-
-Mobile app
-
-### Do you have other comments about the useR! organization?
-
-Please write your answer here:
+-   Prefer not to respond
 
 ## Demographics
 
@@ -191,6 +119,7 @@ Please choose  **only one**  of the following:
 -   Equatorial Guinea
 -   Eritrea
 -   Estonia
+-   Eswatini, Kingdom of
 -   Ethiopia
 -   Faroe Islands
 -   Fiji
@@ -317,7 +246,6 @@ Please choose  **only one**  of the following:
 -   Sudan
 -   Suriname
 -   Svalbard
--   Swaziland
 -   Sweden
 -   Switzerland
 -   Syria
@@ -374,13 +302,13 @@ Please choose  **only one**  of the following:
 -   No
 -   Prefer not to respond
 
-### Do you have any disabilities or impairments that affect the way you study/work or place special requirements on your learning/working environment? Select all that apply:
+### Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? Select all that apply:
 
 Comment only when you choose an answer.
 
 Please choose all that apply and provide a comment:
 
--   A vision impairment
+-   A vision impairment/
     
 -   A hearing impairment
     
@@ -481,6 +409,115 @@ Please choose  **only one**  of the following:
 -   Yes
 -   No
 -   Prefer not to respond
+
+
+## Involvement in useR!
+
+### The useR! 2020 programme includes breakout sessions, keynotes, an R core panel, pre-recorded videos and online tutorials. How many useR! 2020 contributions have you watched or attended during July?
+
+ - 0
+ - 1 - 2
+ - 2 - 5
+ - 5 - 10
+ - 10 - 20
+ - 20 - 50
+ - 50 - 100
+ - > 100
+
+### Which types of contribution did you watch/attend? [conditional on attending > 0]
+
+- breakout session (watched live or recorded)
+- keynote (watched live or recorded)
+- R core panel (watched live or recorded)
+- contributed video
+- online tutorial
+
+### Why did you not watch or attend any parts of useR! during July? [conditional on attending 0]
+
+[open text box]
+
+### Did you present a contribution at useR!?
+
+Choose one of the following answers
+
+Please choose  **only one**  of the following:
+
+-   Yes, I presented a regular talk
+-   Yes, I presented a lightning talk
+-   Yes, I presented a poster
+-   No
+-   Prefer not to respond
+
+### Did you present in an special session (invited keynote, tutorial, breakout session) or hold an organizational position (program/local committee member, session chair, tutorial facilitator)?
+
+Choose one of the following answers
+
+Please choose  **only one**  of the following:
+
+-   Yes
+-   No
+-   Prefer not to respond
+
+## Satisfaction with useR!
+
+### How satisfied were you with the following aspects of the useR! program?
+
+Please choose the appropriate response for each item:
+
+Not at all satisfied
+
+Slightly satisfied
+
+Moderately satisfied
+
+Very satisfied
+
+Completely satisfied
+
+Not applicable
+
+Breakout sessions
+
+Tutorials
+
+Keynotes
+
+Regular talks
+
+Lightning talks
+
+Posters
+
+### Do you have other comments about the useR! program?
+
+Please write your answer here:
+
+### How satisfied were you with the following aspects of the useR! organization?
+
+Please choose the appropriate response for each item:
+
+Not at all satisfied
+
+Slightly satisfied
+
+Moderately satisfied
+
+Very satisfied
+
+Completely satisfied
+
+Not applicable
+
+Website
+
+Publicity
+
+Tutorial registration
+
+### Do you have other comments about the useR! organization?
+
+Please write your answer here:
+
 
 Thank you for completing this survey!
 
