@@ -16,7 +16,8 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 (1 opción) 
 * Sí 
 * Cuando puedo encontrar una excusa pero no es un requisito
-* No 
+* No, pero me interesa empezar a usarlo
+* No
 * Prefiero no responder
 
 ### ¿En qué año comenzaste a usar R?
@@ -30,6 +31,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Investigación/Desarrollo 
 * Industria/Sector privado
 * Gobierno/Sector público
+* Otro
 
 ### ¿Qué porcentaje de lo que haces en R corresponde a las siguientes categorías?
 
@@ -56,6 +58,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Género diverso (género no conforme / género fluido / otra minoría de género)
 * Otro 
 * Prefiero no responder
+* No me reconozco con ningún género
 
 ### ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
 
@@ -94,8 +97,8 @@ Lista de todos los países
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
-* Otro
-* Ninguno de la anteriores
+* Prefiero no responder
+* Otro (a completar)
 
 ## III- Educación
 
@@ -106,6 +109,7 @@ Lista de todos los países
 * Intermedio
 * Avanzado
 * Bilingüe
+* No tengo conocimientos de inglés
 
 Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual destreza
 
@@ -132,14 +136,14 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Tienes alguna discapacidad o impedimentos que afecten la forma en que estudias / trabajas o necesitas requisitos especiales en tu entorno de aprendizaje / trabajo? 
 
 (1 o + opciones) 
-* Discapacidad visual
 * Discapacidad auditiva
-* Impedimento de movilidad
 * Discapacidad de aprendizaje
-* Trastorno de salud mental
-* Otra discapacidad/impedimento
+* Discapacidad visual 
+* Impedimento de movilidad
 * No tengo discapacidad o impedimento
 * Prefiero no responder
+* Trastorno de salud mental
+* Otro
 
 ## IV- R y la comunidad
 
@@ -147,23 +151,23 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 
 (1 o + opciones) 
 * Capítulo local de R-Ladies
+* CDSB
+* ConectaR
 * Grupo de usuarios/as (RUG)
 * LatinR
-* ConectaR
-* RSpatial_ES
-* CDSB
 * MiR
 * RainbowR
-* Otra
+* RSpatial_ES
 * Ninguna
+* Otra
 
 ### ¿Perteneces a alguna organización relacionada con R a nivel internacional? 
 
 (1 o + opciones) 
-* R Forwards
-* R Foundation
 * R Consortium
 * R Core
+* R Forwards
+* R Foundation
 * R-Ladies Global (formas parte de https://rladies.org/about-us/team/ o lideras un capítulo local de R-Ladies)
 * Otra
 * Ninguna
@@ -171,27 +175,29 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
 
 (1 o + opciones)
-* Twitter
 * Facebook
+* Instagram
 * Meetup
 * Slack
-* Otra
+* Telegram
+* Twitter
 * Ninguna
+* Otra
 
 ### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
 (matriz de opciones no excluyentes: “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
-* RStudio::conf
-* useR!
+* BioC (Bioconductor Conference)
+* CDSB
+* conectaR
 * eRum
 * LatinR
-* conectaR
-* satRday
-* BioC (Bioconductor Conference)
-* SER
 * RDay
+* RStudio::conf
+* satRday
+* SER
+* useR!
 * WhyR
-* CDSB
 * Otra
 
 ### Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
@@ -218,9 +224,9 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Participas en alguna de las siguientes iniciativas?
 
 (matriz de opciones: "No la conozco" "La conozco, pero nunca participé" “La conozco y participé al menos una vez") 
-* Tidytuesday
 * Datos de miércoles
 * #30diasdegráficos
+* Tidytuesday
 
 ## V- Uso de R 
 
@@ -256,43 +262,43 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Dónde buscas información para resolver problemas / aprender a usar un paquete nuevo?
 
 (1 o + opciones) 
-* Stackoverflow en inglés
-* Stackoverflow en tu lengua
 * Artículos en inglés
 * Artículos en tu lengua
-* Slack de la comunidad a la que perteneces
+* Bioconductor Support
 * Consultas con un/a colega
 * Consultas la documentación del paquete
 * Consultas en Twitter
-* RStudio Community
-* Bioconductor Support
 * GitHub Issues
+* RStudio Community
+* Slack de la comunidad a la que perteneces
+* Stackoverflow en inglés
+* Stackoverflow en tu lengua
 * Otros
 
 ### ¿Qué otro(s) lenguaje(s) de programación usas?
 
 (1 o + opciones)  
-* Ninguno
 * C/C++
-* Python
-* MATLAB
 * Fortran
-* Java
 * HTML
+* Java
+* MATLAB
 * Perl
-* Otros
+* Python
+* Ninguno
+* Otro
 
 ### ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
 (1 opción) 
-* R
 * C/C++
-* Python
-* Java
-* MATLAB
 * Fortran
 * HTML
+* Java
+* MATLAB
 * Perl
+* Python
+* R
 * Otro
 
 ### ¿Cuál es el paquete de R que usas con mayor frecuencia? 
