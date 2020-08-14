@@ -1,12 +1,12 @@
 # Encuesta para América Latina 2020 - Versión Español
 
-Te damos la bienvenida a la encuesta 2020 de América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Fundation para mujeres y grupos subrepresentados. 
+Te damos la bienvenida a la encuesta 2020 de América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Foundation para mujeres y grupos subrepresentados. 
 
-Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) que sean parte de la comunidad de R (todas aquellas personas que utilicen R, organicen RUGs y Capítulos de R-Ladies, tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog post, podscats y toda actividad relacionada con el lenguaje en nuestra región). 
+Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) que sea parte de la comunidad de R (todas aquellas personas que usen R, organicen grupos de usuarios/as (RUGs) y capítulos de R-Ladies, tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog post, podscats y toda actividad relacionada con el lenguaje en nuestra región). 
 
 Esta encuesta incluye preguntas sobre información personal y que potencialmente puede identificarte. Hacemos estas preguntas porque la comunidad de R está trabajando activamente para mejorar la inclusión y la apertura de nuestros espacios. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y podemos ajustar nuestras acciones en consecuencia si los resultados así lo indican. La base legal para el procesamiento de estos datos es tu consentimiento. 
 
-Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP). Estimamos que la encuesta debería tomar menos de 10 minutos en completarse.
+Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP). Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 
 
 ##I- Interés en R
@@ -74,7 +74,7 @@ Lista de todos los países
 (1 opción) 
 Lista de todos los países
 
-### ¿Cuáles de las siguientes consideras como tu primera  lengua?
+### ¿Cuáles de las siguientes consideras como tu primera lengua?
 
 (1 opción) 
 * Español
@@ -107,9 +107,9 @@ Lista de todos los países
 * Avanzado
 * Bilingüe
 
-Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igual destreza
+Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual destreza
 
-### ¿Cuál es el nivel más alto de educación que has completado? 
+### ¿Cuál es el nivel más alto de educación que completaste? 
 
 (1 opción) 
 * Doctorado
@@ -124,7 +124,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 ### ¿Eres estudiante actualmente? (esto incluye a los estudiantes de doctorado, sean pagos o no)
 
 (1 opción) 
-* Sí y a tiempo completo
+* Sí, a tiempo completo
 * Sí, de manera parcial
 * No
 * Prefiero no responder
@@ -147,7 +147,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 
 (1 o + opciones) 
 * Capítulo local de R-Ladies
-* Grupo de usuarios (RUG)
+* Grupo de usuarios/as (RUG)
 * LatinR
 * ConectaR
 * RSpatial_ES
@@ -180,7 +180,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 
 ### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
-(matriz de opciones no excluyentes: “Lo conozco pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
+(matriz de opciones no excluyentes: “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
 * RStudio::conf
 * useR!
 * eRum
@@ -206,17 +206,18 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 (1 o + opciones) 
 * Falta de dinero
 * Falta de tiempo
-* No me siento cómodo/a con el idioma
+* No me siento cómodo/a con el idioma del evento
 * Situación familiar
 * No me siento representado/a en los paneles y charlas
 * Mi solicitud fue negada
 * Mi conexión a internet no lo permite
-* Otras
 * No encontré ninguna barrera para participar
+* Otras
+
 
 ### ¿Participas en alguna de las siguientes iniciativas?
 
-(matriz de opciones: "No la conozco" "La conozco pero nunca participé" “La conozco y participé al menos una vez") 
+(matriz de opciones: "No la conozco" "La conozco, pero nunca participé" “La conozco y participé al menos una vez") 
 * Tidytuesday
 * Datos de miércoles
 * #30diasdegráficos
@@ -228,7 +229,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 (1 opción ) 
 * Era un requisito del programa académico
 * Era un requisito laboral
-* No era un requisito pero tenía interés para aprender
+* No era un requisito, pero tenía interés para aprender
 * Otros 
 
 ### ¿Dónde aprendiste a usar R?
@@ -250,9 +251,9 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 * Lo más difícil de aprender R fue dominar el uso de paquetes
 * Fue fácil encontrar paquetes apropiados para usar 
 * Me resultó difícil la sintaxis del lenguaje 
-* Formar parte de la comunidad me ayudó resolver problemas
+* Formar parte de la comunidad me ayudó a resolver problemas
 
-### ¿Dónde buscas información para resolver problemas/ aprender a usar un paquete nuevo?
+### ¿Dónde buscas información para resolver problemas / aprender a usar un paquete nuevo?
 
 (1 o + opciones) 
 * Stackoverflow en inglés
@@ -281,7 +282,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 * Perl
 * Otros
 
-### ¿Cuál fue el primer lenguaje de programación que aprendiste ?
+### ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
 (1 opción) 
 * R
@@ -302,7 +303,7 @@ Nota: Se entiende por Bilingüe aquella persona que habla ambos idiomas con igua
 
 (1 opción) 
 * Sí
-* No se como hacerlo
+* No sé como hacerlo
 * Mi trabajo no lo permite
 * No
 * Prefiero no responder
