@@ -299,6 +299,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 * Perl
 * Python
 * R
+* Ninguno
 * Otro
 
 ### ¿Cuál es el paquete de R que usas con mayor frecuencia? 
