@@ -1,186 +1,193 @@
-# Latinamerica survey 2020 - English Version
+# Latin America survey 2020 - English Version
 
-Te damos la bienvenida a la encuesta 2020 de América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Foundation para mujeres y grupos subrepresentados. 
+Welcome to the 2020 Latin America useR survey, conducted by [Forwards](https://forwards.github.io), the R Foundation's working group for women and underrepresented groups. 
 
-Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) que sea parte de la comunidad de R (todas aquellas personas que usen R, organicen grupos de usuarios/as (RUGs) y capítulos de R-Ladies, tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog post, podscats y toda actividad relacionada con el lenguaje en nuestra región). 
+This survey is aimed at all people born in Latin America (whether or not currently resident) and who use, have used or want to use R, organize RUGs or chapters of R-Ladies, are tutors, students, speakers, authors of books, packages, code, blog posts, podcasts or any activity related to the language in our region. If you've ever read a line of code written in R or would like to learn how to read it, this survey is for you.
 
-Esta encuesta incluye preguntas sobre información personal y que potencialmente puede identificarte. Hacemos estas preguntas porque la comunidad de R está trabajando activamente para mejorar la inclusión y la apertura de nuestros espacios. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y podemos ajustar nuestras acciones en consecuencia si los resultados así lo indican. La base legal para el procesamiento de estos datos es tu consentimiento. 
+This survey includes questions regarding personal and potentially identifiable information. We ask these questions because the R community is actively working to improve the inclusiveness and openness of our online and offline spaces. Taking snapshots of demographic data allows us to see how we're doing over time, and adjust accordingly if the results suggest our events are excluding certain demographics. The legal basis for processing this data is your consent.
 
-Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP). Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
+Please note that all questions are optional and no explicit identifiers are recorded (eg: name, email, IP address). We estimate that it should take you less than 10 minutes to complete this survey.
 
 
-##I- Your interest in R
+## I- Your interest in R
 
-### ¿Usas R en tu trabajo o estudio? 
+### Do you use R to work or study? 
 
-(1 opción) 
-* Sí 
-* Cuando puedo encontrar una excusa pero no es un requisito
+(1 option) 
+* Yes 
+* Whenever I can, even if it is not mandatory
 * No 
-* Prefiero no responder
+* No, but I am interested in starting to use it
+* Prefer not to respond
 
-### ¿En qué año comenzaste a usar R?
+### In which year did you start using R?
 
-(respuesta numérica) 
+(numeric answer) 
 
-### ¿Cuál de estos sectores describe mejor el ámbito en el que usas R? 
+### Which of the following options better describes the domain in which you use R? 
 
-(1 opción) 
-* Educación 
-* Investigación/Desarrollo 
-* Industria/Sector privado
-* Gobierno/Sector público
+(1 option) 
+* Education 
+* Research/Development 
+* Industry/Private sector
+* Government/Public sector
+* Others
 
-### ¿Qué porcentaje de lo que haces en R corresponde a las siguientes categorías?
+### What percentage of your work in R falls into these categories?
 
-(1 o + opciones a completar; la suma debe ser 100%) 
-* Análisis de datos 
-* Visualización de datos 
-* Desarrollo de paquetes/software 
-* Desarrollo de páginas web/apps
-* Presentación de documentos
-* Otras 
+(1 or + options; the total sum must be 100%) 
+* Data analysis 
+* Data visualization 
+* Packages/software development 
+* Web page/apps development
+* Document preparation
+* Others 
 
+## II- Demographics
 
-## II- Demografía
+### Age
 
-### Edad
+(numeric answer)
 
-(respuesta numérica)
+### If you recognize yourself with a gender, what would it be?
 
-### Si te reconoces con un género, ¿cuál sería?
+(1 option) 
+* Woman
+* Man
+* Gender diverse (gender non-conforming/gender-fluid/other gender minority)
+* Other
+* I do not recognize myself with any gender
+* Prefer not to respond
 
-(1 opción) 
-* Femenino
-* Masculino
-* Género diverso (género no conforme / género fluido / otra minoría de género)
-* Otro 
-* Prefiero no responder
+### Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual minority)?
 
-### ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
-
-(1 opción) 
-* Sí
+(1 option)
+* Yes
 * No 
-* Prefiero no responder
+* Prefer not to respond
 
-### ¿En qué país naciste?
+### In what country where you born?
 
-(1 opción) 
-Lista de todos los países
+(1 option)
+List of all countries
 
-### ¿En qué país resides actualmente?  
+### In what country do you currently reside? 
 
-(1 opción) 
-Lista de todos los países
+(1 option)
+List of all countries
 
-### ¿Cuáles de las siguientes consideras como tu primera lengua?
+### Which of the following do you consider to be your first language?
 
-(1 opción) 
-* Español
-* Portugués
-* Inglés
-* Nederlandés
+(1 option)
+
+* Spanish
+* Portuguese
+* English
+* Dutch
 * Quechua
-* Aimara
+* Aymara
 * Guaraní
-* Francés
+* French
 * Creol
-* Una Lengua de Señas
-* Otra (a completar)
+* A Sign Language
+* Other (to be completed)
 
-### ¿Perteneces a alguna de los siguientes grupos?
+### Do you identify with any of the following groups?
 
-(1 opción) 
-* Indígena o descendiente de pueblos indígenas u originarios
-* Afrodescendiente o con antepasados negros
-* Otro
-* Ninguno de la anteriores
+(1 option) 
+* Indigenous or descendant of indigenous or native people
+* Afro-descendant or with black ancestors
+* Other (to be completed)
+* None of the above
+* Prefer not to respond
 
-## III- Educación
+## III- Education
 
-### ¿Cuál es tu manejo de inglés?
+### Which is your English level?
 
-(1 opción) 
-* Principiante
-* Intermedio
-* Avanzado
-* Bilingüe
+(1 option) 
+* Beginner
+* Intermediate
+* Advanced
+* Bilingual
+* I have no knowledge of English
 
-Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual destreza
+Note: We consider Bilingual a person who speaks both languages with equal skills
 
-### ¿Cuál es el nivel más alto de educación que completaste? 
+### What is the highest level of education you have completed?
 
-(1 opción) 
-* Doctorado
-* Maestría
-* Grado/Licenciatura
-* Terciario
-* Título Técnico
-* Secundario
-* Primario
-* Prefiero no responder
+(1 option)
+* PhD
+* Master's degree
+* Bachelor's degree 
+* Tertiary
+* Technical Title
+* High School
+* Primary School
+* Prefer not to respond
 
-### ¿Eres estudiante actualmente? (esto incluye a los estudiantes de doctorado, sean pagos o no)
+### Are you currently a student? (this includes PhD students, paid or not)
 
-(1 opción) 
-* Sí, a tiempo completo
-* Sí, de manera parcial
+(1 option)
+* Yes, full time
+* Yes, partially
 * No
-* Prefiero no responder
+* Prefer not to respond
 
-### ¿Tienes alguna discapacidad o impedimentos que afecten la forma en que estudias / trabajas o necesitas requisitos especiales en tu entorno de aprendizaje / trabajo? 
+### Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment?
 
-(1 o + opciones) 
-* Discapacidad visual
-* Discapacidad auditiva
-* Impedimento de movilidad
-* Discapacidad de aprendizaje
-* Trastorno de salud mental
-* Otra discapacidad/impedimento
-* No tengo discapacidad o impedimento
-* Prefiero no responder
+(1 or + options)
+* Hearing impairment
+* Learning disability
+* Visual impairment
+* Mobility impairment
+* Mental health disorder
+* None
+* Other
+* Prefer not to respond
 
-## IV- R y la comunidad
+## IV- R and the community
 
-### ¿Perteneces a alguna comunidad de R?  
+### Are you a member of an R community group?
 
-(1 o + opciones) 
-* Capítulo local de R-Ladies
-* Grupo de usuarios/as (RUG)
+(1 or + options)
+* Local R-Ladies Chapter
+* R User group (RUG)
 * LatinR
 * ConectaR
 * RSpatial_ES
 * CDSB
 * MiR
 * RainbowR
-* Otra
-* Ninguna
+* Other
+* None
 
-### ¿Perteneces a alguna organización relacionada con R a nivel internacional? 
+### Are you a member of an international R community group?
 
-(1 o + opciones) 
+(1 or + options)
 * R Forwards
 * R Foundation
 * R Consortium
 * R Core
-* R-Ladies Global (formas parte de https://rladies.org/about-us/team/ o lideras un capítulo local de R-Ladies)
-* Otra
-* Ninguna
+* R-Ladies Global (you are part of https://rladies.org/about-us/team/ or you lead a local chapter of R-Ladies)
+* Other
+* None
 
-### ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
+### Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
-(1 o + opciones)
-* Twitter
+(1 or + options)
 * Facebook
+* Instagram
 * Meetup
 * Slack
-* Otra
-* Ninguna
+* Telegram
+* Twitter
+* None
+* Other
 
-### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
+### Have you participated in an R event (conference, talk or workshop) in the last 5 years?
 
-(matriz de opciones no excluyentes: “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
+(matrix of non-exclusive options: "I don't know of them", "I know them, but I didn't attend", "I attended at least once", "I presented at least one work (poster, talk, other)", "I participated in the organization")
 * RStudio::conf
 * useR!
 * eRum
@@ -194,118 +201,121 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 * CDSB
 * Otra
 
-### Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
+### If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
 
-(1 opción) 
-* Sí
+(1 option)
+* Yes
 * No
-* Nunca participé
+* I never participated
 
-### ¿Te encontraste con alguna de las siguientes barreras para participar en un evento?
+### Did you encounter any of the following barriers to participate in an event?
 
-(1 o + opciones) 
-* Falta de dinero
-* Falta de tiempo
-* No me siento cómodo/a con el idioma del evento
-* Situación familiar
-* No me siento representado/a en los paneles y charlas
-* Mi solicitud fue negada
-* Mi conexión a internet no lo permite
-* No encontré ninguna barrera para participar
-* Otras
+(1 or + options)
+* Lack of money
+* Lack of time
+* I don't feel comfortable with the language of the event
+* Family situation
+* I do not feel represented in the panels and talks
+* My request was denied
+* My internet connection doesn't allow it
+* I did not find any barrier to participate
+* Other
 
+### Do you participate in any of the following initiatives?
 
-### ¿Participas en alguna de las siguientes iniciativas?
-
-(matriz de opciones: "No la conozco" "La conozco, pero nunca participé" “La conozco y participé al menos una vez") 
+(matrix of options: "I don't know it" "I know it, but I never participated" "I know it and I participated at least once")
 * Tidytuesday
 * Datos de miércoles
 * #30diasdegráficos
 
-## V- Uso de R 
+## V- Using R 
 
-### ¿Empezaste a usar R por alguno de los siguientes motivos?
+### Did you start using R for any of the following reasons?
 
-(1 opción ) 
-* Era un requisito del programa académico
-* Era un requisito laboral
-* No era un requisito, pero tenía interés para aprender
-* Otros 
+(1 option)
+* It was a requirement of the academic program
+* It was a job requirement
+* It was not a requirement, but I was interested in learning
+* Others 
 
-### ¿Dónde aprendiste a usar R?
+### Where did you learn to use R?
 
-(1 o + opciones) 
-* Cursos gratuitos (online)
-* Cursos gratuitos (presenciales)
-* Cursos arancelados (online)
-* Cursos arancelados (presenciales)
-* Autodidacta (material digital)
-* Autodidacta (material impreso)
+(1 or + options)
+* Free courses (online)
+* Free courses (face-to-face)
+* Payed courses (online)
+* Payed courses (face-to-face)
+* Self-taught (digital material)
+* Self-taught (printed material)
 
-### Indica tu grado de acuerdo con las siguientes frases, siendo 1 “En total desacuerdo” y 5 “Totalmente de acuerdo”
+### Indicate your degree of agreement with the following sentences, being 1 "In total disagreement" and 5 "Totally agree"
 
-(1 opción por frase)
-* Aprender a usar R me resultó fácil
-* El idioma inglés me resultó una barrera para aprender y resolver errores 
-* Los mensajes de error son difíciles de interpretar
-* Lo más difícil de aprender R fue dominar el uso de paquetes
-* Fue fácil encontrar paquetes apropiados para usar 
-* Me resultó difícil la sintaxis del lenguaje 
-* Formar parte de la comunidad me ayudó a resolver problemas
+(1 option per phrase)
+* Learning to use R was easy for me
+* The English language was a barrier to learning and solving mistakes
+* Error messages are difficult to interpret
+* The hardest thing in learnning R was mastering the use of packages
+* It was easy to find appropriate packages to use
+* I found the language syntax difficult
+* Being part of the community helped me solve problems
 
-### ¿Dónde buscas información para resolver problemas / aprender a usar un paquete nuevo?
+### Where do you look for information to solve problems/learn how to use a new package?
 
-(1 o + opciones) 
-* Stackoverflow en inglés
-* Stackoverflow en tu lengua
-* Artículos en inglés
-* Artículos en tu lengua
-* Slack de la comunidad a la que perteneces
-* Consultas con un/a colega
-* Consultas la documentación del paquete
-* Consultas en Twitter
-* RStudio Community
+(1 or + options)
+* Articles in English
+* Articles in your language
 * Bioconductor Support
+* Consultations with a colleague
+* Check the package documentation
+* Queries on Twitter
 * GitHub Issues
-* Otros
+* RStudio Community
+* Slack from the community you belong to
+* Stackoverflow in English
+* Stackoverflow in your language
+* Others
 
-### ¿Qué otro(s) lenguaje(s) de programación usas?
+### What other programming language(s) do you use?
 
-(1 o + opciones)  
-* Ninguno
+(1 or + options)
+* bash
 * C/C++
-* Python
-* MATLAB
 * Fortran
-* Java
 * HTML
+* Java
+* MATLAB
 * Perl
-* Otros
+* Python
+* None
+* Other
 
-### ¿Cuál fue el primer lenguaje de programación que aprendiste?
+### What was the first programming language you learned?
 
-(1 opción) 
+(1 option)
+* bash
+* C/C++
+* Fortran
+* HTML
+* Java
+* MATLAB
+* Perl
+* Python
 * R
-* C/C++
-* Python
-* Java
-* MATLAB
-* Fortran
-* HTML
-* Perl
-* Otro
+* None
+* Other
 
-### ¿Cuál es el paquete de R que usas con mayor frecuencia? 
+### Which is the R package that you use most often?
 
-(respuesta abierta)
+(Open answer)
+Note: Please mention only one.
 
-### ¿Has compartido código de R de forma pública? 
+### Have you shared R code publicly?
 
-(1 opción) 
-* Sí
-* No sé como hacerlo
-* Mi trabajo no lo permite
+(1 option)
+* Yes
+* I do not know how to do it
+* My job doesn't allow it
 * No
-* Prefiero no responder
+* Prefer not to respond
 
 
