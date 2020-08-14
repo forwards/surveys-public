@@ -11,7 +11,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 
 ## I- Interés en R
 
-### ¿Usas R en tu trabajo o estudio? 
+### ¿Usas R para tu trabajo, estudio o por interés personal?
 
 (1 opción) 
 * Sí 
