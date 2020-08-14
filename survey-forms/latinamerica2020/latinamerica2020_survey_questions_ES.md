@@ -98,6 +98,7 @@ Lista de todos los países
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
 * Otro (a completar)
+* Ninguno de los anteriores
 * Prefiero no responder
 
 ## III- Educación
@@ -186,7 +187,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 
 ### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
-(matriz de opciones no excluyentes: "No lo conozco", “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
+(matriz de opciones no excluyentes: "No lo conozco", “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo (poster, charla, otro)", "Participé en la organización")
 * BioC (Bioconductor Conference)
 * CDSB
 * conectaR
