@@ -97,8 +97,9 @@ Lista de todos los países
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
-* Prefiero no responder
 * Otro (a completar)
+* Ninguno de los anteriores
+* Prefiero no responder
 
 ## III- Educación
 
@@ -186,7 +187,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 
 ### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
-(matriz de opciones no excluyentes: “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
+(matriz de opciones no excluyentes: "No lo conozco", “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo", "Participé en la organización")
 * BioC (Bioconductor Conference)
 * CDSB
 * conectaR
@@ -278,6 +279,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Qué otro(s) lenguaje(s) de programación usas?
 
 (1 o + opciones)  
+* bash
 * C/C++
 * Fortran
 * HTML
@@ -291,6 +293,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
 (1 opción) 
+* bash
 * C/C++
 * Fortran
 * HTML
@@ -305,6 +308,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 ### ¿Cuál es el paquete de R que usas con mayor frecuencia? 
 
 (respuesta abierta)
+Nota: Por favor, mencioná solo uno.
 
 ### ¿Has compartido código de R de forma pública? 
 
