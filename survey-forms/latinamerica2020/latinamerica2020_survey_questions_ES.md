@@ -141,9 +141,9 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 * Discapacidad de aprendizaje
 * Discapacidad visual 
 * Impedimento de movilidad
-* No tengo discapacidad o impedimento
 * Prefiero no responder
 * Trastorno de salud mental
+* Ninguna
 * Otro
 
 ## IV- R y la comunidad
