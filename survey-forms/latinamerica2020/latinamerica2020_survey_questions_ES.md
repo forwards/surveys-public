@@ -57,8 +57,8 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Masculino
 * Género diverso (género no conforme / género fluido / otra minoría de género)
 * Otro 
-* Prefiero no responder
 * No me reconozco con ningún género
+* Prefiero no responder
 
 ### ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
 
@@ -98,7 +98,6 @@ Lista de todos los países
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
 * Otro (a completar)
-* Ninguno de los anteriores
 * Prefiero no responder
 
 ## III- Educación
