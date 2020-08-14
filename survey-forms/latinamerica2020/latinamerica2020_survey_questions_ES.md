@@ -2,14 +2,14 @@
 
 Te damos la bienvenida a la encuesta 2020 de América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Foundation para mujeres y grupos subrepresentados. 
 
-Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) que sea parte de la comunidad de R (todas aquellas personas que usen R, organicen grupos de usuarios/as (RUGs) y capítulos de R-Ladies, tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog post, podscats y toda actividad relacionada con el lenguaje en nuestra región). 
+Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) y que usen, hayan usado o quieran usar R, organicen RUGs o capítulos de R-Ladies, sean tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog posts, podcasts o cualquier actividad relacionada con el lenguaje en nuestra región. Si alguna vez leíste una línea de código escrito en R o te gustaría aprender a leerla, esta encuesta es para tí.
 
 Esta encuesta incluye preguntas sobre información personal y que potencialmente puede identificarte. Hacemos estas preguntas porque la comunidad de R está trabajando activamente para mejorar la inclusión y la apertura de nuestros espacios. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y podemos ajustar nuestras acciones en consecuencia si los resultados así lo indican. La base legal para el procesamiento de estos datos es tu consentimiento. 
 
 Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP). Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 
 
-##I- Interés en R
+## I- Interés en R
 
 ### ¿Usas R en tu trabajo o estudio? 
 
