@@ -199,7 +199,7 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 * RDay
 * WhyR
 * CDSB
-* Otra
+* Other
 
 ### If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
 
