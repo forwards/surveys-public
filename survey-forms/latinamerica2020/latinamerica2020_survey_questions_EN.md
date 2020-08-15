@@ -151,27 +151,27 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 ### Are you a member of an R community group?
 
 (1 or + options)
-* Local R-Ladies Chapter
-* R User group (RUG)
-* LatinR
-* ConectaR
-* RSpatial_ES
 * CDSB
+* ConectaR
+* LatinR
+* Local R-Ladies Chapter
 * MiR
 * RainbowR
+* RSpatial_ES
+* R User group (RUG)
 * Other
 * None
 
 ### Are you a member of an international R community group?
 
 (1 or + options)
-* R Forwards
-* R Foundation
 * R Consortium
 * R Core
+* R Forwards
+* R Foundation
 * R-Ladies Global (you are part of https://rladies.org/about-us/team/ or you lead a local chapter of R-Ladies)
-* Other
 * None
+* Other
 
 ### Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
