@@ -77,7 +77,7 @@ Lista de todos los países
 (1 opción) 
 Lista de todos los países
 
-### ¿Cuáles de las siguientes consideras como tu primera lengua?
+### ¿Cuál de las siguientes consideras como tu primera lengua?
 
 (1 opción) 
 * Español
@@ -92,7 +92,7 @@ Lista de todos los países
 * Una Lengua de Señas
 * Otra (a completar)
 
-### ¿Perteneces a alguna de los siguientes grupos?
+### ¿Perteneces a alguno de los siguientes grupos?
 
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
@@ -103,16 +103,16 @@ Lista de todos los países
 
 ## III- Educación
 
-### ¿Cuál es tu manejo de inglés?
+### ¿Sabes inglés? ¿En qué nivel calificarías tu conocimiento?
 
 (1 opción) 
+* No tengo conocimientos de inglés
 * Principiante
 * Intermedio
 * Avanzado
 * Bilingüe
-* No tengo conocimientos de inglés
 
-Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual destreza
+Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua con igual destreza
 
 ### ¿Cuál es el nivel más alto de educación que completaste? 
 
@@ -141,10 +141,10 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 * Discapacidad de aprendizaje
 * Discapacidad visual 
 * Impedimento de movilidad
-* Prefiero no responder
 * Trastorno de salud mental
 * Ninguna
 * Otro
+* Prefiero no responder
 
 ## IV- R y la comunidad
 
@@ -199,7 +199,7 @@ Nota: Consideramos Bilingüe a una persona que habla ambos idiomas con igual des
 * SER
 * useR!
 * WhyR
-* Otra
+* Otro
 
 ### Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
 
