@@ -11,7 +11,7 @@ Please note that all questions are optional and no explicit identifiers are reco
 
 ## I- Your interest in R
 
-### Do you use R to work, study or for personal interest? 
+### 1) Do you use R to work, study or for personal interest? 
 
 (1 option) 
 * Yes 
@@ -20,11 +20,11 @@ Please note that all questions are optional and no explicit identifiers are reco
 * No
 * Prefer not to respond
 
-### In which year did you start using R?
+### 2) In which year did you start using R?
 
 (numeric answer) 
 
-### Which of the following options better describes the domain in which you use R? 
+### 3) Which of the following options better describes the domain in which you use/would use R? 
 
 (1 option) 
 * Education 
@@ -33,7 +33,7 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Government/Public sector
 * Others
 
-### What percentage of your work in R falls into these categories?
+### 4) What percentage of your work in R falls/would fall into these categories?
 
 (1 or + options; the total sum must be 100%) 
 * Data analysis 
@@ -45,11 +45,11 @@ Please note that all questions are optional and no explicit identifiers are reco
 
 ## II- Demographics
 
-### Age
+### 5) Age
 
 (numeric answer)
 
-### If you recognize yourself with a gender, what would it be?
+### 6) If you recognize yourself with a gender, what would it be?
 
 (1 option) 
 * Woman
@@ -59,27 +59,26 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Prefer not to respond
 * Other
 
-### Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual minority)?
+### 7) Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual minority)?
 
 (1 option)
 * Yes
 * No 
 * Prefer not to respond
 
-### In what country where you born?
+### 8) In what country where you born?
 
 (1 option)
 List of all countries
 
-### In what country do you currently reside? 
+### 9) In what country do you currently reside? 
 
 (1 option)
 List of all countries
 
-### Which of the following do you consider to be your first language?
+### 10) Which of the following do you consider to be your first language?
 
 (1 option)
-
 * Spanish
 * Portuguese
 * English
@@ -92,7 +91,7 @@ List of all countries
 * A Sign Language
 * Other (to be completed)
 
-### Do you identify with any of the following groups?
+### 11) Do you identify with any of the following groups?
 
 (1 option) 
 * Indigenous or descendant of indigenous or native people
@@ -103,7 +102,7 @@ List of all countries
 
 ## III- Education
 
-### Do you know English? Which is your English level?
+### 12) Do you know English? Which is your English level?
 
 (1 option) 
 * I have no knowledge of English
@@ -114,7 +113,7 @@ List of all countries
 
 Note: We consider Bilingual a person who speaks English and their first language with equal skills
 
-### What is the highest level of education you have completed?
+### 13) What is the highest level of education you have completed?
 
 (1 option)
 * PhD
@@ -126,7 +125,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Primary School
 * Prefer not to respond
 
-### Are you currently a student? (this includes PhD students, paid or not)
+### 14) Are you currently a student? (this includes PhD students, paid or not)
 
 (1 option)
 * Yes, full time
@@ -134,7 +133,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * No
 * Prefer not to respond
 
-### Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment?
+### 15) Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment?
 
 (1 or + options)
 * Hearing impairment
@@ -148,7 +147,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 ## IV- R and the community
 
-### Are you a member of an R community group?
+### 16) Are you a member of an R community group?
 
 (1 or + options)
 * Local R-Ladies Chapter
@@ -162,7 +161,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * None
 * Other
 
-### Are you a member of an international R community group?
+### 17) Are you a member of an international R community group?
 
 (1 or + options)
 * R Consortium
@@ -173,7 +172,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * None
 * Other
 
-### Do you use any of the following social networks to keep up to date on what is happening in the R community?
+### 18) Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
 (1 or + options)
 * Facebook
@@ -185,7 +184,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * None
 * Other
 
-### Have you participated in an R event (conference, talk or workshop) in the last 5 years?
+### 19) Have you participated in an R event (conference, talk or workshop) in the last 5 years?
 
 (matrix of non-exclusive options: "I don't know of them", "I know them, but I didn't attend", "I attended at least once", "I presented at least one work (poster, talk, other)", "I participated in the organization")
 * BioC (Bioconductor Conference)
@@ -201,14 +200,14 @@ Note: We consider Bilingual a person who speaks English and their first language
 * WhyR
 * Other
 
-### If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
+### 20) If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
 
 (1 option)
 * Yes
 * No
 * I never participated
 
-### Did you encounter any of the following barriers to participate in an event?
+### 21) Did you encounter any of the following barriers to participate in an event?
 
 (1 or + options)
 * Lack of money
@@ -221,7 +220,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * I did not find any barrier to participate
 * Other
 
-### Do you participate in any of the following initiatives?
+### 22) Do you participate in any of the following initiatives?
 
 (matrix of options: "I don't know it" "I know it, but I never participated" "I know it and I participated at least once")
 * Datos de miércoles
@@ -230,7 +229,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 ## V- Using R 
 
-### Did you start using R for any of the following reasons?
+### 23) Did you start using R for any of the following reasons?
 
 (1 option)
 * It was a requirement of the academic program
@@ -238,7 +237,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * It was not a requirement, but I was interested in learning
 * Others 
 
-### Where did you learn to use R?
+### 24) Where did you learn to use R?
 
 (1 or + options)
 * Free courses (online)
@@ -248,7 +247,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Self-taught (digital material)
 * Self-taught (printed material)
 
-### Indicate your degree of agreement with the following sentences, being 1 "In total disagreement" and 5 "Totally agree"
+### 25) Indicate your degree of agreement with the following sentences, being 1 "In total disagreement" and 5 "Totally agree"
 
 (1 option per phrase)
 * Learning to use R was easy for me
@@ -259,7 +258,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * I found the language syntax difficult
 * Being part of the community helped me solve problems
 
-### Where do you look for information to solve problems/learn how to use a new package?
+### 26) Where do you look for information to solve problems/learn how to use a new package?
 
 (1 or + options)
 * Articles in English
@@ -275,7 +274,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Stackoverflow in your language
 * Others
 
-### What other programming language(s) do you use?
+### 27) What other programming language(s) do you use?
 
 (1 or + options)
 * bash
@@ -289,7 +288,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * None
 * Other
 
-### What was the first programming language you learned?
+### 28) What was the first programming language you learned?
 
 (1 option)
 * bash
@@ -304,12 +303,12 @@ Note: We consider Bilingual a person who speaks English and their first language
 * None
 * Other
 
-### Which is the R package that you use most often?
+### 29) Which is the R package that you use most often?
 
 (Open answer)
 Note: Please mention only one.
 
-### Have you shared R code publicly?
+### 30) Have you shared R code publicly?
 
 (1 option)
 * Yes
