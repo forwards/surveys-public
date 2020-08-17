@@ -11,13 +11,13 @@ Please note that all questions are optional and no explicit identifiers are reco
 
 ## I- Your interest in R
 
-### Do you use R to work or study? 
+### Do you use R to work, study or for personal interest? 
 
 (1 option) 
 * Yes 
 * Whenever I can, even if it is not mandatory
-* No 
-* No, but I am interested in starting to use it
+* No, but I am interested in starting to use it 
+* No
 * Prefer not to respond
 
 ### In which year did you start using R?
@@ -103,16 +103,16 @@ List of all countries
 
 ## III- Education
 
-### Which is your English level?
+### Do you know English? Which is your English level?
 
 (1 option) 
+* I have no knowledge of English
 * Beginner
 * Intermediate
 * Advanced
 * Bilingual
-* I have no knowledge of English
 
-Note: We consider Bilingual a person who speaks both languages with equal skills
+Note: We consider Bilingual a person who speaks English and their first language with equal skills
 
 ### What is the highest level of education you have completed?
 
@@ -151,16 +151,16 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 ### Are you a member of an R community group?
 
 (1 or + options)
+* Local R-Ladies Chapter
 * CDSB
 * ConectaR
+* R User group (RUG)
 * LatinR
-* Local R-Ladies Chapter
 * MiR
 * RainbowR
 * RSpatial_ES
-* R User group (RUG)
-* Other
 * None
+* Other
 
 ### Are you a member of an international R community group?
 
@@ -170,8 +170,8 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 * R Forwards
 * R Foundation
 * R-Ladies Global (you are part of https://rladies.org/about-us/team/ or you lead a local chapter of R-Ladies)
-* None
 * Other
+* None
 
 ### Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
@@ -188,17 +188,17 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 ### Have you participated in an R event (conference, talk or workshop) in the last 5 years?
 
 (matrix of non-exclusive options: "I don't know of them", "I know them, but I didn't attend", "I attended at least once", "I presented at least one work (poster, talk, other)", "I participated in the organization")
-* RStudio::conf
-* useR!
+* BioC (Bioconductor Conference)
+* CDSB
+* conectaR
 * eRum
 * LatinR
-* conectaR
-* satRday
-* BioC (Bioconductor Conference)
-* SER
 * RDay
+* RStudio::conf
+* satRday
+* SER
+* useR!
 * WhyR
-* CDSB
 * Other
 
 ### If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
@@ -224,9 +224,9 @@ Note: We consider Bilingual a person who speaks both languages with equal skills
 ### Do you participate in any of the following initiatives?
 
 (matrix of options: "I don't know it" "I know it, but I never participated" "I know it and I participated at least once")
-* Tidytuesday
 * Datos de miércoles
 * #30diasdegráficos
+* Tidytuesday
 
 ## V- Using R 
 
