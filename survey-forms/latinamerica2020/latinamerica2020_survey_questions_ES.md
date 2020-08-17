@@ -170,8 +170,8 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * R Forwards
 * R Foundation
 * R-Ladies Global (formas parte de https://rladies.org/about-us/team/ o lideras un capítulo local de R-Ladies)
-* Otra
 * Ninguna
+* Otra
 
 ### ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
 
