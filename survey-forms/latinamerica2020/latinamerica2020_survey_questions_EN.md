@@ -55,9 +55,9 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Woman
 * Man
 * Gender diverse (gender non-conforming/gender-fluid/other gender minority)
-* Other
 * I do not recognize myself with any gender
 * Prefer not to respond
+* Other
 
 ### Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual minority)?
 
@@ -97,9 +97,9 @@ List of all countries
 (1 option) 
 * Indigenous or descendant of indigenous or native people
 * Afro-descendant or with black ancestors
-* Other (to be completed)
 * None of the above
 * Prefer not to respond
+* Other (to be completed)
 
 ## III- Education
 
@@ -142,9 +142,9 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Visual impairment
 * Mobility impairment
 * Mental health disorder
+* Prefer not to respond
 * None
 * Other
-* Prefer not to respond
 
 ## IV- R and the community
 
@@ -170,8 +170,8 @@ Note: We consider Bilingual a person who speaks English and their first language
 * R Forwards
 * R Foundation
 * R-Ladies Global (you are part of https://rladies.org/about-us/team/ or you lead a local chapter of R-Ladies)
-* Other
 * None
+* Other
 
 ### Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
