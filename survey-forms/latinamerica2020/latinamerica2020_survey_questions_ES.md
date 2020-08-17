@@ -56,9 +56,9 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Femenino
 * Masculino
 * Género diverso (género no conforme / género fluido / otra minoría de género)
-* Otro 
 * No me reconozco con ningún género
 * Prefiero no responder
+* Otro 
 
 ### ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
 
@@ -97,9 +97,9 @@ Lista de todos los países
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
-* Otro (a completar)
 * Ninguno de los anteriores
 * Prefiero no responder
+* Otro (a completar)
 
 ## III- Educación
 
@@ -142,9 +142,9 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Discapacidad visual 
 * Impedimento de movilidad
 * Trastorno de salud mental
+* Prefiero no responder
 * Ninguna
 * Otro
-* Prefiero no responder
 
 ## IV- R y la comunidad
 
@@ -219,7 +219,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Mi solicitud fue negada
 * Mi conexión a internet no lo permite
 * No encontré ninguna barrera para participar
-* Otras
+* Otros
 
 
 ### ¿Participas en alguna de las siguientes iniciativas?
