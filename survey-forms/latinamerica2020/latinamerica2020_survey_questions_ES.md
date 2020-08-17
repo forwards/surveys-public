@@ -24,7 +24,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 
 (respuesta numérica) 
 
-### ¿Cuál de estos sectores describe mejor el ámbito en el que usas R? 
+### ¿Cuál de estos sectores describe mejor el ámbito en el que usas/usarías R? 
 
 (1 opción) 
 * Educación 
@@ -33,7 +33,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Gobierno/Sector público
 * Otro
 
-### ¿Qué porcentaje de lo que haces en R corresponde a las siguientes categorías?
+### ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes categorías?
 
 (1 o + opciones a completar; la suma debe ser 100%) 
 * Análisis de datos 
