@@ -11,7 +11,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 
 ## I- Interés en R
 
-### ¿Usas R para tu trabajo, estudio o por interés personal?
+### 1) ¿Usas R para tu trabajo, estudio o por interés personal?
 
 (1 opción) 
 * Sí 
@@ -20,11 +20,11 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * No
 * Prefiero no responder
 
-### ¿En qué año comenzaste a usar R?
+### 2) ¿En qué año comenzaste a usar R?
 
 (respuesta numérica) 
 
-### ¿Cuál de estos sectores describe mejor el ámbito en el que usas/usarías R? 
+### 3) ¿Cuál de estos sectores describe mejor el ámbito en el que usas/usarías R? 
 
 (1 opción) 
 * Educación 
@@ -33,7 +33,7 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Gobierno/Sector público
 * Otro
 
-### ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes categorías?
+### 4) ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes categorías?
 
 (1 o + opciones a completar; la suma debe ser 100%) 
 * Análisis de datos 
@@ -43,14 +43,13 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Presentación de documentos
 * Otras 
 
-
 ## II- Demografía
 
-### Edad
+### 5) Edad
 
 (respuesta numérica)
 
-### Si te reconoces con un género, ¿cuál sería?
+### 6) Si te reconoces con un género, ¿cuál sería?
 
 (1 opción) 
 * Femenino
@@ -60,24 +59,24 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 * Prefiero no responder
 * Otro 
 
-### ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
+### 7) ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
 
 (1 opción) 
 * Sí
 * No 
 * Prefiero no responder
 
-### ¿En qué país naciste?
+### 8) ¿En qué país naciste?
 
 (1 opción) 
 Lista de todos los países
 
-### ¿En qué país resides actualmente?  
+### 9) ¿En qué país resides actualmente?  
 
 (1 opción) 
 Lista de todos los países
 
-### ¿Cuál de las siguientes consideras como tu primera lengua?
+### 10) ¿Cuál de las siguientes consideras como tu primera lengua?
 
 (1 opción) 
 * Español
@@ -92,7 +91,7 @@ Lista de todos los países
 * Una Lengua de Señas
 * Otra (a completar)
 
-### ¿Perteneces a alguno de los siguientes grupos?
+### 11) ¿Perteneces a alguno de los siguientes grupos?
 
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
@@ -103,7 +102,7 @@ Lista de todos los países
 
 ## III- Educación
 
-### ¿Sabes inglés? ¿En qué nivel calificarías tu conocimiento?
+### 12) ¿Sabes inglés? ¿En qué nivel calificarías tu conocimiento?
 
 (1 opción) 
 * No tengo conocimientos de inglés
@@ -114,7 +113,7 @@ Lista de todos los países
 
 Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua con igual destreza
 
-### ¿Cuál es el nivel más alto de educación que completaste? 
+### 13) ¿Cuál es el nivel más alto de educación que completaste? 
 
 (1 opción) 
 * Doctorado
@@ -126,7 +125,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Primario
 * Prefiero no responder
 
-### ¿Eres estudiante actualmente? (esto incluye a los estudiantes de doctorado, sean pagos o no)
+### 14) ¿Eres estudiante actualmente? (esto incluye a los estudiantes de doctorado, sean pagos o no)
 
 (1 opción) 
 * Sí, a tiempo completo
@@ -134,7 +133,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * No
 * Prefiero no responder
 
-### ¿Tienes alguna discapacidad o impedimentos que afecten la forma en que estudias / trabajas o necesitas requisitos especiales en tu entorno de aprendizaje / trabajo? 
+### 15) ¿Tienes alguna discapacidad o impedimentos que afecten la forma en que estudias/trabajas o necesitas requisitos especiales en tu entorno de aprendizaje/trabajo? 
 
 (1 o + opciones) 
 * Discapacidad auditiva
@@ -148,7 +147,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 
 ## IV- R y la comunidad
 
-### ¿Perteneces a alguna comunidad de R?  
+### 16) ¿Perteneces a alguna comunidad de R?  
 
 (1 o + opciones) 
 * Capítulo local de R-Ladies
@@ -162,7 +161,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguna
 * Otra
 
-### ¿Perteneces a alguna organización relacionada con R a nivel internacional? 
+### 17) ¿Perteneces a alguna organización relacionada con R a nivel internacional? 
 
 (1 o + opciones) 
 * R Consortium
@@ -173,7 +172,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguna
 * Otra
 
-### ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
+### 18) ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
 
 (1 o + opciones)
 * Facebook
@@ -185,7 +184,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguna
 * Otra
 
-### ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
+### 19) ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
 (matriz de opciones no excluyentes: "No lo conozco", “Lo conozco, pero no asistí", "Asistí al menos una vez", "Presenté al menos un trabajo (poster, charla, otro)", "Participé en la organización")
 * BioC (Bioconductor Conference)
@@ -201,14 +200,14 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * WhyR
 * Otro
 
-### Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
+### 20) Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
 
 (1 opción) 
 * Sí
 * No
 * Nunca participé
 
-### ¿Te encontraste con alguna de las siguientes barreras para participar en un evento?
+### 21) ¿Te encontraste con alguna de las siguientes barreras para participar en un evento?
 
 (1 o + opciones) 
 * Falta de dinero
@@ -221,8 +220,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * No encontré ninguna barrera para participar
 * Otros
 
-
-### ¿Participas en alguna de las siguientes iniciativas?
+### 22) ¿Participas en alguna de las siguientes iniciativas?
 
 (matriz de opciones: "No la conozco" "La conozco, pero nunca participé" “La conozco y participé al menos una vez") 
 * Datos de miércoles
@@ -231,7 +229,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 
 ## V- Uso de R 
 
-### ¿Empezaste a usar R por alguno de los siguientes motivos?
+### 23) ¿Empezaste a usar R por alguno de los siguientes motivos?
 
 (1 opción ) 
 * Era un requisito del programa académico
@@ -239,7 +237,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * No era un requisito, pero tenía interés para aprender
 * Otros 
 
-### ¿Dónde aprendiste a usar R?
+### 24) ¿Dónde aprendiste a usar R?
 
 (1 o + opciones) 
 * Cursos gratuitos (online)
@@ -249,7 +247,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Autodidacta (material digital)
 * Autodidacta (material impreso)
 
-### Indica tu grado de acuerdo con las siguientes frases, siendo 1 “En total desacuerdo” y 5 “Totalmente de acuerdo”
+### 25) Indica tu grado de acuerdo con las siguientes frases, siendo 1 “En total desacuerdo” y 5 “Totalmente de acuerdo”
 
 (1 opción por frase)
 * Aprender a usar R me resultó fácil
@@ -260,7 +258,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Me resultó difícil la sintaxis del lenguaje 
 * Formar parte de la comunidad me ayudó a resolver problemas
 
-### ¿Dónde buscas información para resolver problemas / aprender a usar un paquete nuevo?
+### 26) ¿Dónde buscas información para resolver problemas/aprender a usar un paquete nuevo?
 
 (1 o + opciones) 
 * Artículos en inglés
@@ -276,7 +274,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Stackoverflow en tu lengua
 * Otros
 
-### ¿Qué otro(s) lenguaje(s) de programación usas?
+### 27) ¿Qué otro(s) lenguaje(s) de programación usas?
 
 (1 o + opciones)  
 * bash
@@ -290,7 +288,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguno
 * Otro
 
-### ¿Cuál fue el primer lenguaje de programación que aprendiste?
+### 28) ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
 (1 opción) 
 * bash
@@ -305,12 +303,12 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguno
 * Otro
 
-### ¿Cuál es el paquete de R que usas con mayor frecuencia? 
+### 29) ¿Cuál es el paquete de R que usas con mayor frecuencia? 
 
 (respuesta abierta)
 Nota: Por favor, mencioná solo uno.
 
-### ¿Has compartido código de R de forma pública? 
+### 30) ¿Has compartido código de R de forma pública? 
 
 (1 opción) 
 * Sí
