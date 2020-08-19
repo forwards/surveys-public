@@ -14,4 +14,5 @@ Many people have contributed to this survey:
 * Andrea Gomez Vargas
 * Paula Andrea Martinez
 * Leonardo Collado Torres
-
+* Natalia Morandeira
+* Milagros Villavicencio
