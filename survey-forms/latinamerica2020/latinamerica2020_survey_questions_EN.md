@@ -129,7 +129,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 (1 option)
 * Yes, full time
-* Yes, partially
+* Yes, part time
 * No
 * Prefer not to respond
 
