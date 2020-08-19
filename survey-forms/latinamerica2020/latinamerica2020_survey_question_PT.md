@@ -1,46 +1,46 @@
-# Questionário para América Latina 2020 - Versão  Espanhol
+# Questionário para América Latina 2020 - Versão Português
 
-Damos-lhe as Boas-vindas ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e grupos sub-representados. 
+Te damos as boas-vindas ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e pessoas de grupos sub-representados. 
 
-O questionário está  dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuários, tenham usado ou queiram utilizar a linguagem R, organizadores do RUGs os capítulos de R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
+O questionário está  dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadoras(os) do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
 
-Este questionário incluí perguntas sobre informações pessoais e que potencialmente pode identificar-te. Fazemos essas perguntas porque a comunidade do R encontra-se trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos, nos permite ver como evoluímos ao longo do tempo e o que devemos ajustar em nossas ações segundo o que os resultados nos indiquem. A base legal para o processamento desses dados é seu consentimento. 
+Este questionário incluí perguntas sobre informações pessoais e que potencialmente podem te identificar. Fazemos essas perguntas porque a comunidade de R encontra-se trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos nos permite ver como evoluímos ao longo do tempo, e o que devemos ajustar em nossas ações segundo o que os resultados nos indicam. A base legal para o processamento desses dados é seu consentimento. 
 
-Tenha em conta que todas as perguntas são opcionais e não são registrados identificadores explícitos (ex: nome, correio eletrônico, endereço, IP). Estimamos que deverá lhe tomar entorno de 10 minutos completar este questionário.
+Tenha em conta que todas as perguntas são opcionais e não são registrados identificadores explícitos (ex: nome, correio eletrônico, endereço, IP). Estimamos que deverá lhe tomar cerca de 10 minutos para completar este questionário.
 
 
 ## I- Interesse no R
 
-### 1) Utiliza o R para seu trabalho, estudo ou por interesse pessoal?
+### 1) Você utiliza o R para seu trabalho, estudo ou por interesse pessoal?
 
 (1 opção) 
 * Sim 
-* Quando posso encontrar uma desculpa, mas não é um requisito.
-* Não, porém me interessa começar a utilizar
+* Quando posso encontrar um motivo, mas não é um requisito.
+* Não, porém tenho interesse em começar a utilizar
 * Não
 * Prefiro não responder
 
-### 2) Em qual ano, você começou a utilizar o R?
+### 2) Em qual ano você começou a utilizar o R?
 
 (resposta numérica) 
 
-### 3) Qual desses setores melhor descreve o âmbito no qual utilizas/utilizaria o R? 
+### 3) Qual desses setores melhor descreve o âmbito no qual você utiliza/utilizaria o R? 
 
 (1 opção) 
 * Educação 
-* Investigação/Desenvolvimento 
-* Industria/Setor privado
+* Pesquisa/Desenvolvimento 
+* Indústria/Setor privado
 * Governo/Setor público
 * Outro
 
-### 4) Que  porcentagem do que você faz/farias no R corresponde às seguintes categorias?
+### 4) Que porcentagem do que você faz/faria no R corresponde às seguintes categorias?
 
 (1 ou + opções para completar; a soma deve ser 100%) 
 * Análises de dados 
 * Visualização de dados 
 * Desenvolvimento de pacotes/‘software’ 
 * Desenvolvimento de páginas ‘web’/apps
-* Apresentação de documentos
+* Elaboração de documentos
 * Outras 
 
 ## II- Demografia
@@ -49,17 +49,17 @@ Tenha em conta que todas as perguntas são opcionais e não são registrados ide
 
 (resposta numérica)
 
-### 6) Se você se reconhece com um gênero. Qual seria?
+### 6) Se você se reconhece com algum gênero, qual seria?
 
 (1 opção) 
 * Feminino
 * Masculino
 * Gênero diverso (gênero não conforme / gênero fluido / outra minoria de gênero)
-* No me reconheço com nenhum gênero
+* Não me reconheço com nenhum gênero
 * Prefiro não responder
 * Outro 
 
-### 7) Você se  identifica como LGBT+ (lesbiana, gay, bissexual, transexual, outra minoria sexual)?
+### 7) Você se identifica como LGBT+ (lésbica, gay, bissexual, transexual, outra minoria de orientação sexual)?
 
 (1 opção) 
 * Sim
@@ -69,14 +69,14 @@ Tenha em conta que todas as perguntas são opcionais e não são registrados ide
 ### 8) Em qual país você nasceu?
 
 (1 opção) 
-Lista de todos los países
+Lista de todos os países
 
 ### 9) Em qual pais você reside atualmente?  
 
 (1 opção) 
-Liste de todos os países
+Lista de todos os países
 
-### 10) Qual das seguintes opções, considera como sua primeira língua?
+### 10) Qual das seguintes opções você considera como sua primeira língua (língua materna)?
 
 (1 opção) 
 * Espanhol
@@ -88,8 +88,8 @@ Liste de todos os países
 * Guarani
 * Francês
 * Creol
-* Linguagem de Sinais
-* Outra (a completar)
+* Língua de Sinais
+* Outra (completar)
 
 ### 11) Pertences a algum dos seguintes grupos?
 
@@ -98,14 +98,14 @@ Liste de todos os países
 * Afrodescendente ou com antepassados negros
 * Nenhum das anteriores
 * Prefiro não responder
-* Outro (a completar)
+* Outro (completar)
 
 ## III- Educação
 
-### 12) Você sabe inglês? Em qual nível qualificarias seu conhecimento?
+### 12) Você sabe inglês? Em qual nível você qualificaria seu conhecimento?
 
 (1 opção) 
-* Não tenho conhecimentos do inglês
+* Não tenho conhecimentos de inglês
 * Principiante
 * Intermédio
 * Avançado
@@ -113,7 +113,7 @@ Liste de todos os países
 
 Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língua com igual destreza
 
-### 13) Qual é seu  nível mais alto de educação completo? 
+### 13) Qual é o seu nível mais alto de educação completo? 
 
 (1 opção) 
 * Doutorado
@@ -125,21 +125,21 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Fundamental
 * Prefiro não responder
 
-### 14) Você é estudante atualmente? (isto inclui  aos estudantes de doutorado, sejam pagos ou não)
+### 14) Você é estudante atualmente? (isto inclui estudantes de doutorado, sendo pagos ou não)
 
 (1 opção) 
-* Sim, a tempo integral
-* Sim, de forma parcial
+* Sim, em tempo integral
+* Sim, em meio período
 * Não
 * Prefiro não responder
 
 ### 15) Você possui algum impedimento que afete sua forma na qual estuda/trabalha ou precisa de adequações especiais em seu ambiente de aprendizagem/trabalho? 
 
 (1 ou + opções) 
-* Auditiva
-* Aprendizagem
-* Visual 
-* Impedimento de mobilidade
+* Deficiência auditiva
+* Transtorno de aprendizagem
+* Deficiência visual 
+* Deficiência física ou mobilidade reduzida
 * Trastorno de saúde mental
 * Prefiro não responder
 * Nenhuma
@@ -147,13 +147,13 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 
 ## IV- R e a comunidade
 
-### 16) Pertences a alguma comunidade do R?  
+### 16) Você pertence a alguma comunidade do R?  
 
 (1 ou + opções) 
-* Capítulo local de R-Ladies
+* Capítulo local da R-Ladies
 * CDSB
 * ConectaR
-* Grupo de usuarios/as (RUG)
+* Grupo de usuárias/os (RUG)
 * LatinR
 * MiR
 * RainbowR
@@ -161,18 +161,18 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Nenhuma
 * Outra
 
-### 17) Pertences a alguma organização relacionada com R ao nível internacional? 
+### 17) Você pertence a alguma organização relacionada com R ao nível internacional? 
 
 (1 ou + opções) 
 * R Consortium
 * R Core
 * R Forwards
 * R Foundation
-* R-Ladies Global (formas parte de https://rladies.org/about-us/team/ ou lideras algum capítulo local de R-Ladies)
+* R-Ladies Global (faz parte de https://rladies.org/about-us/team/ ou lidera algum capítulo local da R-Ladies)
 * Nenhuma
 * Outra
 
-### 18)  Você utiliza alguma/s das seguintes redes sociais para estar informado sobre o que ocorre na comunidade do R? 
+### 18)  Você utiliza alguma(s) das seguintes redes sociais para estar informado sobre o que ocorre na comunidade do R? 
 
 (1 ou + opções)
 * Facebook
@@ -186,7 +186,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 
 ### 19) Participou de algum evento (conferência, palestra, minicurso ou workshop) de R nos últimos 5 anos?   
 
-(matriz de opções não excludentes: "Não  conheço", “Conheço, mas não assistí", "Assisti ao menos uma vez", "Apresentei ao menos um trabalho (poster, oral, outro)", "Participei na organização")
+(matriz de opções não excludentes: "Não  conheço", “Conheço, mas não assisti", "Assisti ao menos uma vez", "Apresentei ao menos um trabalho (poster, oral, outro)", "Participei na organização")
 * BioC (Bioconductor Conference)
 * CDSB
 * conectaR
@@ -200,12 +200,12 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * WhyR
 * Otro
 
-### 20) Se você participou em algum desses eventos, recebeu alguma  bolsa ou financiamento para participar? 
+### 20) Se você participou em algum desses eventos, recebeu alguma bolsa ou financiamento para participar? 
 
 (1 opção) 
 * Sim
 * Não
-* Nunca partícipe
+* Nunca participei
 
 ### 21) Você se encontro com alguma das seguintes barreiras para participar em um evento?
 
@@ -213,8 +213,8 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Falta de dinheiro
 * Falta de tempo
 * Não me sinto a vontade com o idioma do evento
-* Situação familiar
-* Não me sinto representado/a nos paneis e palestras
+* Questões ou problemas familiares
+* Não me sinto representada(o) nos painéis e palestras
 * Minha solicitação foi negada
 * Minha conexão de internet não permite
 * Não encontrei nenhuma barreira para participar
@@ -222,7 +222,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 
 ### 22) Você, participa de  alguma das seguintes iniciativas?
 
-(matriz de opções: “Não conheço”  “conheço, mas nunca participei””  conheço e participei ao menos uma vez”) 
+(matriz de opções: “Não conheço”  “Conheço, mas nunca participei”  "Conheço e participei ao menos uma vez”) 
 * Datos de miércoles
 * #30diasdegráficos
 * Tidytuesday
@@ -233,11 +233,11 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 
 (1 opção) 
 * Era um requisito do programa acadêmico
-* Era um requisito laboral
-* Não era um requisito, mas tinha interesse para apreender
+* Era um requisito de trabalho
+* Não era um requisito, mas tinha interesse para aprender
 * Outros 
 
-### 24) Onde aprendeu a usar R?
+### 24) Onde você aprendeu a usar R?
 
 (1 ou + opções) 
 * Cursos gratuitos (online)
@@ -247,7 +247,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Autodidata (material digital)
 * Autodidata (material impresso)
 
-### 25) Observando as seguintes frases indique seu grau,  sendo 1“ Em total desacordo” e 5 “Totalmente de acordo”  
+### 25) Observando as seguintes frases indique seu grau de concordância,  sendo 1 “Em total desacordo” e 5 “Totalmente de acordo”  
 
 (1 opção  por frases)
 * Aprender a usar R foi fácil
@@ -258,20 +258,20 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Foi difícil a sintaxe da linguagem 
 * Formar parte da comunidade me auxiliou a resolver problemas
 
-### 26) Onde você procura  informação  para resolver problemas/aprender a utilizar um novo pacote?
+### 26) Onde você procura informação para resolver problemas/aprender a utilizar um novo pacote?
 
 (1 ou + opções) 
 * Artigos em inglês 
-* Artigos na sua lingua nativa 
+* Artigos na sua língua nativa 
 * Bioconductor Support
-* Consultas com um/a colega
-* Consultas a documentação  do pacote
-* Consultas no Twitter
+* Consulta com um/a colega
+* Consulta a documentação do pacote
+* Consulta no Twitter
 * GitHub Issues
 * RStudio Community
-* Slack da comunidade a qual pertences
+* Slack da comunidade a qual pertence
 * Stackoverflow em inglês
-* Stackoverflow na sua lingua nativa
+* Stackoverflow na sua língua nativa
 * Outros
 
 ### 27) Que outra(s) linguagem(s) de programação você utiliza?
@@ -317,13 +317,13 @@ Nota: Por favor, mencione somente um.
 * Não
 * Prefiro não responder
 
-¡Gracias por completar nuestra encuesta!
+Agradecemos por completar nosso questionário!
 
-Por favor, copia y/o imprime la siguiente información:
+Por favor, copie ou imprima a seguinte informação:
 
-Número de identificación de la respuesta:
+Número de identificação da respuesta:
 
-Fecha y hora:  
+Data e hora:  
 
-Envíate esta información por correo electrónico.
-Deberás proporcionar esta información si luego deseas solicitar que se editen o eliminen tus respuestas. Para ejercer estos derechos, contacta a  rowforwards@gmail.com. Ten en cuenta que imprimir tus respuestas no guarda el número de identificación ni la fecha y hora de tus respuestas.
+Envie para você mesma(o) essa informação por e-mail.
+Você precisará fornecer essas informações se mais tarde desejar solicitar que suas respostas sejam editadas ou excluídas. Para exercer esses direitos, entre em contato com rowforwards@gmail.com. Observe que imprimir suas respostas não salva o número de identificação ou a data e hora de suas respostas.
