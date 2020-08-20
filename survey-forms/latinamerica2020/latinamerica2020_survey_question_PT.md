@@ -1,12 +1,12 @@
 # Questionário para América Latina 2020 - Versão Português
 
-Te damos as boas-vindas ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e pessoas de grupos sub-representados. 
+Bem-vindo ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e pessoas de grupos sub-representados. 
 
-O questionário está  dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadoras(os) do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
+O questionário é dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadores do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
 
-Este questionário incluí perguntas sobre informações pessoais e que potencialmente podem te identificar. Fazemos essas perguntas porque a comunidade de R encontra-se trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos nos permite ver como evoluímos ao longo do tempo, e o que devemos ajustar em nossas ações segundo o que os resultados nos indicam. A base legal para o processamento desses dados é seu consentimento. 
+Este questionário incluí perguntas sobre informações pessoais e que potencialmente podem te identificar. Fazemos essas perguntas porque a comunidade de R está trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos nos permite ver como evoluímos ao longo do tempo, e o que devemos ajustar em nossas ações segundo o que os resultados nos indicam. A base legal para o processamento desses dados é seu consentimento. 
 
-Tenha em conta que todas as perguntas são opcionais e não são registrados identificadores explícitos (ex: nome, correio eletrônico, endereço, IP). Estimamos que deverá lhe tomar cerca de 10 minutos para completar este questionário.
+Considere que todas as perguntas são opcionais e não são registrados identificadores explícitos (ex: nome, correio eletrônico, endereço, IP). Estimamos que levará cerca de 10 minutos para completar este questionário.
 
 
 ## I- Interesse no R
@@ -91,12 +91,12 @@ Lista de todos os países
 * Língua de Sinais
 * Outra (completar)
 
-### 11) Pertences a algum dos seguintes grupos?
+### 11) Você pertence a algum dos seguintes grupos?
 
 (1 opção) 
 * Indígena ou descendente de povos indígenas, ou originários
 * Afrodescendente ou com antepassados negros
-* Nenhum das anteriores
+* Nenhum dos anteriores
 * Prefiro não responder
 * Outro (completar)
 
@@ -111,7 +111,7 @@ Lista de todos os países
 * Avançado
 * Bilíngue
 
-Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língua com igual destreza
+Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língua com igual aptidão.
 
 ### 13) Qual é o seu nível mais alto de educação completo? 
 
@@ -207,7 +207,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Não
 * Nunca participei
 
-### 21) Você se encontro com alguma das seguintes barreiras para participar em um evento?
+### 21) Você já se deparou com alguma das seguintes barreiras para participar em um evento?
 
 (1 ou + opções) 
 * Falta de dinheiro
@@ -321,7 +321,7 @@ Agradecemos por completar nosso questionário!
 
 Por favor, copie ou imprima a seguinte informação:
 
-Número de identificação da respuesta:
+Número de identificação da resposta:
 
 Data e hora:  
 
