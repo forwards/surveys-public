@@ -1,8 +1,8 @@
 # Questionário para América Latina 2020 - Versão Português
 
-Bem-vindo ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e pessoas de grupos sub-representados. 
+Boas-vindas ao questionário 2020 da América Latina, realizada pelo [Forwards](https://forwards.github.io), o grupo de trabalho da R Foundation para mulheres e pessoas de grupos sub-representados. 
 
-O questionário é dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadores do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
+O questionário é dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadoras(es) do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
 
 Este questionário incluí perguntas sobre informações pessoais e que potencialmente podem te identificar. Fazemos essas perguntas porque a comunidade de R está trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos nos permite ver como evoluímos ao longo do tempo, e o que devemos ajustar em nossas ações segundo o que os resultados nos indicam. A base legal para o processamento desses dados é seu consentimento. 
 
