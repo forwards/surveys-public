@@ -1,12 +1,14 @@
-# Encuesta para América Latina 2020 - Versión Español
+# Encuesta sobre uso de R para América Latina 2020 - Versión Español
 
-Te damos la bienvenida a la encuesta 2020 de América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Foundation para mujeres y grupos subrepresentados. 
+Te damos la bienvenida a la encuesta 2020 sobre el uso de R en América Latina, realizada por [Forwards](https://forwards.github.io), el grupo de trabajo de la R Foundation para mujeres y grupos subrepresentados. 
 
-Esta encuesta está dirigida a toda persona nacida en América Latina (sea o no residente actualmente) y que usen, hayan usado o quieran usar R, organicen RUGs o capítulos de R-Ladies, sean tutores, estudiantes, disertantes, autores de libros, paquetes, código, blog posts, podcasts o cualquier actividad relacionada con el lenguaje en nuestra región. Si alguna vez leíste una línea de código escrito en R o te gustaría aprender a leerla, esta encuesta es para tí.
+Esta encuesta está dirigida a personas nacidas en América Latina (sean o no residente actualmente) y usen, hayan usado o quieran usar R, organicen RUGs o capítulos de R-Ladies, sean tutoras o tutores, estudiantes, disertantes, autoras o autores de libros, paquetes, código, blog posts, podcasts o cualquier actividad relacionada con el lenguaje R en nuestra región. Si alguna vez leíste una línea de código escrito en R o te gustaría aprender a leerla, nos gustaría saber más sobre tí.
 
-Esta encuesta incluye preguntas sobre información personal y que potencialmente puede identificarte. Hacemos estas preguntas porque la comunidad de R está trabajando activamente para mejorar la inclusión y la apertura de nuestros espacios. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y podemos ajustar nuestras acciones en consecuencia si los resultados así lo indican. La base legal para el procesamiento de estos datos es tu consentimiento. 
+Esta encuesta incluye preguntas sobre información personal que potencialmente puede identificarte. Hacemos estas preguntas porque estamos trabajando activamente para mejorar la inclusión y la apertura de la comunidad R. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y enfocar nuestros esfuerzos donde sean necesarios. La base legal para el procesamiento de estos datos es tu consentimiento. 
 
-Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP). Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
+Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP).
+
+Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 
 
 ## I- Interés en R
@@ -49,13 +51,13 @@ Ten en cuenta que todas las preguntas son opcionales y no se registran identific
 
 (respuesta numérica)
 
-### 6) Si te reconoces con un género, ¿cuál sería?
+### 6) Si te identificas con un género, ¿cuál es?
 
 (1 opción) 
 * Femenino
 * Masculino
 * Género diverso (género no conforme / género fluido / otra minoría de género)
-* No me reconozco con ningún género
+* No me identifico con ningún género
 * Prefiero no responder
 * Otro 
 
@@ -96,7 +98,8 @@ Lista de todos los países
 (1 opción) 
 * Indígena o descendiente de pueblos indígenas u originarios
 * Afrodescendiente o con antepasados negros
-* Ninguno de los anteriores
+* Ninguno
+* No sé
 * Prefiero no responder
 * Otro (a completar)
 
@@ -123,6 +126,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Título Técnico
 * Secundario
 * Primario
+* Ninguno
 * Prefiero no responder
 
 ### 14) ¿Eres estudiante actualmente? (esto incluye a los estudiantes de doctorado, sean pagos o no)
@@ -203,20 +207,21 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 ### 20) Si participaste en alguno de estos eventos, ¿recibiste algún tipo de beca o financiamiento para participar? 
 
 (1 opción) 
-* Sí
+* Sí, de una organización relacionada con R
+* Sí, de mi trabajo, universidad u otra institución no relacionada con R
 * No
 * Nunca participé
 
 ### 21) ¿Te encontraste con alguna de las siguientes barreras para participar en un evento?
 
 (1 o + opciones) 
-* Falta de dinero
-* Falta de tiempo
+* El evento era muy caro
+* El evento demandaba mucho tiempo
 * No me siento cómodo/a con el idioma del evento
-* Situación familiar
+* El evento no contemplaba que estoy a cargo de otras personas
 * No me siento representado/a en los paneles y charlas
-* Mi solicitud fue negada
-* Mi conexión a internet no lo permite
+* Mi resumen / trabajo / paper / charla /  panel / propuesta fue rechazada por el evento
+* El evento era online y requería tener conexión de alta velocidad para participar
 * No encontré ninguna barrera para participar
 * Otros
 
@@ -232,6 +237,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 ### 23) ¿Empezaste a usar R por alguno de los siguientes motivos?
 
 (1 opción ) 
+* Todavía no empecé a usar R 
 * Era un requisito del programa académico
 * Era un requisito laboral
 * No era un requisito, pero tenía interés para aprender
@@ -278,7 +284,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 
 (1 o + opciones)  
 * bash
-* C/C++
+* C/C++/C#
 * Fortran
 * HTML
 * Java
@@ -292,7 +298,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 
 (1 opción) 
 * bash
-* C/C++
+* C/C++/C#
 * Fortran
 * HTML
 * Java
