@@ -1,12 +1,12 @@
 # Latin America survey 2020 - English Version
 
-Welcome to the 2020 Latin America useR survey, conducted by [Forwards](https://forwards.github.io), the R Foundation's working group for women and underrepresented groups. 
+Welcome to the 2020 Latin America survey for R users, conducted by [Forwards](https://forwards.github.io), the R Foundation's working group for women and underrepresented groups. 
 
-This survey is aimed at all people born in Latin America (whether or not currently resident) and who use, have used or want to use R, organize RUGs or chapters of R-Ladies, are tutors, students, speakers, authors of books, packages, code, blog posts, podcasts or any activity related to the language in our region. If you've ever read a line of code written in R or would like to learn how to read it, this survey is for you.
+This survey is aimed at all people born in Latin America (whether or not currently live in Latin America) and who use, have used or want to use R, organize RUGs or chapters of R-Ladies, are tutors, students, speakers, authors of books, packages, code, blog posts, podcasts or any activity related to the language in our region. If you've ever read a line of code written in R or would like to learn how to read it, this survey is for you.
 
-This survey includes questions regarding personal and potentially identifiable information. We ask these questions because the R community is actively working to improve the inclusiveness and openness of our online and offline spaces. Taking snapshots of demographic data allows us to see how we're doing over time, and adjust accordingly if the results suggest our events are excluding certain demographics. The legal basis for processing this data is your consent.
+This survey includes questions regarding personal and potentially identifiable information. We ask these questions because we are actively working to improve the inclusiveness and openness of the R community. Taking snapshots of demographic data allows us to see how we're doing over time, and focus our efforts where needed. The legal basis for processing this data is your consent.
 
-Please note that all questions are optional and no explicit identifiers are recorded (eg: name, email, IP address). We estimate that it should take you less than 10 minutes to complete this survey.
+Please note that all questions are optional and no explicit identifiers are recorded (e.g.: name, email, IP address). We estimate that it should take you less than 10 minutes to complete this survey.
 
 
 ## I- Your interest in R
@@ -49,13 +49,13 @@ Please note that all questions are optional and no explicit identifiers are reco
 
 (numeric answer)
 
-### 6) If you recognize yourself with a gender, what would it be?
+### 6) If you identify yourself with a gender, what would it be?
 
 (1 option) 
 * Woman
 * Man
 * Gender diverse (gender non-conforming/gender-fluid/other gender minority)
-* I do not recognize myself with any gender
+* I do not identify myself with any gender
 * Prefer not to respond
 * Other
 
@@ -96,13 +96,14 @@ List of all countries
 (1 option) 
 * Indigenous or descendant of indigenous or native people
 * Afro-descendant or with black ancestors
-* None of the above
+* None
+* Do not know
 * Prefer not to respond
 * Other (to be completed)
 
 ## III- Education
 
-### 12) Do you know English? Which is your English level?
+### 12) How would you rate your English fluency?
 
 (1 option) 
 * I have no knowledge of English
@@ -123,6 +124,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Technical Title
 * High School
 * Primary School
+* None
 * Prefer not to respond
 
 ### 14) Are you currently a student? (this includes PhD students, paid or not)
@@ -186,7 +188,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 ### 19) Have you participated in an R event (conference, talk or workshop) in the last 5 years?
 
-(matrix of non-exclusive options: "I don't know of them", "I know them, but I didn't attend", "I attended at least once", "I presented at least one work (poster, talk, other)", "I participated in the organization")
+(matrix of non-exclusive options: "I don't know of it", "I know it, but I didn't attend", "I attended at least once", "I presented at least one work (poster, talk, other)", "I helped to organize it")
 * BioC (Bioconductor Conference)
 * CDSB
 * conectaR
@@ -203,20 +205,21 @@ Note: We consider Bilingual a person who speaks English and their first language
 ### 20) If you participated in any of these events, did you receive any kind of scholarship or funding to participate?
 
 (1 option)
-* Yes
+* Yes, from an R-related organization
+* Yes, from my work, university or an organization unrelated to R
 * No
 * I never participated
 
 ### 21) Did you encounter any of the following barriers to participate in an event?
 
 (1 or + options)
-* Lack of money
-* Lack of time
+* The event was very expensive 
+* The event was very time demanding
 * I don't feel comfortable with the language of the event
-* Family situation
+* The event didn't contemplate that I'm in charge of other people
 * I do not feel represented in the panels and talks
-* My request was denied
-* My internet connection doesn't allow it
+* My abstract / paper / talk / panel / proposal was rejected by the event
+* The event was online and required a high-speed connection to participate
 * I did not find any barrier to participate
 * Other
 
@@ -229,12 +232,13 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 ## V- Using R 
 
-### 23) Did you start using R for any of the following reasons?
+### 23) Why did you start using R?
 
 (1 option)
 * It was a requirement of the academic program
 * It was a job requirement
 * It was not a requirement, but I was interested in learning
+* I haven't started using R 
 * Others 
 
 ### 24) Where did you learn to use R?
@@ -247,13 +251,13 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Self-taught (digital material)
 * Self-taught (printed material)
 
-### 25) Indicate your degree of agreement with the following sentences, being 1 "In total disagreement" and 5 "Totally agree"
+### 25) Indicate your degree of agreement with the following sentences, 1 being "In total disagreement" and 5 being "Totally agree"
 
 (1 option per phrase)
 * Learning to use R was easy for me
 * The English language was a barrier to learning and solving mistakes
 * Error messages are difficult to interpret
-* The hardest thing in learnning R was mastering the use of packages
+* The hardest thing in learning R was mastering the use of packages
 * It was easy to find appropriate packages to use
 * I found the language syntax difficult
 * Being part of the community helped me solve problems
@@ -278,7 +282,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 (1 or + options)
 * bash
-* C/C++
+* C/C++/C#
 * Fortran
 * HTML
 * Java
@@ -292,7 +296,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 
 (1 option)
 * bash
-* C/C++
+* C/C++/C#
 * Fortran
 * HTML
 * Java
