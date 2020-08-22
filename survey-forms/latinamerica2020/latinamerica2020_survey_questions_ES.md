@@ -234,13 +234,13 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 
 ## V- Uso de R 
 
-### 23) ¿Empezaste a usar R por alguno de los siguientes motivos?
+### 23) ¿Por qué motivo empezaste a usar R? 
 
 (1 opción ) 
-* Todavía no empecé a usar R 
 * Era un requisito del programa académico
 * Era un requisito laboral
 * No era un requisito, pero tenía interés para aprender
+* Todavía no empecé a usar R
 * Otros 
 
 ### 24) ¿Dónde aprendiste a usar R?
