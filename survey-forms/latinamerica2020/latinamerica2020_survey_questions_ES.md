@@ -4,6 +4,8 @@ Te damos la bienvenida a la encuesta 2020 sobre el uso de R en América Latina, 
 
 Esta encuesta está dirigida a personas nacidas en América Latina (sean o no residente actualmente) y usen, hayan usado o quieran usar R, organicen RUGs o capítulos de R-Ladies, sean tutoras o tutores, estudiantes, disertantes, autoras o autores de libros, paquetes, código, blog posts, podcasts o cualquier actividad relacionada con el lenguaje R en nuestra región. Si alguna vez leíste una línea de código escrito en R o te gustaría aprender a leerla, nos gustaría saber más sobre tí.
 
+Si no naciste en América Latina, pero es tu lugar de residencia en este momento y te relacionas con R en alguna de las formas ya descriptas, también nos gustaría que completes esta encuesta.
+
 Esta encuesta incluye preguntas sobre información personal que potencialmente puede identificarte. Hacemos estas preguntas porque estamos trabajando activamente para mejorar la inclusión y la apertura de la comunidad R. Tomar estos datos demográficos en diferentes momentos nos permite ver cómo evolucionamos a lo largo del tiempo y enfocar nuestros esfuerzos donde sean necesarios. La base legal para el procesamiento de estos datos es tu consentimiento. 
 
 Ten en cuenta que todas las preguntas son opcionales y no se registran identificadores explícitos (ej: nombre, correo electrónico, dirección IP).
@@ -13,14 +15,19 @@ Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 
 ## I- Interés en R
 
-### 1) ¿Usas R para tu trabajo, estudio o por interés personal?
+### 1) ¿Usas R?
 
 (1 opción) 
 * Sí 
-* Cuando puedo encontrar una excusa pero no es un requisito
 * No, pero me interesa empezar a usarlo
-* No
-* Prefiero no responder
+* No --> ¡Gracias!
+
+### 1b) ¿Para qué usas/usarías R? 
+
+(1 o+ opciones)
+* Trabajo
+* Estudio
+* Interés personal
 
 ### 2) ¿En qué año comenzaste a usar R?
 
@@ -35,7 +42,8 @@ Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 * Gobierno/Sector público
 * Otro
 
-### 4) ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes categorías?
+### 4) ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes actividades? 
+Por ejemplo, si la mitad de lo que haces con R es Análisis de datos y la otra mitad es Visualización de datos tienes que mover la barra para llegar a 50% en ambas actividades. El total de actividades incluyendo Otras debe sumar 100.
 
 (1 o + opciones a completar; la suma debe ser 100%) 
 * Análisis de datos 
@@ -215,13 +223,14 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 ### 21) ¿Te encontraste con alguna de las siguientes barreras para participar en un evento?
 
 (1 o + opciones) 
-* El evento era muy caro
+* El evento era muy caro (considerando la inscripción, viaje, alojamiento y/o gastos asociados)
 * El evento demandaba mucho tiempo
 * No me siento cómodo/a con el idioma del evento
 * El evento no contemplaba que estoy a cargo de otras personas
 * No me siento representado/a en los paneles y charlas
 * Mi resumen / trabajo / paper / charla /  panel / propuesta fue rechazada por el evento
 * El evento era online y requería tener conexión de alta velocidad para participar
+* El evento era online pero comparto mi computadora con otras personas
 * No encontré ninguna barrera para participar
 * Otros
 
@@ -280,7 +289,20 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Stackoverflow en tu lengua
 * Otros
 
-### 27) ¿Qué otro(s) lenguaje(s) de programación usas?
+### 27) ¿Cuál interfaz (IDE) usas para programar con R?
+
+(1 o+ opciones)
+
+* Rstudio
+* Visual Studio
+* Jupyter Notebook
+* Nvim-R 
+* RIDE
+* Tinn-R
+* No uso una interfaz gráfica
+* Otro
+
+### 28) ¿Qué otro(s) lenguaje(s) de programación usas?
 
 (1 o + opciones)  
 * bash
@@ -294,7 +316,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguno
 * Otro
 
-### 28) ¿Cuál fue el primer lenguaje de programación que aprendiste?
+### 29) ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
 (1 opción) 
 * bash
@@ -309,18 +331,29 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Ninguno
 * Otro
 
-### 29) ¿Cuál es el paquete de R que usas con mayor frecuencia? 
+### 30) ¿Cuál es el paquete de R que usas con mayor frecuencia? 
 
 (respuesta abierta)
 Nota: Por favor, mencioná solo uno.
 
-### 30) ¿Has compartido código de R de forma pública? 
+### 31) ¿Has compartido código de R de forma pública? 
 
 (1 opción) 
 * Sí
-* No sé como hacerlo
-* Mi trabajo no lo permite
 * No
 * Prefiero no responder
 
+###  31b) ¿Por qué motivo no compartís tu código? 
 
+(1 o+ opciones)
+* No se como compartirlo
+* No se como compartirlo y que me citen correctamente
+* No se como compartirlo y asegurar mis derechos de autor
+* En mi trabajo no me lo permiten
+* No quiero compartirlo
+* Prefiero no responder
+* Otro
+
+### 31) Si tenés algún comentario sobre la encuesta, por favor escribilo abajo.
+
+(respuesta abierta)
