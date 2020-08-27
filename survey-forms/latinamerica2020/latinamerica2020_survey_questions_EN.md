@@ -4,6 +4,8 @@ Welcome to the 2020 Latin America survey for R users, conducted by [Forwards](ht
 
 This survey is aimed at all people born in Latin America (whether or not currently live in Latin America) and who use, have used or want to use R, organize RUGs or chapters of R-Ladies, are tutors, students, speakers, authors of books, packages, code, blog posts, podcasts or any activity related to the language in our region. If you've ever read a line of code written in R or would like to learn how to read it, this survey is for you.
 
+If you were not born in Latin America, but is your current place of residence and you relate to R in one of the ways already described, we would also like you to complete this survey.
+
 This survey includes questions regarding personal and potentially identifiable information. We ask these questions because we are actively working to improve the inclusiveness and openness of the R community. Taking snapshots of demographic data allows us to see how we're doing over time, and focus our efforts where needed. The legal basis for processing this data is your consent.
 
 Please note that all questions are optional and no explicit identifiers are recorded (e.g.: name, email, IP address). We estimate that it should take you less than 10 minutes to complete this survey.
@@ -11,14 +13,20 @@ Please note that all questions are optional and no explicit identifiers are reco
 
 ## I- Your interest in R
 
-### 1) Do you use R to work, study or for personal interest? 
+### 1) Do you use R?
 
 (1 option) 
-* Yes 
-* Whenever I can, even if it is not mandatory
+* Yes
 * No, but I am interested in starting to use it 
-* No
-* Prefer not to respond
+* No ---> Thank you!
+
+### 1b) For what do you use R/would use R?
+
+(1 option) 
+* Work
+* Study
+* Personal interest
+* Other (to be completed)
 
 ### 2) In which year did you start using R?
 
@@ -31,9 +39,10 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Research/Development 
 * Industry/Private sector
 * Government/Public sector
-* Others
+* Other (to be completed)
 
-### 4) What percentage of your work in R falls/would fall into these categories?
+### 4) What percentage of your work in R falls/would fall into these activities?
+For example, if half of what you do with R is Data Analysis and the other half is Data Visualization, you have to move the bar to reach 50% in both activities. The total sum of activities including Others must add up to 100.
 
 (1 or + options; the total sum must be 100%) 
 * Data analysis 
@@ -41,7 +50,7 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Packages/software development 
 * Web page/apps development
 * Document preparation
-* Others 
+* Other
 
 ## II- Demographics
 
@@ -57,7 +66,7 @@ Please note that all questions are optional and no explicit identifiers are reco
 * Gender diverse (gender non-conforming/gender-fluid/other gender minority)
 * I do not identify myself with any gender
 * Prefer not to respond
-* Other
+* Other (to be completed)
 
 ### 7) Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual minority)?
 
@@ -145,7 +154,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Mental health disorder
 * Prefer not to respond
 * None
-* Other
+* Other (to be completed)
 
 ## IV- R and the community
 
@@ -161,7 +170,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * RainbowR
 * RSpatial_ES
 * None
-* Other
+* Other (to be completed)
 
 ### 17) Are you a member of an international R community group?
 
@@ -172,7 +181,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * R Foundation
 * R-Ladies Global (you are part of https://rladies.org/about-us/team/ or you lead a local chapter of R-Ladies)
 * None
-* Other
+* Other (to be completed)
 
 ### 18) Do you use any of the following social networks to keep up to date on what is happening in the R community?
 
@@ -184,7 +193,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Telegram
 * Twitter
 * None
-* Other
+* Other (to be completed)
 
 ### 19) Have you participated in an R event (conference, talk or workshop) in the last 5 years?
 
@@ -213,15 +222,16 @@ Note: We consider Bilingual a person who speaks English and their first language
 ### 21) Did you encounter any of the following barriers to participate in an event?
 
 (1 or + options)
-* The event was very expensive 
+* The event was very expensive (considering registration, travel, accommodation and/or associated expenses)
 * The event was very time demanding
 * I don't feel comfortable with the language of the event
 * The event didn't contemplate that I'm in charge of other people
 * I do not feel represented in the panels and talks
 * My abstract / paper / talk / panel / proposal was rejected by the event
 * The event was online and required a high-speed connection to participate
+* The event was online but I share my computer with other people
 * I did not find any barrier to participate
-* Other
+* Other (to be completed)
 
 ### 22) Do you participate in any of the following initiatives?
 
@@ -239,7 +249,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 * It was a job requirement
 * It was not a requirement, but I was interested in learning
 * I haven't started using R 
-* Others 
+* Others (to be completed)
 
 ### 24) Where did you learn to use R?
 
@@ -276,9 +286,21 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Slack from the community you belong to
 * Stackoverflow in English
 * Stackoverflow in your language
-* Others
+* Others (to be completed)
 
-### 27) What other programming language(s) do you use?
+### 27) What interface (IDE) do you use to program with R?
+
+(1 or + options)
+* Rstudio
+* Jupyter Notebook
+* Nvim-R
+* RIDE
+* Tinn-R
+* Visual Studio
+* I don't use a graphical interface
+* Other (to be completed)
+
+### 28) What other programming language(s) do you use?
 
 (1 or + options)
 * bash
@@ -290,9 +312,9 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Perl
 * Python
 * None
-* Other
+* Other (to be completed)
 
-### 28) What was the first programming language you learned?
+### 29) What was the first programming language you learned?
 
 (1 option)
 * bash
@@ -305,20 +327,32 @@ Note: We consider Bilingual a person who speaks English and their first language
 * Python
 * R
 * None
-* Other
+* Other (to be completed)
 
-### 29) Which is the R package that you use most often?
+### 30) Which is the R package that you use most often?
 
 (Open answer)
 Note: Please mention only one.
 
-### 30) Have you shared R code publicly?
+### 31) Have you shared R code publicly?
 
 (1 option)
 * Yes
-* I do not know how to do it
-* My job doesn't allow it
 * No
 * Prefer not to respond
 
+### 31b) Why don't you share your code?
 
+(1 or + options)
+* I don't know how to share it
+* I don't know how to share it and to be cited correctly
+* I don't know how to share it and secure my copyright
+* They don't allow it in my work
+* I don't want to share it
+* Prefer not to respond
+* Other (to be completed)
+
+
+### 32) If you have any comments about the survey, please write them below.
+
+(Open answer)
