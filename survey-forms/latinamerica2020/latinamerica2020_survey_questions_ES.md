@@ -24,11 +24,11 @@ Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 
 ### 1b) ¿Para qué usas/usarías R? 
 
-(1 o+ opciones)
+(1 o + opciones)
 * Trabajo
 * Estudio
 * Interés personal
-* Otro
+* Otro (a completar)
 
 ### 2) ¿En qué año comenzaste a usar R?
 
@@ -41,7 +41,7 @@ Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 * Investigación/Desarrollo 
 * Industria/Sector privado
 * Gobierno/Sector público
-* Otro
+* Otro (a completar)
 
 ### 4) ¿Qué porcentaje de lo que haces/harías en R corresponde a las siguientes actividades? 
 Por ejemplo, si la mitad de lo que haces con R es Análisis de datos y la otra mitad es Visualización de datos tienes que mover la barra para llegar a 50% en ambas actividades. El total de actividades incluyendo Otras debe sumar 100.
@@ -68,7 +68,7 @@ Por ejemplo, si la mitad de lo que haces con R es Análisis de datos y la otra m
 * Género diverso (género no conforme / género fluido / otra minoría de género)
 * No me identifico con ningún género
 * Prefiero no responder
-* Otro 
+* Otro (a completar) 
 
 ### 7) ¿Te identificas como LGBT+ (lesbiana, gay, bisexual, transexual, otra minoría sexual)?
 
@@ -156,7 +156,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Trastorno de salud mental
 * Prefiero no responder
 * Ninguna
-* Otro
+* Otro (a completar)
 
 ## IV- R y la comunidad
 
@@ -172,7 +172,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * RainbowR
 * RSpatial_ES
 * Ninguna
-* Otra
+* Otra (a completar)
 
 ### 17) ¿Perteneces a alguna organización relacionada con R a nivel internacional? 
 
@@ -183,7 +183,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * R Foundation
 * R-Ladies Global (formas parte de https://rladies.org/about-us/team/ o lideras un capítulo local de R-Ladies)
 * Ninguna
-* Otra
+* Otra (a completar)
 
 ### 18) ¿Utilizas alguna/s de las siguientes redes sociales para mantenerte al tanto sobre lo que ocurre en la comunidad de R? 
 
@@ -195,7 +195,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Telegram
 * Twitter
 * Ninguna
-* Otra
+* Otra (a completar)
 
 ### 19) ¿Participaste en algún evento (conferencia, charla o taller) de R en los últimos 5 años?   
 
@@ -233,7 +233,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * El evento era online y requería tener conexión de alta velocidad para participar
 * El evento era online pero comparto mi computadora con otras personas
 * No encontré ninguna barrera para participar
-* Otros
+* Otros (a completar)
 
 ### 22) ¿Participas en alguna de las siguientes iniciativas?
 
@@ -251,7 +251,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Era un requisito laboral
 * No era un requisito, pero tenía interés para aprender
 * Todavía no empecé a usar R
-* Otros 
+* Otros (a completar) 
 
 ### 24) ¿Dónde aprendiste a usar R?
 
@@ -288,19 +288,19 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Slack de la comunidad a la que perteneces
 * Stackoverflow en inglés
 * Stackoverflow en tu lengua
-* Otros
+* Otros (a completar)
 
 ### 27) ¿Cuál interfaz (IDE) usas para programar con R?
 
-(1 o+ opciones)
+(1 o + opciones)
 * Rstudio
-* Visual Studio
 * Jupyter Notebook
-* Nvim-R 
+* Nvim-R
 * RIDE
 * Tinn-R
+* Visual Studio
 * No uso una interfaz gráfica
-* Otro
+* Otro (a completar)
 
 ### 28) ¿Qué otro(s) lenguaje(s) de programación usas?
 
@@ -314,7 +314,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Perl
 * Python
 * Ninguno
-* Otro
+* Otro (a completar)
 
 ### 29) ¿Cuál fue el primer lenguaje de programación que aprendiste?
 
@@ -329,7 +329,7 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 * Python
 * R
 * Ninguno
-* Otro
+* Otro (a completar)
 
 ### 30) ¿Cuál es el paquete de R que usas con mayor frecuencia? 
 
@@ -345,14 +345,14 @@ Nota: Por favor, mencioná solo uno.
 
 ###  31b) ¿Por qué motivo no compartís tu código? 
 
-(1 o+ opciones)
+(1 o + opciones)
 * No se como compartirlo
 * No se como compartirlo y que me citen correctamente
 * No se como compartirlo y asegurar mis derechos de autor
 * En mi trabajo no me lo permiten
 * No quiero compartirlo
 * Prefiero no responder
-* Otro
+* Otro (a completar)
 
 ### 32) Si tenés algún comentario sobre la encuesta, por favor escribilo abajo.
 
