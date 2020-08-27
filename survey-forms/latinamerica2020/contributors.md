@@ -16,3 +16,5 @@ Many people have contributed to this survey:
 * Leonardo Collado Torres
 * Natalia Morandeira
 * Milagros Villavicencio
+* Fernando Hannaka
+* Michael Chirico
