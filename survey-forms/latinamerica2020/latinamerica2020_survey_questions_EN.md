@@ -128,7 +128,7 @@ Note: We consider Bilingual a person who speaks English and their first language
 (1 option)
 * PhD
 * Master's degree
-* Bachelor's degree 
+* Bachelor's degree
 * Tertiary
 * Technical Title
 * High School
