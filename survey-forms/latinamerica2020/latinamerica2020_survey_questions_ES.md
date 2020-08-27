@@ -28,6 +28,7 @@ Estimamos que debería tomarte menos de 10 minutos completar esta encuesta.
 * Trabajo
 * Estudio
 * Interés personal
+* Otro
 
 ### 2) ¿En qué año comenzaste a usar R?
 
@@ -292,7 +293,6 @@ Nota: Consideramos Bilingüe a una persona que habla inglés y su primera lengua
 ### 27) ¿Cuál interfaz (IDE) usas para programar con R?
 
 (1 o+ opciones)
-
 * Rstudio
 * Visual Studio
 * Jupyter Notebook
@@ -354,6 +354,6 @@ Nota: Por favor, mencioná solo uno.
 * Prefiero no responder
 * Otro
 
-### 31) Si tenés algún comentario sobre la encuesta, por favor escribilo abajo.
+### 32) Si tenés algún comentario sobre la encuesta, por favor escribilo abajo.
 
 (respuesta abierta)
