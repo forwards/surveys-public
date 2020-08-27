@@ -24,9 +24,9 @@ Considere que todas as perguntas são opcionais e não são registrados identifi
 
 (1 ou + opções)
 * Trabalho
-* Estude
+* Estudo
 * Interesse pessoal
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ### 2) Em qual ano você começou a utilizar o R?
 
@@ -39,7 +39,7 @@ Considere que todas as perguntas são opcionais e não são registrados identifi
 * Pesquisa/Desenvolvimento 
 * Indústria/Setor privado
 * Governo/Setor público
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ### 4) Que porcentagem do que você faz/faria no R corresponde às seguintes atividades?
 Por exemplo, se metade do que você faz com R é Análise de Dados e a outra metade é Visualização de Dados, você deve mover a barra para chegar a 50% em ambas as atividades. O total de atividades incluindo outras deve somar 100.
@@ -66,7 +66,7 @@ Por exemplo, se metade do que você faz com R é Análise de Dados e a outra met
 * Gênero diverso (gênero não conforme/gênero fluido/outra minoria de gênero)
 * Não me identifico com nenhum gênero
 * Prefiro não responder
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ### 7) Você se identifica como LGBT+ (lésbica, gay, bissexual, transexual, outra minoria de orientação sexual)?
 
@@ -98,7 +98,7 @@ Lista de todos os países
 * Francês
 * Creol
 * Língua de Sinais
-* Outra (completar)
+* Outra (a ser preenchido)
 
 ### 11) Você pertence a algum dos seguintes grupos?
 
@@ -108,7 +108,7 @@ Lista de todos os países
 * Nenhum
 * Não se
 * Prefiro não responder
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ## III- Educação
 
@@ -154,7 +154,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Trastorno de saúde mental
 * Prefiro não responder
 * Nenhuma
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ## IV- R e a comunidade
 
@@ -170,7 +170,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * RainbowR
 * RSpatial_ES
 * Nenhuma
-* Outra (completar)
+* Outra (a ser preenchido)
 
 ### 17) Você pertence a alguma organização relacionada com R ao nível internacional? 
 
@@ -193,7 +193,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Telegram
 * Twitter
 * Nenhuma
-* Outra (completar)
+* Outra (a ser preenchido)
 
 ### 19) Participou de algum evento (conferência, palestra, minicurso ou workshop) de R nos últimos 5 anos?   
 
@@ -209,7 +209,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * SER
 * useR!
 * WhyR
-* Outra (completar)
+* Outra 
 
 ### 20) Se você participou em algum desses eventos, recebeu alguma bolsa ou financiamento para participar? 
 
@@ -231,7 +231,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * O evento foi on-line e exigiu uma conexão de alta velocidade para participar
 * O evento foi online, mas eu compartilho meu computador com outras pessoas
 * Não encontrei nenhuma barreira para participar
-* Outros (completar)
+* Outros (a ser preenchido)
 
 ### 22) Você, participa de  alguma das seguintes iniciativas?
 
@@ -249,7 +249,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Era um requisito de trabalho
 * Não era um requisito, mas tinha interesse para aprender
 * Ainda não comecei a usar o R
-* Outros (completar)
+* Outros (a ser preenchido)
 
 ### 24) Onde você aprendeu/aprenderia a usar R?
 
@@ -286,7 +286,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Slack da comunidade a qual pertence
 * Stackoverflow em inglês
 * Stackoverflow na sua língua nativa
-* Outros (completar)
+* Outros (a ser preenchido)
 
 
 ### 27) Qual interface (IDE) você usa para programar com R?
@@ -299,7 +299,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Tinn-R
 * Visual Studio
 * Eu não uso uma interface gráfica
-* Outros (completar)
+* Outros (a ser preenchido)
 
 ### 28) Que outra(s) linguagem(s) de programação você utiliza?
 
@@ -313,7 +313,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Perl
 * Python
 * Nenhuma
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ### 29) Qual foi a primeira linguagem de programação que você aprendeu?
 
@@ -328,7 +328,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Python
 * R
 * Nenhum
-* Outro (completar)
+* Outro (a ser preenchido)
 
 ### 30) Qual o pacote do R que você usa com mais frequência? 
 
@@ -349,7 +349,7 @@ Nota: Por favor, mencione somente um.
 * Não sei como compartilhar e ser citado corretamente
 * Não sei como compartilhar e proteger meus direitos autorais
 * Eu não quero compartilhar isso
-* No meu trabalho eles não permitem
+* Meu trabalho não permite
 * Prefiro não responder
 * Outro (a ser preenchido)
 
