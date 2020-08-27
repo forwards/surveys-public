@@ -349,8 +349,8 @@ Nota: Por favor, mencioná solo uno.
 * No se como compartirlo
 * No se como compartirlo y que me citen correctamente
 * No se como compartirlo y asegurar mis derechos de autor
-* En mi trabajo no me lo permiten
 * No quiero compartirlo
+* En mi trabajo no me lo permiten
 * Prefiero no responder
 * Otro (a completar)
 
