@@ -4,6 +4,8 @@ Boas-vindas ao questionário 2020 da América Latina, realizada pelo [Forwards](
 
 O questionário é dirigido a toda pessoa nascida na América Latina (atualmente residente ou não) e que sejam usuárias(os), tenham usado ou queiram utilizar a linguagem R, organizadoras(es) do RUGs ou capítulos da R-Ladies, sejam tutores, estudantes, dissertantes, autores de livros, pacotes, código, blog posts, podcasts ou qualquer atividade relacionada com a linguagem em nossa região. Se alguma vez você leu ou gostaria de aprender a ler uma linha de código escrita no R, este questionário é para você.
 
+Se você não nasceu na América Latina, mas é seu local de residência no momento e se relaciona com R de uma das formas já descritas, também gostaríamos que respondesse a esta pesquisa.
+
 Este questionário incluí perguntas sobre informações pessoais e que potencialmente podem te identificar. Fazemos essas perguntas porque a comunidade de R está trabalhando ativamente para melhorar a inclusão e a abertura de nossos espaços. Considerar estes dados demográficos em diferentes momentos nos permite ver como evoluímos ao longo do tempo, e o que devemos ajustar em nossas ações segundo o que os resultados nos indicam. A base legal para o processamento desses dados é seu consentimento. 
 
 Considere que todas as perguntas são opcionais e não são registrados identificadores explícitos (ex: nome, correio eletrônico, endereço, IP). Estimamos que levará cerca de 10 minutos para completar este questionário.
@@ -11,14 +13,20 @@ Considere que todas as perguntas são opcionais e não são registrados identifi
 
 ## I- Interesse no R
 
-### 1) Você utiliza o R para seu trabalho, estudo ou por interesse pessoal?
+### 1) Você utiliza o R?
 
 (1 opção) 
 * Sim 
-* Quando posso encontrar um motivo, mas não é um requisito.
 * Não, porém tenho interesse em começar a utilizar
-* Não
-* Prefiro não responder
+* Não-> Obrigada!
+
+### 1b) Para que você usa/usaria R?
+
+(1 ou + opções)
+* Trabalho
+* Estude
+* Interesse pessoal
+* Outro (completar)
 
 ### 2) Em qual ano você começou a utilizar o R?
 
@@ -31,17 +39,18 @@ Considere que todas as perguntas são opcionais e não são registrados identifi
 * Pesquisa/Desenvolvimento 
 * Indústria/Setor privado
 * Governo/Setor público
-* Outro
+* Outro (completar)
 
-### 4) Que porcentagem do que você faz/faria no R corresponde às seguintes categorias?
-
+### 4) Que porcentagem do que você faz/faria no R corresponde às seguintes atividades?
+Por exemplo, se metade do que você faz com R é Análise de Dados e a outra metade é Visualização de Dados, você deve mover a barra para chegar a 50% em ambas as atividades. O total de atividades incluindo outras deve somar 100.
 (1 ou + opções para completar; a soma deve ser 100%) 
+
 * Análises de dados 
 * Visualização de dados 
 * Desenvolvimento de pacotes/‘software’ 
 * Desenvolvimento de páginas ‘web’/apps
 * Elaboração de documentos
-* Outras 
+* Outras
 
 ## II- Demografia
 
@@ -54,10 +63,10 @@ Considere que todas as perguntas são opcionais e não são registrados identifi
 (1 opção) 
 * Feminino
 * Masculino
-* Gênero diverso (gênero não conforme / gênero fluido / outra minoria de gênero)
+* Gênero diverso (gênero não conforme/gênero fluido/outra minoria de gênero)
 * Não me identifico com nenhum gênero
 * Prefiro não responder
-* Outro 
+* Outro (completar)
 
 ### 7) Você se identifica como LGBT+ (lésbica, gay, bissexual, transexual, outra minoria de orientação sexual)?
 
@@ -119,8 +128,8 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 (1 opção) 
 * Doutorado
 * Mestrado
-* Bacharel/Licenciatura
-* Tecnólogo
+* Bacharel/Licenciatura/Universidade Superior
+* Tecnólogo/Superior não Universitário
 * Técnico
 * Médio
 * Fundamental
@@ -145,7 +154,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Trastorno de saúde mental
 * Prefiro não responder
 * Nenhuma
-* Outro
+* Outro (completar)
 
 ## IV- R e a comunidade
 
@@ -161,7 +170,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * RainbowR
 * RSpatial_ES
 * Nenhuma
-* Outra
+* Outra (completar)
 
 ### 17) Você pertence a alguma organização relacionada com R ao nível internacional? 
 
@@ -172,7 +181,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * R Foundation
 * R-Ladies Global (faz parte de https://rladies.org/about-us/team/ ou lidera algum capítulo local da R-Ladies)
 * Nenhuma
-* Outra
+* Outra (completar)
 
 ### 18)  Você utiliza alguma(s) das seguintes redes sociais para estar informado sobre o que ocorre na comunidade do R? 
 
@@ -184,7 +193,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Telegram
 * Twitter
 * Nenhuma
-* Outra
+* Outra (completar)
 
 ### 19) Participou de algum evento (conferência, palestra, minicurso ou workshop) de R nos últimos 5 anos?   
 
@@ -200,7 +209,7 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * SER
 * useR!
 * WhyR
-* Otro
+* Outra (completar)
 
 ### 20) Se você participou em algum desses eventos, recebeu alguma bolsa ou financiamento para participar? 
 
@@ -213,15 +222,16 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 ### 21) Você já se deparou com alguma das seguintes barreiras para participar em um evento?
 
 (1 ou + opções) 
-* O evento foi muito caro
+* O evento foi muito caro (considerando registro, viagem, acomodação e/ou despesas associadas)
 * O evento foi muito demorado
 * Não me sinto a vontade com o idioma do evento
 * O evento não contemplou que eu esteja no encargo de outras pessoas
 * Não me sinto representada(o) nos painéis e palestras
 * Meu resumo / papel / palestra / painel / proposta foi rejeitado pelo evento
 * O evento foi on-line e exigiu uma conexão de alta velocidade para participar
+* O evento foi online, mas eu compartilho meu computador com outras pessoas
 * Não encontrei nenhuma barreira para participar
-* Outros
+* Outros (completar)
 
 ### 22) Você, participa de  alguma das seguintes iniciativas?
 
@@ -239,9 +249,9 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Era um requisito de trabalho
 * Não era um requisito, mas tinha interesse para aprender
 * Ainda não comecei a usar o R
-* Outros 
+* Outros (completar)
 
-### 24) Onde você aprendeu a usar R?
+### 24) Onde você aprendeu/aprenderia a usar R?
 
 (1 ou + opções) 
 * Cursos gratuitos (online)
@@ -276,9 +286,22 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Slack da comunidade a qual pertence
 * Stackoverflow em inglês
 * Stackoverflow na sua língua nativa
-* Outros
+* Outros (completar)
 
-### 27) Que outra(s) linguagem(s) de programação você utiliza?
+
+### 27) Qual interface (IDE) você usa para programar com R?
+
+(1 ou + opções)
+* Rstudio
+* Jupyter Notebook
+* Nvim-R
+* RIDE
+* Tinn-R
+* Visual Studio
+* Eu não uso uma interface gráfica
+* Outros (completar)
+
+### 28) Que outra(s) linguagem(s) de programação você utiliza?
 
 (1 ou + opções)  
 * bash
@@ -290,9 +313,9 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Perl
 * Python
 * Nenhuma
-* Outro
+* Outro (completar)
 
-### 28) Qual foi a primeira linguagem de programação que você aprendeu?
+### 29) Qual foi a primeira linguagem de programação que você aprendeu?
 
 (1 opção) 
 * bash
@@ -305,29 +328,31 @@ Nota: Consideramos Bilíngue a uma pessoa que fala inglês e sua primeira língu
 * Python
 * R
 * Nenhum
-* Outro
+* Outro (completar)
 
-### 29) Qual o pacote do R que você usa com mais frequência? 
+### 30) Qual o pacote do R que você usa com mais frequência? 
 
 (resposta aberta)
 Nota: Por favor, mencione somente um.
 
-### 30) Você compartilha o código de R de forma pública? 
+### 31) Você compartilha o código de R de forma pública? 
 
 (1 opção) 
 * Sim
-* Não sei fazer isso 
-* Meu trabalho não permite 
 * Não
 * Prefiro não responder
 
-Agradecemos por completar nosso questionário!
+### 31b) Por que você não compartilha seu código?
 
-Por favor, copie ou imprima a seguinte informação:
+(1 ou + opções)
+* Não sei como compartilhar
+* Não sei como compartilhar e ser citado corretamente
+* Não sei como compartilhar e proteger meus direitos autorais
+* Eu não quero compartilhar isso
+* No meu trabalho eles não permitem
+* Prefiro não responder
+* Outro (a ser preenchido)
 
-Número de identificação da resposta:
+### 32) Se você tiver algum comentário sobre a pesquisa, escreva-o abaixo.
 
-Data e hora:  
-
-Envie para você mesma(o) essa informação por e-mail.
-Você precisará fornecer essas informações se mais tarde desejar solicitar que suas respostas sejam editadas ou excluídas. Para exercer esses direitos, entre em contato com rowforwards@gmail.com. Observe que imprimir suas respostas não salva o número de identificação ou a data e hora de suas respostas.
+* (Resposta aberta)
