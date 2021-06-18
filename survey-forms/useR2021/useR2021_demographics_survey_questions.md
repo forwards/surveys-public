@@ -1,7 +1,7 @@
 useR! 2021 Survey
-Welcome to the useR! 2020 survey, run by Forwards, the R Foundation taskforce for women and underrepresented groups.
+Welcome to the useR! 2021 survey, run by Forwards, the R Foundation taskforce for women and underrepresented groups.
 
-This survey is open to anyone that watched/attended any of the useR! 2020 breakout sessions, keynotes, R core panel, contributed tutorials, or online tutorials. It is also open to those that wished to participate in useR! 2020 but could not.
+This survey is open to anyone that is registered in the conference and plans to attend or is attending any of the useR! 2021 keynotes, regular talks, elevator pitches, panels and incubators, tutorials, and social events. <!--It is also open to those that wished to participate in useR! 2021 but could not. <!--this is a posteriori-->
 
 This survey includes questions regarding personal and potentially identifiable information. We ask these questions because the R community is actively working to improve the inclusiveness and openness of our online and offline spaces. Taking snapshots of demographic data allows us to see how we're doing over time, and adjust accordingly if the results suggest our events are excluding certain demographics. The legal basis for processing this data is your consent.
 
@@ -16,11 +16,11 @@ There are 24 questions in this survey.
 ### What is your interest in useR!?
 Choose one of the following answers
 Please choose only one of the following:
-I use R
-I am interested in starting to use R
-I am not interested in using R, but I am interested in data science
-I am not interested in using R, but I am interested in another topic covered by the useR! program
-I am not interested in using R, or anything on the useR! program [if selected, survey terminates early]
+- [ ] I use R
+- [ ] I am interested in starting to use R
+- [ ] I am not interested in using R, but I am interested in data science
+- [ ] I am not interested in using R, but I am interested in another topic covered by the useR! program
+- [ ]  I am not interested in using R, or anything on the useR! program [if selected, survey terminates early]
 
 ### How long have you been using R for?
 Only answer this question if the following conditions are met:
@@ -270,7 +270,9 @@ Zimbabwe
 Prefer not to respond
 Other (please specify):
 
-## To what racial/ethnic group(s) do you identify? (Please describe in the comment box)
+## To what racial/ethnic group(s) do you identify? 
+Note: This classification varies from country to country and might not be encompassing all the local specificities. 
+(Please describe in the comment box)
 Comment only when you choose an answer.
 Please select at most 6 answers
 Please choose all that apply and provide a comment:
@@ -290,12 +292,16 @@ Woman
 Gender diverse (gender non-conforming/gender-fluid/other gender minority)
 Prefer not to respond
 
-### Do you identify as LGBT+ (lesbian, gay, bisexual, transgender, other sexual or gender minority)?
+AST: open comment box in addition to this?
+
+### Do you identify as LGBTQ+ (lesbian, gay, bisexual, transgender, other sexual or gender minority)?
 Choose one of the following answers
 Please choose only one of the following:
 Yes
 No
 Prefer not to respond
+
+AST: open comment box in addition to this?
 
 ### Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? Select all that apply:
 Comment only when you choose an answer.
@@ -372,10 +378,11 @@ Prefer not to respond
 
 ## Involvement in useR!
 
-### The useR! 2020 programme includes breakout sessions, keynotes, an R Core panel, pre-recorded videos and online tutorials. How many useR! 2020 contributions have you watched or attended during July?
+### The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?
 
 Choose one of the following answers
 Please choose only one of the following:
+AST: DO WE KEEP THIS COUNT?
 0
 1 - 2
 3 - 5
@@ -387,26 +394,30 @@ Please choose only one of the following:
 
 ### Which types of contribution did you watch/attend?
 Only answer this question if the following conditions are met:
-Answer was '3 - 5' or '1 - 2' or '6 - 10' or '11 - 20' or '50 - 100' or '21 - 50' or '> 100' at question '16 [Attendance]' (The useR! 2020 programme includes breakout sessions, keynotes, an R Core panel, pre-recorded videos and online tutorials. How many useR! 2020 contributions have you watched or attended during July? )
+Answer was '3 - 5' or '1 - 2' or '6 - 10' or '11 - 20' or '50 - 100' or '21 - 50' or '> 100' at question '16 [Attendance]' (The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?)
+
 Check all that apply
 Please choose all that apply:
-breakout session (watched live or recorded)
-keynote (watched live or recorded)
-R core panel (watched live or recorded)
-contributed video
-online tutorial
+keynote
+regular talks
+elevator pitches
+panels and incubators
+tutorial
 
-### Why did you not watch/attend any part of useR! 2020 during July?
+<!-- the following could go on the a posteriori form-->
+### Why did you not watch/attend any part of useR! 2021 during July?
 Only answer this question if the following conditions are met:
-Answer was '0' at question '16 [Attendance]' (The useR! 2020 programme includes breakout sessions, keynotes, an R Core panel, pre-recorded videos and online tutorials. How many useR! 2020 contributions have you watched or attended during July? )
+Answer was '0' at question '16 [Attendance]' (The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?)
 Please write your answer here:
 
-### Did you present a contribution for useR!?
+### Did you present a contribution for useR! 2021?
+
 Choose one of the following answers
 Please choose only one of the following:
 Yes, I presented a regular talk
 Yes, I presented a lightning talk
-Yes, I presented a poster
+Yes, I presented a technical note
+Yes, I presented a technical note
 No
 Prefer not to respond
 Did you present in an special session (invited talk, panel, breakout session, tutorial) or hold an organizational position (program/organizing committee member, session chair, tutorial facilitator, teaching assistant)?
