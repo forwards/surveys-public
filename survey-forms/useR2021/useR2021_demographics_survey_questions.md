@@ -13,7 +13,7 @@ There are 24 questions in this survey.
 
 ## Interest in R and the useR! conference
 
-### What is your interest in useR!?
+### 1. What is your interest in useR!?
 Choose one of the following answers
 Please choose only one of the following:
 - [ ] I use R
@@ -22,7 +22,7 @@ Please choose only one of the following:
 - [ ] I am not interested in using R, but I am interested in another topic covered by the useR! program
 - [ ]  I am not interested in using R, or anything on the useR! program [if selected, survey terminates early]
 
-### How long have you been using R for?
+### 2. How long have you been using R for?
 Only answer this question if the following conditions are met:
 Answer was 'I use R' at question '1 [InterestInR]' (What is your interest in useR!?)
 Choose one of the following answers
@@ -35,7 +35,7 @@ Please choose only one of the following:
 > 10 years
 Prefer not to respond
 
-### Do you use R in your work/study?
+### 3. Do you use R in your work/study?
 Only answer this question if the following conditions are met:
 Answer was 'I use R' at question '1 [InterestInR]' (What is your interest in useR!?)
 Choose one of the following answers
@@ -47,7 +47,7 @@ Prefer not to respond
 
 ## Demographics
 
-### How old are you?
+### 4. How old are you?
 Choose one of the following answers
 Please choose only one of the following:
 < 18
@@ -60,9 +60,9 @@ Please choose only one of the following:
 > 74
 Prefer not to respond
 
-## In what country do you currently reside?
+## 5. In what country do you currently reside?
 Choose one of the following answers
-Please choose only one of the following:
+Please choose only one of the following: <!--check the country list!-->
 Afghanistan
 Albania
 Algeria
@@ -74,6 +74,7 @@ Armenia
 Australia
 Austria
 Azerbaijan
+Bolivia
 Bulgaria
 Burkina Faso
 Burma
@@ -270,7 +271,7 @@ Zimbabwe
 Prefer not to respond
 Other (please specify):
 
-## To what racial/ethnic group(s) do you identify? 
+## 6. To what racial/ethnic group(s) do you identify? 
 Note: This classification varies from country to country and might not be encompassing all the local specificities. 
 (Please describe in the comment box)
 Comment only when you choose an answer.
@@ -279,32 +280,38 @@ Please choose all that apply and provide a comment:
 Asian
 Black/African/Caribbean
 Hispanic/Latinx
+Indigenous groups
 Mixed/Multiple ethnic groups
 White
-Other ethnic group
+Prefer to self identify
 Prefer not to respond
 
-### What is your gender?
+### 7. What is your gender?
 Choose one of the following answers
 Please choose only one of the following:
+(Please describe in the comment box)
 Man
 Woman
 Gender diverse (gender non-conforming/gender-fluid/other gender minority)
 Prefer not to respond
 
-AST: open comment box in addition to this?
+<!--AST: open comment box in addition to this?-->
 
-### Do you identify as LGBTQ+ (lesbian, gay, bisexual, transgender, other sexual or gender minority)?
+### 8. Do you identify as LGBTQ+ (lesbian, gay, bisexual, transgender, other sexual or gender minority)?
 Choose one of the following answers
+(Please describe in the comment box)
 Please choose only one of the following:
 Yes
 No
 Prefer not to respond
 
-AST: open comment box in addition to this?
+<!--AST: open comment box in addition to this?-->
 
-### Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? Select all that apply:
+### 9. Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? Select all that apply:
 Comment only when you choose an answer.
+
+[a binary response similar to the previous questions]
+
 Please choose all that apply and provide a comment:
 A vision impairment
 A hearing impairment
@@ -315,7 +322,7 @@ Other disability/impairment (further comment)
 I have no such disability or impairment
 Prefer not to respond
 
-### Are there actions you think useR! organizers should take to better cater for your disabilities or impairments?
+### Are there actions you think useR! organizers should take to better cater for your disabilities or impairments? <!--satisfaction survey--> 
 
 Only answer this question if the following conditions are met:
 Answer was 'A vision impairment' or 'A hearing impairment' or 'A mobility impairment' or 'A learning disability' or 'A mental health disorder' or 'Other disability/impairment (further comment)' at question '9 [Disability]' (Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? Select all that apply:)
@@ -328,7 +335,7 @@ Make a comment on your choice here:
 
 ## Education & Employment
 
-### What is the highest level of education you have completed?
+### 10. What is the highest level of education you have completed?
 Choose one of the following answers
 Please choose only one of the following:
 High school/Secondary school or lower
@@ -338,7 +345,7 @@ Doctorate degree
 Professional degree or certification
 Prefer not to respond
 
-### Are you currently a student? (Note this includes PhD students, even if salaried, but this does not include postdocs)
+### 11. Are you currently a student? (Note this includes PhD students, even if salaried, but this does not include postdocs)
 
 Choose one of the following answers
 Please choose only one of the following:
@@ -347,7 +354,7 @@ Yes, part time
 No
 Prefer not to respond
 
-### What is your current employment status? If you are employed in multiple sectors or both work and study, select all that apply:
+### 12. What is your current employment status? If you are employed in multiple sectors or both work and study, select all that apply:
 Choose one of the following answers
 Please choose only one of the following:
 Employed permanently in academia
@@ -360,7 +367,7 @@ Non-salaried student
 Retired
 Prefer not to respond
 
-### If in paid employment, are you:
+### 13. If in paid employment, are you:
 Choose one of the following answers
 Please choose only one of the following:
 Full time
@@ -369,7 +376,7 @@ I am not currently in paid employment
 Prefer not to respond
 Other
 
-### Do you have any children or adults that depend on you for day-to-day care?
+### 14. Do you have any children or adults that depend on you for day-to-day care?
 Choose one of the following answers
 Please choose only one of the following:
 Yes
@@ -378,21 +385,18 @@ Prefer not to respond
 
 ## Involvement in useR!
 
-### The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?
+### The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to? <!--satisfaction survey--> 
 
 Choose one of the following answers
 Please choose only one of the following:
-AST: DO WE KEEP THIS COUNT?
+AST: DO WE KEEP THIS COUNT? -> Heather: days would be bette, timezones, for ex. 
 0
-1 - 2
-3 - 5
-6 - 10
-11 - 20
-21 - 50
-50 - 100
-> 100
+1 - 2 day
+Every day 
+Every day + tutorials
 
-### Which types of contribution did you watch/attend?
+
+### Which types of contribution did you watch/attend? <!--satisfaction survey--> 
 Only answer this question if the following conditions are met:
 Answer was '3 - 5' or '1 - 2' or '6 - 10' or '11 - 20' or '50 - 100' or '21 - 50' or '> 100' at question '16 [Attendance]' (The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?)
 
@@ -405,12 +409,12 @@ panels and incubators
 tutorial
 
 <!-- the following could go on the a posteriori form-->
-### Why did you not watch/attend any part of useR! 2021 during July?
+### Why did you not watch/attend any part of useR! 2021 during July? <!--satisfaction survey--> 
 Only answer this question if the following conditions are met:
 Answer was '0' at question '16 [Attendance]' (The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?)
 Please write your answer here:
 
-### Will you present a contribution for useR! 2021?
+### 15. Are you going to present a contribution for useR! 2021?
 
 Choose one of the following answers
 Please choose only one of the following:
@@ -423,38 +427,48 @@ Yes, I presented a panel or an incubator
 No
 Prefer not to respond
 
-Did you hold an organizational position (program/organizing committee member, session chair, tutorial facilitator, maRmot, zoom hosts)?
+### 16. Do you hold an organizational position (organizing committee member, program committee member, session chair, maRmot, zoom hosts, partner community representatives, social events facilitator)?
+
 Choose one of the following answers
 Please choose only one of the following:
 Yes
 No
 Prefer not to respond
-<!--AST: maybe a comment box?--> 
 
-## Satisfaction with useR!
+<!-- We wante a multichoice! menu with the options --> 
 
-### How satisfied were you with the following aspects of the useR! program?
+## Satisfaction with useR! <!--satisfaction survey--> 
+
+### How satisfied were you with the following aspects of the useR! program?<!--satisfaction survey--> 
 Please choose the appropriate response for each item: [radio button selection array]
 Not at all satisfied	Slightly satisfied	Moderately satisfied	Very satisfied	Completely satisfied	Not applicable
 
-Breakout sessions	
 Keynotes	
 Regular talks	
 Lightning talks	
-Posters	
-Tutorials	
+Technical notes	
+Panels and incubators
+Tutorials
+Social events
 
-### Do you have other comments about the useR! program?
+### Do you have other comments about the useR! program?<!--satisfaction survey--> 
 Please write your answer here:
 
-### How satisfied were you with the following aspects of the useR! organization? 
+### How satisfied were you with the following aspects of the useR! organization? <!--satisfaction survey--> 
 Please choose the appropriate response for each item: [radio button selection array]
 Not at all satisfied	Slightly satisfied	Moderately satisfied	Very satisfied	Completely satisfied	Not applicable
-Website	
-Publicity	
-Tutorial registration	
 
-### Do you have other comments about the useR! organization?
+Website
+Social media presence	
+Registration system
+Event platform (Zoom webinars and/or Youtube streaming)
+Chat platform
+Captions
+Code of conduct response
+
+
+### Do you have other comments about the useR! organization? <!--satisfaction survey--> 
+
 Please write your answer here:
 
 
@@ -469,7 +483,7 @@ Time: {date ('Y-m-d H:s')}
 Email this information to yourself
 
 You will need to provide this information if you later wish to ask for your responses to be edited/deleted. Contact rowforwards@gmail.com to exercise these rights.
-
+<!-- AST: the option to edit should be enabled in limesurvey-->
 Note that printing your answers does not save the respondent ID and time of response.
 
 Submit your survey.
