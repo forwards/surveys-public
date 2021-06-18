@@ -410,22 +410,26 @@ Only answer this question if the following conditions are met:
 Answer was '0' at question '16 [Attendance]' (The useR! 2021 programme includes keynotes, regular talks, elevator pitches, panels and incubators, and tutorials. How many useR! 2021 sessions did you attend to?)
 Please write your answer here:
 
-### Did you present a contribution for useR! 2021?
+### Will you present a contribution for useR! 2021?
 
 Choose one of the following answers
 Please choose only one of the following:
 Yes, I presented a regular talk
 Yes, I presented a lightning talk
 Yes, I presented a technical note
-Yes, I presented a technical note
+Yes, I presented a tutorial
+Yes, I presented a panel or an incubator
+
 No
 Prefer not to respond
-Did you present in an special session (invited talk, panel, breakout session, tutorial) or hold an organizational position (program/organizing committee member, session chair, tutorial facilitator, teaching assistant)?
+
+Did you hold an organizational position (program/organizing committee member, session chair, tutorial facilitator, maRmot, zoom hosts)?
 Choose one of the following answers
 Please choose only one of the following:
 Yes
 No
 Prefer not to respond
+<!--AST: maybe a comment box?--> 
 
 ## Satisfaction with useR!
 
