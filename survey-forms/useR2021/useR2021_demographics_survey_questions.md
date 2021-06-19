@@ -1,4 +1,5 @@
-useR! 2021 Survey
+# useR! 2021 Survey
+
 Welcome to the useR! 2021 survey, run by Forwards, the R Foundation taskforce for women and underrepresented groups.
 
 This survey is open to anyone that is registered in the conference and plans to attend or is attending any of the useR! 2021 keynotes, regular talks, elevator pitches, panels and incubators, tutorials, and social events. <!--It is also open to those that wished to participate in useR! 2021 but could not. <!--this is a posteriori-->
@@ -8,8 +9,6 @@ This survey includes questions regarding personal and potentially identifiable i
 Please note that all questions are optional and no explicit identifiers (name, email, IP address) are recorded.
 
 Based on previous years, the survey should take less than 5 minutes to complete.
-
-There are 24 questions in this survey.
 
 ## Interest in R and the useR! conference
 
@@ -429,10 +428,16 @@ Prefer not to respond
 
 ### 16. Do you hold an organizational position (organizing committee member, program committee member, session chair, maRmot, zoom hosts, partner community representatives, social events facilitator)?
 
-Choose one of the following answers
-Please choose only one of the following:
-Yes
+Choose one more answers
+
 No
+Yes, organizing committee member
+Yes, program committee member
+Yes, session chair
+Yes, maRmot
+Yes, Zoom host
+Yes, partner community representative
+Yes, social events facilitator
 Prefer not to respond
 
 <!-- We wante a multichoice! menu with the options --> 
