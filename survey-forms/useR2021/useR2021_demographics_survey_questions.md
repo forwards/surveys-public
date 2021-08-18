@@ -28,37 +28,37 @@ Only answer this question if the following conditions are met:
 Answer was 'I use R' at question '1 [InterestInR]' (What is your interest in useR!?)
 Choose one of the following answers
 
-< 6 months
-6-12 months
-1-2 years
-2-5 years
-5-10 years
-> 10 years
-Prefer not to respond
+- < 6 months
+- 6-12 months
+- 1-2 years
+- 2-5 years
+- 5-10 years
+- 10+ years
+- Prefer not to respond
 
 ### 3. Do you use R in your work/study?
 Only answer this question if the following conditions are met:
 Answer was 'I use R' at question '1 [InterestInR]' (What is your interest in useR!?)
 Choose one of the following answers
 
-Yes
-When I can find an excuse to, but it's not a requirement
-No
-Prefer not to respond
+- Yes
+- Yes, When I can find an excuse to, but it's not a requirement
+- No
+- Prefer not to respond
 
 ## Demographics
 
 ### 4. How old are you?
 Choose one of the following answers
 
-< 18
-18 - 24
-25 - 34
-35 - 44
-45 - 54
-55 - 64
-> 64
-Prefer not to respond
+- < 18
+- 18 - 24
+- 25 - 34
+- 35 - 44
+- 45 - 54
+- 55 - 64
+- 64+
+- Prefer not to respond
 
 ## 5. What is your country of origin?
 Choose one of the following answers
@@ -485,15 +485,15 @@ Other (please specify):
 ## 7. To what racial/ethnic group(s) do you identify? 
 Note: This classification varies from region to region and does not encompass the whole array of possibilities, please check all that apply and/or self-identify in the comment box. 
 
-Asian or Pacific Islander
-Black/African/Caribbean
-Hispanic/Latinx
-Indigenous/aboriginal groups
-Middle-Eastern/North-African
-Mixed/Multiple ethnic groups
-White
-Prefer not to respond
-Prefer to self identify (with comment box)
+- Asian or Pacific Islander
+- Black/African/Caribbean
+- Hispanic/Latinx
+- Indigenous/aboriginal groups
+- Middle-Eastern/North-African
+- Mixed/Multiple ethnic groups
+- White
+- Prefer not to respond
+- Prefer to self identify (with comment box)
 
 ### 8. How would you self-identify regarding race and ethnicity?
 
@@ -502,107 +502,110 @@ Box for open answer.
 ### 9. What is your gender?
 Choose one of the following answers
 
-Man
-Woman
-Gender diverse (gender non-conforming/gender-fluid/other gender minority)
-Prefer not to respond
-Prefer to self identify (with comment box)
+- Male
+- Female
+- Transgender Female
+- Trans Male
+- Gender Non-Conforming/ gender-fluid/ other gender minority)
+- Prefer not to respond
+- Prefer to self identify (with comment box)
 
 ### 10. Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? 
 Choose one of the following answers
 
-Yes
-No
-Prefer not to respond
+- Yes
+- No
+- Prefer not to respond
 
 ### 11. What kind of disability do you have? Select all that apply:
-Only answer this question if the following conditions are met:
-Answer was 'Yes' at question Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? 
-Please choose all that apply and provide a comment:
+Only answer this question if the following conditions are met :
+- Answer was 'Yes' at question 
+* Do you have any disabilities or impairments that affect the way you work/study or place special requirements on your working/learning environment? 
+* Please choose all that apply and provide a comment:
 
-A vision impairment
-A hearing impairment
-A mobility impairment
-A learning disability
-A mental health disorder
-Other disability/impairment (further comment)
-I have no such disability or impairment
-Prefer not to respond
+- A vision impairment
+- A hearing impairment
+- A mobility impairment
+- A learning disability
+- A mental health disorder
+- Other disability/impairment (further comment)
+- I have no such disability or impairment
+- Prefer not to respond
 
-### 12. Do you identify as LGBTQ+ (lesbian, gay, bisexual, transgender, other sexual or gender minority)?
+### 12. Do you identify as LGBTQ+ (lesbian, gay, bisexual, transgender, queer, other sexual or gender minority)?
 Choose one of the following answers
 
-Yes
-No
-Prefer not to respond
+* Yes
+* No
+* Prefer not to respond
 
 ## Education & Employment
 
 ### 13. What is the highest level of education you have completed?
 Choose one of the following answers
 
-High school/Secondary school or lower
-Undergraduate degree
-Master degree
-Doctorate degree
-Professional degree or certification
-Prefer not to respond
+- High school/Secondary school or lower
+- Undergraduate degree
+- Master degree
+- Doctorate degree
+- Professional degree or certification
+- Prefer not to respond
 
 ### 14. Are you currently a student? (Note this includes PhD students, even if salaried, but this does not include postdocs)
 Choose one of the following answers
 
-Yes, full time
-Yes, part time
-No
-Prefer not to respond
+- Yes, full time
+- Yes, part time
+- No
+- Prefer not to respond
 
 ### 15. What is your current employment status? If you are employed in multiple sectors or both work and study, select all that apply:
 Choose one of the following answers
 
-Employed permanently in academia
-Employed non-permanently in academia (includes salaried students)
-Employed in government/non-profit
-Employed in industry
-Self-employed
-Unemployed
-Non-salaried student
-Retired
-Prefer not to respond
+- Employed permanently in academia
+- Employed non-permanently in academia (includes salaried students)
+- Employed in government/non-profit
+- Employed in industry
+- Self-employed
+- Unemployed
+- Non-salaried student
+- Retired
+- Prefer not to respond
 
 ### 16. If in paid employment, are you:
 Choose one of the following answers
 Please choose only one of the following:
-Full time
-Part time
-I am not currently in paid employment
-Prefer not to respond
-Other (with comment box)
+- Full time
+- Part time
+- I am not currently in paid employment
+- Prefer not to respond
+- Other (with comment box)
 
 ### 17. Do you have any children or adults that depend on you for day-to-day care?
 Choose one of the following answers
 Please choose only one of the following:
-Yes
-No
-Prefer not to respond
+- Yes
+- No
+- Prefer not to respond
 
 ## Involvement in useR!
 
 ### 18. Are you presenting a contribution for useR! 2021?
 Choose one of the following answers
 
-No
-Yes, I presented a regular talk
-Yes, I presented a lightning talk/technical note
-Yes, I presented a tutorial, panel, incubator or keynote
-Prefer not to respond
+- No
+- Yes, I presented a regular talk
+- Yes, I presented a lightning talk/technical note
+- Yes, I presented a tutorial, panel, incubator or keynote
+- Prefer not to respond
 
 ### 19. Do you hold an organizational position (organizing committee member, program committee member, session chair, maRmot, zoom host, partner community representative, social event facilitator)?
 Choose one more answers
 
-No
-Yes, organizing/program committee member/session chair
-Yes, maRmot, zoom host, partner community representative, social events facilitator
-Prefer not to respond
+- No
+- Yes, organizing/program committee member/session chair
+- Yes, maRmot, zoom host, partner community representative, social events facilitator
+- Prefer not to respond
 
 Thank you for completing this survey!
 
